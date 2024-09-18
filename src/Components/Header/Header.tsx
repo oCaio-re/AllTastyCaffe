@@ -4,14 +4,20 @@ import NavBar from "./NavBar/NavBar.tsx";
 
 function Header() {
     const headerSx = {
-        backgroundColor: "rgba(154,154,154,0.13)",
+        backgroundColor: "white",
         h: "77px",
+        boxShadow: "0px 5px 5px silver",
+        zIndex: "200",
+        position: "fixed",
+        width: "100%",
+        mt: "2.2em",
+        mb: "auto",
+        top: "0"
     }
     return (
         <>
             <TopBar/>
-            <Flex className="header" sx={headerSx} boxShadow="-4px 5px 5px silver">
-                {/*<Box as="image" src={logo}/>*/}
+            <Flex className="header" sx={headerSx}>
                 <NavBar/>
             </Flex>
         </>

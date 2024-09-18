@@ -28,15 +28,11 @@ function NavBar() {
         ml: "3em",
         borderRadius: "5px",
         border: "none",
-        ":active": {
-            // backgroundColor: "rgba(12,110,90,0.57)",
-            backgroundColor: "red",
-            transitionDuration: "0.2s",
-        },
         boxShadow: "-4px 5px 5px silver",
         ":hover": {
-            backgroundColor: "rgba(10,87,71,0.79)",
-            transitionDuration: "0.2s",
+            // backgroundColor: "rgba(10,87,71,0.79)",
+            // transitionDuration: "0.2s",
+            color: "black"
         }
     }
     const imgWrapSx = {

@@ -7,6 +7,9 @@ function TopBar() {
         h: {base: "37px", md: "37px"},
         backgroundColor: "#0C6E5A",
         justifyContent: "center",
+        position: "fixed",
+        // mb: "10em"
+        // width: "100%",
     }
     return (
         <Flex className="top-bar" sx={topBarSx}>

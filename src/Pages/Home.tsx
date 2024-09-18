@@ -1,5 +1,7 @@
 import {Box} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
+import WallPaper from "../Components/WallPaper/WallPaper.tsx";
+// import TopBar from "../Components/Header/TopBar/TopBar.tsx";
 
 function Home() {
     return (
@@ -8,6 +10,8 @@ function Home() {
                  overflow="hidden"
             >
                 <Header/>
+                <WallPaper/>
+                {/*<TopBar/>*/}
             </Box>
         </>
     );
