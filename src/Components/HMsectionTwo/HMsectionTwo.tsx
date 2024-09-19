@@ -1,12 +1,16 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
-// import {NavLink} from "react-router-dom";
+import ViewMenusBar from "./ViewMenusBar/ViewMenusBar.tsx";
+import icedTeaImg from "../../../public/iced_tea.png"
+import smoothieImg from "../../../public/smootie_strawberry.png"
+import lemonadeImg from "../../../public/lemonade.png"
 
 function HMsectionTwo() {
     const sectionWrapSx = {
         height: "90vh",
-        backgroundColor: "yellow",
+        backgroundColor: "",
         mt: "15em",
         mb: "10em",
+        flexDirection: "column",
     }
     const contentWrapSx = {
         backgroundColor: "",
@@ -26,6 +30,11 @@ function HMsectionTwo() {
     const imgWrapSx = {
         h: "90%",
         backgroundColor: "",
+        m: "auto",
+        // "_hover": {
+        //     width: "10%",
+        //     height: "10%",
+        // }
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
@@ -44,7 +53,7 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx}/>
+                        <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
                         <Box className="beverage-name-wrap" m="auto">
                             <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">LIPTON ICED TEA</Text>
                         </Box>
@@ -53,7 +62,7 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx}/>
+                        <Box as="img" sx={imgWrapSx} src={smoothieImg}/>
                         <Box className="beverage-name-wrap" m="auto">
                             <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">STRAWBERRY SMOOTHIE</Text>
                         </Box>
@@ -62,25 +71,14 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx}/>
+                        <Box as="img" sx={imgWrapSx} src={lemonadeImg}/>
                         <Box className="beverage-name-wrap" m="auto">
                             <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">FRESH LEMONADE</Text>
                         </Box>
                     </Flex>
                 </Flex>
-                <Flex className="bottom-bar-wrap">
-                    <Flex className="bottom-content-wrap">
-                        <Flex>
-                            <Text>View Menus</Text>
-                        </Flex>
-                        <Flex>
-                            {/*<NavLink to={}>FOOD</NavLink>*/}
-                            {/*<NavLink to={}>FOOD</NavLink>*/}
-                            {/*<NavLink to={}>FOOD</NavLink>*/}
-                        </Flex>
-                    </Flex>
-                </Flex>
             </Flex>
+            <ViewMenusBar/>
         </Flex>
     );
 }
