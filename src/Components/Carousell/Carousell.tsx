@@ -5,17 +5,18 @@ function Carousell() {
     return (
       <>
           <Flex height="90vh" w="100%"
-                position="relative"
+                // position="relative"
                 top="0"
                 mb="auto"
           >
             <Box className="img-wrap" zIndex="0"
-                 position="absolute"
+                 // position="relative"
                  w="100vw" h="90vh"
-                // mt="auto"
+                pt="110px"
                 // backgroundImage={backgroundImage}
             >
                 <Box as="img" src={backgroundImage}
+                     // position="absolute"
                      w="100vw" h="90vh" ml="auto" mr="auto"
                      objectFit="cover"
                      zIndex="1"

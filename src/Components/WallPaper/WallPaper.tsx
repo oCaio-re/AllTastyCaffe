@@ -5,7 +5,7 @@ function WallPaper() {
     const wallpaperSx = {
         // position: "absolute",
         zIndex: "-3",
-        opacity: "30%",
+        opacity: "10%",
         w: "100vw",
         backgroundAttachment: "fixed"
     }

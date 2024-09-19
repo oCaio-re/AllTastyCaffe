@@ -3,7 +3,7 @@ import Header from "../Components/Header/Header.tsx";
 import WallPaper from "../Components/WallPaper/WallPaper.tsx";
 import Footer from "../Components/Footer/Footer.tsx";
 import Carousell from "../Components/Carousell/Carousell.tsx";
-// import TopBar from "../Components/Header/TopBar/TopBar.tsx";
+import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
 
 function Home() {
     return (
@@ -12,11 +12,10 @@ function Home() {
                 overflow="hidden"
                 flexDirection="column"
             >
-                {/*<Spacer h="110px"/>*/}
                 <Header/>
                 <Carousell/>
+                <HMsectionTwo/>
                 <Footer/>
-                {/*<TopBar/>*/}
                 <WallPaper/>
             </Flex>
         </>
