@@ -1,5 +1,4 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
-import {GrLocation} from "react-icons/gr";
 import {GoLink} from "react-icons/go";
 
 function LinkItem() {

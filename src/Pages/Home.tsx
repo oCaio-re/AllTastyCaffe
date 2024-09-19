@@ -4,6 +4,7 @@ import WallPaper from "../Components/WallPaper/WallPaper.tsx";
 import Footer from "../Components/Footer/Footer.tsx";
 import Carousell from "../Components/Carousell/Carousell.tsx";
 import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
+import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
                 <Header/>
                 <Carousell/>
                 <HMsectionTwo/>
+                <HMsectionThree/>
                 <Footer/>
                 <WallPaper/>
             </Flex>
