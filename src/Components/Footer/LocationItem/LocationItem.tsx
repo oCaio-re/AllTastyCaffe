@@ -1,5 +1,4 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
-import { em } from "framer-motion/client";
 import {GrLocation} from "react-icons/gr";
 
 function LocationItem() {
