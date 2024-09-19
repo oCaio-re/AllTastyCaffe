@@ -8,6 +8,7 @@ function TopBar() {
         backgroundColor: "#0C6E5A",
         justifyContent: "center",
         position: "fixed",
+        zIndex: "200"
         // mb: "10em"
         // width: "100%",
     }

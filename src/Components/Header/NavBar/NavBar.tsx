@@ -39,7 +39,8 @@ function NavBar() {
         w: "7%",
         // backgroundColor: "red",
         position: "absolute",
-        "filter": "drop-shadow(0px 2px 2px rgba(77, 76, 76, 0.5))"
+        "filter": "drop-shadow(0px 2px 2px rgba(77, 76, 76, 0.5))",
+        zIndex: "20"
     }
     return (
         <Flex className="outerwrap" sx={outerWrapSx}>
