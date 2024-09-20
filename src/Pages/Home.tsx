@@ -6,6 +6,7 @@ import Carousell from "../Components/Carousell/Carousell.tsx";
 import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
 import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
 import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
+import wallpaper from "../../public/wallpaper-opac.svg"
 
 function Home() {
     return (
@@ -15,12 +16,19 @@ function Home() {
                 flexDirection="column"
             >
                 <Header/>
-                <Carousell/>
-                <HMsectionTwo/>
-                <HMsectionThree/>
-                <HMsectionFour/>
-                <Footer/>
-                <WallPaper/>
+                <Flex flexDirection="column"
+                    backgroundImage={wallpaper}
+                    backgroundSize="cover"
+                      backgroundAttachment="fixed"
+                    // opacity="0.3"
+                >
+                    <Carousell/>
+                    <HMsectionTwo/>
+                    <HMsectionThree/>
+                    <HMsectionFour/>
+                    <Footer/>
+                </Flex>
+                {/*<WallPaper/>*/}
             </Flex>
         </>
     );
