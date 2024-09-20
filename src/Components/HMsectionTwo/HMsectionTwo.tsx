@@ -9,7 +9,7 @@ function HMsectionTwo() {
         height: "90vh",
         backgroundColor: "",
         mt: "15em",
-        mb: "5em",
+        mb: "10em",
         flexDirection: "column",
     }
     const contentWrapSx = {
@@ -31,20 +31,21 @@ function HMsectionTwo() {
         h: "90%",
         backgroundColor: "",
         m: "auto",
-        // "_hover": {
-        //     width: "10%",
-        //     height: "10%",
-        // }
+        "filter": "drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
             <Flex className="content-wrap" flexDirection="column" sx={contentWrapSx}>
                 <Flex className="titleS-wrap" sx={titleSWrapSx}>
-                    <Flex className="title-wrap" backgroundColor="" h="60%" w="100%">
-                        <Text m="auto" fontFamily="Inknut Antiqua" fontSize="3.5em">A ROSCOMMON ORIGINAL</Text>
+                    <Flex className="title-wrap" backgroundColor="" h="50%" w="100%"
+                        filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
+                    >
+                        <Text m="auto" fontFamily="Inknut Antiqua" fontSize="3em">A ROSCOMMON ORIGINAL</Text>
                     </Flex>
-                    <Flex className="undertitle-wrap" h="40%" w="100%" backgroundColor="">
-                        <Text m="auto" fontFamily="Ingrid Darling" fontSize="3em" color="#0C6E5A">A few of our
+                    <Flex className="undertitle-wrap" h="50%" w="100%" backgroundColor=""
+                          filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
+                    >
+                        <Text m="auto" fontFamily="Ingrid Darling" fontSize="3.5em" color="#0C6E5A">A few of our
                             favorites...</Text>
                     </Flex>
                 </Flex>
