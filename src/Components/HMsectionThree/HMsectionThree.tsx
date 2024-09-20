@@ -5,10 +5,9 @@ import backgroundSvg from "../../../public/hm_secThree_bg.svg"
 function HMsectionThree() {
     const sectionWrapSx = {
         // backgroundColor: "#0C6E5A",
-        backgroundSize: "cover",
-        backgroundImage: `url(${backgroundSvg})`,
-        h: "90vh",
         justifyContent: "center",
+        position: "relative",
+        h: "90vh",
         mb: "-5em",
         // mb: "2em",
     }
@@ -16,6 +15,7 @@ function HMsectionThree() {
         backgroundColor: "",
         h: "85%",
         w: "70%",
+        zIndex: "20"
     }
     const textContentWrapSx = {
         flexDirection: "column",
@@ -29,6 +29,9 @@ function HMsectionThree() {
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
+            <Flex className="background-wrap" position="absolute">
+                <Box as="img" src={backgroundSvg}/>
+            </Flex>
             <Flex className="outer-wrap" sx={outerWrapSx}>
                 <Flex className="left-content"  w="50%" backgroundColor="">
                     <Flex className="text-content-wrap" sx={textContentWrapSx}>
