@@ -13,7 +13,8 @@ function NavBar() {
         ml:"auto",
         mt:"auto",
         mb:"auto",
-        fontFamily: "Istok Web",
+        // fontFamily: "Istok Web",
+        fontFamily: "Inter",
         fontSize: "1.3em",
         gap: "40px",
         color: "grey",
@@ -32,7 +33,8 @@ function NavBar() {
         ":hover": {
             // backgroundColor: "rgba(10,87,71,0.79)",
             // transitionDuration: "0.2s",
-            color: "black"
+            color: "#0C6E5A",
+
         }
     }
     const imgWrapSx = {
