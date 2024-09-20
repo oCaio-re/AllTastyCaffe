@@ -30,7 +30,7 @@ function Footer() {
             <Flex className="main-background" sx={mainBackgroundSx}>
                 <Flex className="content-wrap" sx={contentWrapSx}>
                     <Flex className="logo-wrap" sx={innerBoxWrapSx} >
-                        <Image src={logoFooter} m="auto" filter= "drop-shadow(-14px 8px 8px rgba(77, 76, 76, 0.6))"/>
+                        <Image src={logoFooter} m="auto" filter= "drop-shadow(-14px 8px 8px rgba(77, 76, 76, 0.6))" w="80%"/>
                     </Flex>
                     <Flex className="phone-wrap" sx={innerBoxWrapSx} flexDirection="column" mt="0.5em">
                         <PhoneItem/>

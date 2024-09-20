@@ -6,7 +6,8 @@ function HMsectionThree() {
         backgroundColor: "#0C6E5A",
         h: "90vh",
         justifyContent: "center",
-        mb: "15em"
+        mb: "-5em",
+        // mb: "2em",
     }
     const outerWrapSx = {
         backgroundColor: "",

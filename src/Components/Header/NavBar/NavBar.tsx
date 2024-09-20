@@ -28,7 +28,7 @@ function NavBar() {
         ml: "3em",
         borderRadius: "5px",
         border: "none",
-        boxShadow: "-4px 5px 5px silver",
+        boxShadow: "-8px 8px 8px rgba(77, 76, 76, 0.4)",
         ":hover": {
             // backgroundColor: "rgba(10,87,71,0.79)",
             // transitionDuration: "0.2s",
@@ -53,7 +53,7 @@ function NavBar() {
                 <NavLink to="/" className="nav-item">Berry Acai</NavLink>
                 <NavLink to="/" className="nav-item" >Pastries</NavLink>
                 <NavLink to="/" className="nav-item" >Sandwiches</NavLink>
-                <NavLink to="/" className="nav-item" >About Us</NavLink>
+                <NavLink to="/" className="nav-item" >About</NavLink>
             </Flex>
             <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
         </Flex>
