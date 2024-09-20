@@ -1,9 +1,12 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
 import friendsCoffeImg from "../../../public/friends-drinking-coffee.jpg"
+import backgroundSvg from "../../../public/hm_secThree_bg.svg"
 
 function HMsectionThree() {
     const sectionWrapSx = {
-        backgroundColor: "#0C6E5A",
+        // backgroundColor: "#0C6E5A",
+        backgroundSize: "cover",
+        backgroundImage: `url(${backgroundSvg})`,
         h: "90vh",
         justifyContent: "center",
         mb: "-5em",
@@ -19,7 +22,10 @@ function HMsectionThree() {
         backgroundColor: "",
         w: "80%",
         h: "75%",
-        m: "auto"
+        mb: "auto",
+        ml: "auto",
+        mr: "auto",
+        mt: "12em",
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
