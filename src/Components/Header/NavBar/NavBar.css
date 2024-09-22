@@ -1,5 +1,11 @@
 .nav-item {
     color: black;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+}
+
+.nav-item:hover {
+    color: #0C6E5A;
+    transition-duration: 0.3s, 0.4s;
 }

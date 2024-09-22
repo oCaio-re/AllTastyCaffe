@@ -14,7 +14,6 @@ function NavBar() {
         mt:"auto",
         mb:"auto",
         // fontFamily: "Istok Web",
-        fontFamily: "Inter",
         fontSize: "1.3em",
         gap: "40px",
         color: "grey",
@@ -25,6 +24,7 @@ function NavBar() {
         backgroundColor: "#0C6E5A",
         color: "white",
         fontFamily: "Inter",
+        fontWeight: "600",
         fontSize: "1.3em",
         ml: "3em",
         borderRadius: "5px",
@@ -45,20 +45,22 @@ function NavBar() {
         zIndex: "20"
     }
     return (
-        <Flex className="outerwrap" sx={outerWrapSx}>
-            <Box className="img-wrap" sx={imgWrapSx}>
-                <Box as="img" src={logo} width="100%"/>
-            </Box>
-            <Flex className="nav-bar-wrap" sx={navBarWrapSx}>
-                <NavLink to="/" className="nav-item">Home</NavLink>
-                <NavLink to="/" className="nav-item">Beverages</NavLink>
-                <NavLink to="/" className="nav-item">Berry Acai</NavLink>
-                <NavLink to="/" className="nav-item" >Pastries</NavLink>
-                <NavLink to="/" className="nav-item" >Sandwiches</NavLink>
-                <NavLink to="/" className="nav-item" >About</NavLink>
+        <>
+            <Flex className="outerwrap" sx={outerWrapSx}>
+                <Box className="img-wrap" sx={imgWrapSx}>
+                    <Box as="img" src={logo} width="100%"/>
+                </Box>
+                <Flex className="nav-bar-wrap" sx={navBarWrapSx}>
+                    <NavLink to="/" className="nav-item">Home</NavLink>
+                    <NavLink to="/beverages" className="nav-item">Beverages</NavLink>
+                    <NavLink to="/" className="nav-item">Berry Acai</NavLink>
+                    <NavLink to="/" className="nav-item" >Pastries</NavLink>
+                    <NavLink to="/" className="nav-item" >Sandwiches</NavLink>
+                    <NavLink to="/" className="nav-item" >About</NavLink>
+                </Flex>
+                <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
             </Flex>
-            <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
-        </Flex>
+        </>
     )
 }
 
