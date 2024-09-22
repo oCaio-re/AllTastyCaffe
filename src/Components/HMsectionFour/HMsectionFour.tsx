@@ -76,7 +76,7 @@ function HMsectionFour() {
                             </Flex>
                             <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize="1.1em">
                                 <motion.div style={{height: "100%"}} whileInView="animate"
-                                            variants={textVariants} initial="initial" viewport={{once: false}}
+                                            variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
                                     <Text>{desc}</Text>

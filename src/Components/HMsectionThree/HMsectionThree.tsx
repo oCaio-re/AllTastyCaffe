@@ -99,7 +99,7 @@ function HMsectionThree() {
                 </Flex>
                 <Flex className="right-content" w="50%">
                     <motion.div style={{height: "100%", backgroundColor: "grey"}} whileInView="animate"
-                                variants={weOpenImgVariants} initial="initial" viewport={{once: false}}
+                                variants={weOpenImgVariants} initial="initial" viewport={{once: true}}
                                 whileHover="whileHover"
                     >
                         <Box as="img" src={friendsCoffeImg} objectFit="cover" w="100%" h="100%"
