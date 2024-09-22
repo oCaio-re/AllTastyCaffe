@@ -3,6 +3,7 @@ import ViewMenusBar from "./ViewMenusBar/ViewMenusBar.tsx";
 import icedTeaImg from "../../../public/iced_tea.png"
 import smoothieImg from "../../../public/smootie_strawberry.png"
 import lemonadeImg from "../../../public/lemonade.png"
+import { motion } from "framer-motion";
 
 function HMsectionTwo() {
     const sectionWrapSx = {
@@ -26,12 +27,49 @@ function HMsectionTwo() {
     }
     const beverageContentSx = {
         w: "33.3333%",
+        backgroundColor: ""
     }
     const imgWrapSx = {
-        h: "90%",
-        backgroundColor: "",
-        m: "auto",
+        h: "100%",
+        // backgroundColor: "green",
+        // m: "auto",
         "filter": "drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
+    }
+    const variantsIcedTea = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 0.2,
+                delay: 0.2
+            }
+        }
+    }
+    const variantsSmoothie = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 0.8,
+                delay: 0.2
+            }
+        }
+    }
+    const variantsLemonade = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 1.2,
+                delay: 0.2
+            }
+        }
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
@@ -54,7 +92,11 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
+                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                            variants={variantsIcedTea} initial="initial" viewport={{once: true}}
+                        >
+                            <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
+                        </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
                             <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">LIPTON ICED TEA</Text>
                         </Box>
@@ -63,16 +105,26 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx} src={smoothieImg}/>
+                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                                    variants={variantsSmoothie} initial="initial" viewport={{once: true}}
+                        >
+                            <Box as="img" sx={imgWrapSx} src={smoothieImg}/>
+                        </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
-                            <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">STRAWBERRY SMOOTHIE</Text>
+                            <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">STRAWBERRY
+                                SMOOTHIE</Text>
                         </Box>
                     </Flex>
 
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <Box as="img" sx={imgWrapSx} src={lemonadeImg}/>
+
+                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                                    variants={variantsLemonade} initial="initial" viewport={{once: true}}
+                        >
+                            <Box as="img" sx={imgWrapSx} src={lemonadeImg}/>
+                        </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
                             <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">FRESH LEMONADE</Text>
                         </Box>
