@@ -45,6 +45,9 @@ function HMsectionTwo() {
                 duration: 0.2,
                 delay: 0.2
             }
+        },
+        whileHover: {
+            scale: 1.1,
         }
     }
     const variantsSmoothie = {
@@ -69,7 +72,8 @@ function HMsectionTwo() {
                 duration: 1.2,
                 delay: 0.2
             }
-        }
+        },
+
     }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
@@ -92,7 +96,7 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                        <motion.div whileHover="whileHover" style={{height: "90%"}} whileInView="animate"
                             variants={variantsIcedTea} initial="initial" viewport={{once: true}}
                         >
                             <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
