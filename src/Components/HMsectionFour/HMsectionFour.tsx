@@ -1,5 +1,6 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
 import dummy from "../../../public/coffe-on-a-table-center.jpg"
+import { motion } from "framer-motion";
 
 function HMsectionFour() {
     const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus. Vestibulum\n" +
@@ -48,6 +49,19 @@ function HMsectionFour() {
         m: "auto",
         flexDirection: "column",
     }
+    const textVariants = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 1.2,
+                delay: 0.2
+            }
+        },
+
+    }
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
             <Flex className="outer-content-wrap" sx={outerContentWrapSx}>
@@ -61,14 +75,19 @@ function HMsectionFour() {
                                 <Text m="auto" fontFamily="Italianno" fontSize="4em">This is the title!</Text>
                             </Flex>
                             <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize="1.1em">
-                                <Text>{desc}</Text>
+                                <motion.div style={{height: "100%"}} whileInView="animate"
+                                            variants={textVariants} initial="initial" viewport={{once: false}}
+                                            whileHover="whileHover"
+                                >
+                                    <Text>{desc}</Text>
+                                </motion.div>
                             </Flex>
                         </Flex>
                     </Flex>
                 </Flex>
             </Flex>
         </Flex>
-    );
+);
 }
 
 export default HMsectionFour;
