@@ -10,9 +10,9 @@ function NavBar() {
         m: "auto",
     }
     const navBarWrapSx = {
-        ml:"auto",
-        mt:"auto",
-        mb:"auto",
+        ml: "auto",
+        mt: "auto",
+        mb: "auto",
         // fontFamily: "Istok Web",
         fontSize: "1.3em",
         gap: "40px",
@@ -54,9 +54,9 @@ function NavBar() {
                     <NavLink to="/" className="nav-item">Home</NavLink>
                     <NavLink to="/beverages" className="nav-item">Beverages</NavLink>
                     <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
-                    <NavLink to="/" className="nav-item" >Pastries & Savouries</NavLink>
-                    <NavLink to="/" className="nav-item" >Sandwiches</NavLink>
-                    <NavLink to="/" className="nav-item" >About</NavLink>
+                    <NavLink to="/pastries" className="nav-item">Pastries & Savouries</NavLink>
+                    <NavLink to="/" className="nav-item">Food</NavLink>
+                    <NavLink to="/" className="nav-item">About</NavLink>
                 </Flex>
                 <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
             </Flex>
