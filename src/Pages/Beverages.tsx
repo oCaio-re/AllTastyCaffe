@@ -2,6 +2,7 @@ import {Box, Flex} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
+import BVGsectionOne from "../Components/BVGsectionOne/BVGsectionOne.tsx";
 
 function Beverages() {
     return (
@@ -14,6 +15,7 @@ function Beverages() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
+                    <BVGsectionOne/>
                     <Footer/>
                 </Flex>
             </Flex>
