@@ -6,6 +6,7 @@ import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
 import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
 import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg"
+import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
                 overflow="hidden"
                 flexDirection="column"
             >
+                <ScrollToTop/>
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">

@@ -1,11 +1,12 @@
 import {Flex, Text} from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 interface Props {
     image: string,
     title: string,
     titleSize?: string,
     imgProportion?: string,
+    borderRadius?: string,
 }
 
 const imgWrapSx = {
@@ -13,20 +14,21 @@ const imgWrapSx = {
     w: "100%",
     justifyContent: "center"
 }
-const itemTitleSx = {
-    m: "auto",
-    // h: "5%",
-    fontFamily: "Inter",
-    fontSize: "1.2em",
-    fontWeight: 700,
-    color: "#0C6E5A",
-}
+
 function Item(props: Props) {
     const itemWrapSx = {
         backgroundColor: "",
         h: "90%",
         w: `${props.imgProportion}`,
         flexDirection: "column",
+    }
+    const itemTitleSx = {
+        m: "auto",
+        // h: "5%",
+        fontFamily: "Inter",
+        fontSize: `${props.titleSize || "1.3em"}`,
+        fontWeight: 700,
+        color: "#0C6E5A",
     }
     const variantsLemonade = {
         initial: {
@@ -42,9 +44,10 @@ function Item(props: Props) {
     }
     return (
         <>
-            <Flex className="item-wrap" sx={itemWrapSx} >
+            <Flex className="item-wrap" sx={itemWrapSx}>
                 <Flex className="img-wrap" sx={imgWrapSx}>
-                    <motion.img src={props.image} alt="item picture" style={{objectFit: "cover"}}
+                    <motion.img src={props.image} alt="item picture"
+                                style={{objectFit: "cover", borderRadius: `${props.borderRadius}`}}
                                 whileHover={{scale: 1.1}} whileInView="animate" initial="initial"
                                 viewport={{once: true}} variants={variantsLemonade}
                     />
@@ -54,7 +57,7 @@ function Item(props: Props) {
                 </Flex>
             </Flex>
         </>
-);
+    );
 }
 
 export default Item;

@@ -1,0 +1,11 @@
+.item {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Inknut Antiqua", sans-serif;
+}
+
+.item:hover {
+    color: #0C6E5A;
+    transition-duration: 0.3s, 0.3s;
+}

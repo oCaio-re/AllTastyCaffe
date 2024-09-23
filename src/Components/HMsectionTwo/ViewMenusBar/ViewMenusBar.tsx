@@ -1,5 +1,6 @@
 import {Flex, HStack, Text} from "@chakra-ui/react";
 import {NavLink} from "react-router-dom";
+import "./ViewMenuBar.css"
 
 function ViewMenusBar() {
     const sectionWrapSx = {
@@ -38,9 +39,9 @@ function ViewMenusBar() {
                     >View Menus:</Text>
                 </Flex>
                 <HStack className="menu-items" sx={menuItemsSx} backgroundColor="">
-                    <NavLink to="/">FOOD</NavLink>
-                    <NavLink to="/">BEVERAGES</NavLink>
-                    <NavLink to="/">ACAI</NavLink>
+                    <NavLink className="item" to="/" >FOOD</NavLink>
+                    <NavLink className="item" to="/beverages">BEVERAGES</NavLink>
+                    <NavLink className="item" to="/berry-acai">ACAI</NavLink>
                 </HStack>
             </Flex>
         </Flex>

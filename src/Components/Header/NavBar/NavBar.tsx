@@ -53,8 +53,8 @@ function NavBar() {
                 <Flex className="nav-bar-wrap" sx={navBarWrapSx}>
                     <NavLink to="/" className="nav-item">Home</NavLink>
                     <NavLink to="/beverages" className="nav-item">Beverages</NavLink>
-                    <NavLink to="/" className="nav-item">Berry Acai</NavLink>
-                    <NavLink to="/" className="nav-item" >Pastries</NavLink>
+                    <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
+                    <NavLink to="/" className="nav-item" >Pastries & Savouries</NavLink>
                     <NavLink to="/" className="nav-item" >Sandwiches</NavLink>
                     <NavLink to="/" className="nav-item" >About</NavLink>
                 </Flex>
