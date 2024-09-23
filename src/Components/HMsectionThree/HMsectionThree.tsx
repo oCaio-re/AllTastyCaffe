@@ -66,7 +66,7 @@ function HMsectionThree() {
                 <Flex className="left-content"  w="50%" backgroundColor="">
                     <Flex className="text-content-wrap" sx={textContentWrapSx}>
                         <motion.div style={{height: "90%"}} whileInView="animate" variants={weOpenVariants}
-                                    initial="initial" viewport={{once: false}}
+                                    initial="initial" viewport={{once: true}}
                         >
                             <Flex className="title-wrap" h="25%" backgroundColor="" justifyContent="center">
                                 <Text className="title-wrap" backgroundColor="" fontSize="7em"

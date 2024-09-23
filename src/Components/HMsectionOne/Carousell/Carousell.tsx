@@ -4,7 +4,7 @@ import backgroundImage from "../../../../public/flat-lay-coffee-ingredients-with
 function Carousell() {
     return (
       <>
-          <Flex height="90vh" w="100%" top="0" backgroundColor="grey" mb="-2em">
+          <Flex height="90vh" w="100%" top="0" backgroundColor="" mb="-2em">
             <Box className="img-wrap" zIndex="0"
                  w="100vw" h="90vh"
             >

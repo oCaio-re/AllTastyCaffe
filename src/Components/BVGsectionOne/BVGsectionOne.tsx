@@ -1,9 +1,10 @@
 import {Box, Flex} from "@chakra-ui/react";
 import Menu from "./Menu/Menu.tsx";
+import bvgs_colorful_img from "../../../public/beverages/beverages_color.png"
 
-function BvGsectionOne() {
+function BVGsectionOne() {
     const whiteBoardSx = {
-        h: "170vh",
+        h: "180vh",
         w: "70%",
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
@@ -13,13 +14,14 @@ function BvGsectionOne() {
         w: "100%",
         h: "30%",
         backgroundColor: "grey",
+        mt: "2em",
     }
     return (
         <>
             <Flex className="outer-wrap" justifyContent="center">
                 <Flex className="white-board" sx={whiteBoardSx}>
-                    <Flex className="bvgs-grid" sx={bvgsGridSx}>
-                        <Box as="img"/>
+                    <Flex className="bvgs-grid" sx={bvgsGridSx} >
+                        <Box as="img" src={bvgs_colorful_img} objectFit="cover" w="100%"/>
                     </Flex>
                     <Menu/>
                 </Flex>
@@ -28,4 +30,4 @@ function BvGsectionOne() {
     );
 }
 
-export default BvGsectionOne;
+export default BVGsectionOne;

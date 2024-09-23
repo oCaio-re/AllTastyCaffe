@@ -29,7 +29,7 @@ function NavBar() {
         ml: "3em",
         borderRadius: "5px",
         border: "none",
-        boxShadow: "-8px 8px 8px rgba(77, 76, 76, 0.4)",
+        boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.4)",
         ":hover": {
             // backgroundColor: "rgba(10,87,71,0.79)",
             // transitionDuration: "0.2s",

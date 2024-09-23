@@ -6,7 +6,7 @@ function Header() {
     const headerSx = {
         backgroundColor: "white",
         h: "77px",
-        boxShadow: "-8px 8px 8px rgba(77, 76, 76, 0.4)",
+        boxShadow: "-8px 4px 4px rgba(77, 76, 76, 0.2)",
         zIndex: "200",
         position: "fixed",
         width: "100%",

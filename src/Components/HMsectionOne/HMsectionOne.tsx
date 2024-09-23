@@ -1,5 +1,6 @@
 import Carousell from "./Carousell/Carousell.tsx";
-import {Button, Flex} from "@chakra-ui/react";
+import {Button} from "@chakra-ui/react";
+import {NavLink} from "react-router-dom";
 
 function HMsectionOne() {
     const buttonSx = {
@@ -10,25 +11,20 @@ function HMsectionOne() {
         fontSize: "1.5em",
         w: "14rem",
         h: "4rem",
-        m: "auto",
+        ml: "auto",
         ":hover": {
             color: "#0C6E5A",
         }
     }
-    const buttonWrapSx = {
-        position: "relative",
-        backgroundColor: "",
-        w: "15%",
-        h: "4em",
-        m: "auto",
-        justifyContent: "center",
-    }
     return (
         <>
             <Carousell/>
-            <Flex sx={buttonWrapSx}>
+            <NavLink to="/beverages"
+                style={{ width: "15%", height: "4em", position: "relative",
+                    margin: "auto", display: "flex", justifyContent: "center"}}
+            >
                 <Button sx={buttonSx}>VIEW MENU</Button>
-            </Flex>
+            </NavLink>
         </>
     );
 }
