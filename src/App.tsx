@@ -3,6 +3,7 @@ import Home from "./Pages/Home.tsx";
 import Beverages from "./Pages/Beverages.tsx";
 import BerryAcai from "./Pages/BerryAcai.tsx";
 import Pastries from "./Pages/Pastries.tsx";
+import Food from "./Pages/Food.tsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route path="/beverages" element={<Beverages/>} />
                     <Route path="/berry-acai" element={<BerryAcai/>} />
                     <Route path="/pastries" element={<Pastries/>} />
+                    <Route path="/food" element={<Food/>} />
                 </Routes>
             </main>
         </BrowserRouter>
