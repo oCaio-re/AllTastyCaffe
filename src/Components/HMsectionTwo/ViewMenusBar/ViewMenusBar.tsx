@@ -35,8 +35,8 @@ function ViewMenusBar() {
                     backgroundColor=""
                 >
                     <Text fontFamily="Inknut Antiqua" fontSize={{base: "1.2em", md: "2.3em"}}
-                          backgroundColor="" fontWeight="300"
-                    >View Menus:</Text>
+                          backgroundColor="" fontWeight="300" whiteSpace="nowrap">
+                    View Menus:</Text>
                 </Flex>
                 <HStack className="menu-items" sx={menuItemsSx} backgroundColor="">
                     <NavLink className="item" to="/" >FOOD</NavLink>

@@ -22,7 +22,7 @@ function LocationItem() {
             </Flex>
             <Flex className="content-wrap" sx={contentWrapSx}>
                 <Box className="header-wrap" backgroundColor="" h="20%">
-                    <Text color="white" fontSize="1.9em" fontWeight="bold">Come and visit us</Text>
+                    <Text color="white" fontSize="1.9em" fontWeight="bold" whiteSpace="nowrap">Come and visit us</Text>
                 </Box>
                 <Flex flexDirection="column" h="80%">
                     <Box className="address-title-wrap">

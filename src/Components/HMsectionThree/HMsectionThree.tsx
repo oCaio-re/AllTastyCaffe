@@ -79,7 +79,7 @@ function HMsectionThree() {
                                 // p="30px"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em">
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em" >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.
                                         Vestibulum
                                         vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros
