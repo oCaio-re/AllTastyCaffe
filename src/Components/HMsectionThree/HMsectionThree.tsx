@@ -1,9 +1,20 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
 import friendsCoffeImg from "../../../public/friends-drinking-coffee.jpg"
 import backgroundSvg from "../../../public/hm_secThree_bg.svg"
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 function HMsectionThree() {
+    const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.\n" +
+        "Vestibulum\n" +
+        "vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros\n" +
+        "bibendum, sed\n" +
+        "iaculis felis consectetur. Fusce non enim urna. Phasellus vel neque sagittis,\n" +
+        "rutrum\n" +
+        "nulla ut, consequat massa. Aliquam pellentesque commodo nisl, et ultricies felis\n" +
+        "efficitur vel. Pellentesque vehicula neque justo, ut mattis urna ullamcorper\n" +
+        "feugiat.\n" +
+        "Aenean vel felis ac elit scelerisque lacinia. Etiam ornare quis tortor non\n" +
+        "tincidunt."
     const sectionWrapSx = {
         // backgroundColor: "#0C6E5A",
         justifyContent: "center",
@@ -63,7 +74,7 @@ function HMsectionThree() {
                 <Box as="img" src={backgroundSvg}/>
             </Flex>
             <Flex className="outer-wrap" sx={outerWrapSx}>
-                <Flex className="left-content"  w="50%" backgroundColor="">
+                <Flex className="left-content" w="50%" backgroundColor="">
                     <Flex className="text-content-wrap" sx={textContentWrapSx}>
                         <motion.div style={{height: "90%"}} whileInView="animate" variants={weOpenVariants}
                                     initial="initial" viewport={{once: true}}
@@ -79,18 +90,8 @@ function HMsectionThree() {
                                 // p="30px"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em" >
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.
-                                        Vestibulum
-                                        vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros
-                                        bibendum, sed
-                                        iaculis felis consectetur. Fusce non enim urna. Phasellus vel neque sagittis,
-                                        rutrum
-                                        nulla ut, consequat massa. Aliquam pellentesque commodo nisl, et ultricies felis
-                                        efficitur vel. Pellentesque vehicula neque justo, ut mattis urna ullamcorper
-                                        feugiat.
-                                        Aenean vel felis ac elit scelerisque lacinia. Etiam ornare quis tortor non
-                                        tincidunt.
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em">
+                                        {desc}
                                     </Text>
                                 </Flex>
                             </Flex>
@@ -108,7 +109,7 @@ function HMsectionThree() {
                 </Flex>
             </Flex>
         </Flex>
-);
+    );
 }
 
 export default HMsectionThree;

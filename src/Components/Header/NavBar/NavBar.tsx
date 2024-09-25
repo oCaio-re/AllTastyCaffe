@@ -56,7 +56,7 @@ function NavBar() {
                     <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
                     <NavLink to="/pastries" className="nav-item">Pastries & Savouries</NavLink>
                     <NavLink to="/food" className="nav-item">Food</NavLink>
-                    <NavLink to="/" className="nav-item">About</NavLink>
+                    <NavLink to="/about-us" className="nav-item">About</NavLink>
                 </Flex>
                 <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
             </Flex>
