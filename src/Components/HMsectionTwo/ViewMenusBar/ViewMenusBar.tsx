@@ -39,7 +39,7 @@ function ViewMenusBar() {
                     View Menus:</Text>
                 </Flex>
                 <HStack className="menu-items" sx={menuItemsSx} backgroundColor="">
-                    <NavLink className="item" to="/food" >FOOD</NavLink>
+                    <NavLink className="item" to="/food">FOOD</NavLink>
                     <NavLink className="item" to="/beverages">BEVERAGES</NavLink>
                     <NavLink className="item" to="/berry-acai">ACAI</NavLink>
                 </HStack>

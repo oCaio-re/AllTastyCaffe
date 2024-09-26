@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <Flex className="App" maxW="100vw"
-                // overflow="hidden"
+                overflow="hidden"
                 flexDirection="column"
             >
                 <ScrollToTop/>
