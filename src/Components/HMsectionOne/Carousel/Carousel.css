@@ -1,0 +1,50 @@
+.slide-items {
+    object-fit: cover;
+}
+
+.swiper .swiper-pagination-bullet {
+    margin-bottom: 100px;
+    background-color: #268EA7;
+}
+
+.swiper .swiper-wraper {
+    /*align-content: center;*/
+    /*justify-content: center;*/
+}
+
+.swiper .swiper-button-prev {
+    /*color: #268EA7;*/
+    /*color: #ff9934;*/
+    color: #000000;
+}
+.swiper .swiper-button-next {
+    /*color: #268EA7;*/
+    color: #000000;
+}
+
+.swipper-wrapper-base {
+    width: 100vw;
+    height: 17em;
+}
+
+.span {
+    /*background-color: pink;*/
+    width: 150px;
+}
+/*------------------------------*/
+
+.swiper {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+}
+
+.swiper-slide {
+}
+
+.swiper-slide img {
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -5,14 +5,14 @@ import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
 import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
 import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
 import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
-import wallpaper from "../../public/wallpaper-opac.svg"
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
+import wallpaper from "../../public/wallpaper-opac.svg"
 
 function Home() {
     return (
         <>
             <Flex className="App" maxW="100vw"
-                overflow="hidden"
+                // overflow="hidden"
                 flexDirection="column"
             >
                 <ScrollToTop/>

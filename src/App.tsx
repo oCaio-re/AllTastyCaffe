@@ -6,6 +6,8 @@ import Pastries from "./Pages/Pastries.tsx";
 import Food from "./Pages/Food.tsx";
 import AboutUs from "./Pages/AboutUs.tsx";
 import TreatRewards from "./Pages/TreatRewards.tsx";
+import Blank from "./Pages/Blank.tsx";
+
 
 function App() {
     return (
@@ -19,6 +21,7 @@ function App() {
                     <Route path="/food" element={<Food/>} />
                     <Route path="/about-us" element={<AboutUs/>} />
                     <Route path="/treat-rewards" element={<TreatRewards/>} />
+                    <Route path="/blank" element={<Blank/>} />
                 </Routes>
             </main>
         </BrowserRouter>
