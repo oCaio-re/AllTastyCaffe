@@ -9,8 +9,8 @@ function HMsectionTwo() {
     const sectionWrapSx = {
         height: "90vh",
         backgroundColor: "",
-        mt: "15em",
-        mb: "10em",
+        mt: {md: "15em"},
+        mb: {md: "10em"},
         flexDirection: "column",
     }
     const contentWrapSx = {

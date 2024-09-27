@@ -10,7 +10,7 @@ function Header() {
         zIndex: "200",
         position: {md: "fixed"},
         width: "100%",
-        mt: {base: "2em",md: "2.2em"},
+        mt: {base: "0em",md: "2.2em"},
         mb: "auto",
         top: "0"
     }

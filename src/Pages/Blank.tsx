@@ -2,8 +2,8 @@ import {Flex} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg";
-import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
-// import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
+// import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
+import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
 // import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
 // import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
 // import Footer from "../Components/Footer/Footer.tsx";
@@ -19,8 +19,8 @@ function Blank() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
-                    <HMsectionOne/>
-                    {/*<HMsectionTwo/>*/}
+                    {/*<HMsectionOne/>*/}
+                    <HMsectionTwo/>
                     {/*<HMsectionThree/>*/}
                     {/*<HMsectionFour/>*/}
                     {/*<Footer/>*/}

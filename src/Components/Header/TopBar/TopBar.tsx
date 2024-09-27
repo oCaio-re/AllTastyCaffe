@@ -7,7 +7,7 @@ function TopBar() {
         h: {base: "20px", md: "37px"},
         backgroundColor: "#0C6E5A",
         justifyContent: "center",
-        position: "fixed",
+        position: {md: "fixed"},
         zIndex: "200"
         // mb: "10em"
         // width: "100%",
