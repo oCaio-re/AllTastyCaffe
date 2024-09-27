@@ -4,7 +4,7 @@ function TopBar() {
     const topBarSx = {
         maxW: "100vw",
         w: "100vw",
-        h: {base: "37px", md: "37px"},
+        h: {base: "20px", md: "37px"},
         backgroundColor: "#0C6E5A",
         justifyContent: "center",
         position: "fixed",
@@ -15,7 +15,8 @@ function TopBar() {
     return (
         <Flex className="top-bar" sx={topBarSx}>
             <Flex className="text-wrap" h="37px" alignItems="center">
-                <Text className="top-bar-content" color="white" fontFamily="Inter" textAlign="center">
+                <Text className="top-bar-content" color="white" fontFamily="Inter" textAlign="center"
+                      fontSize={{base: "0.7em", md: "1em"}}>
                     CHECKOUT OUR TREAT REWARDS: BE REWARDED FOR YOUR DAILY <i><b>ALL TASTY</b></i>
                 </Text>
             </Flex>
