@@ -9,16 +9,15 @@ function HMsectionTwo() {
     const sectionWrapSx = {
         height: "90vh",
         backgroundColor: "",
-        mt: {md: "15em"},
-        mb: {md: "10em"},
+        mt: {base: "2em", md: "15em"},
+        mb: {base: "2em", md: "10em"},
         flexDirection: "column",
     }
     const contentWrapSx = {
         backgroundColor: "",
-        h: "80%",
-        w: "60%",
-        ml: "auto",
-        mr: "auto",
+        h: {base: "25em",md: "80%"},
+        w: {base: "80%", md: "60%"},
+        m: "0 auto 0 auto",
     }
     const titleSWrapSx = {
         h: "25%",
@@ -26,11 +25,14 @@ function HMsectionTwo() {
         flexDirection: "column",
     }
     const beverageContentSx = {
-        w: "33.3333%",
-        backgroundColor: ""
+        w: {base: "32%", md:"33.3333%"},
+        h: {base: "100%", md: "auto"},
+        backgroundColor: "",
+        m: "0 auto 0 auto",
     }
     const imgWrapSx = {
-        h: "100%",
+        h: "90%",
+        objectFit: "cover",
         // backgroundColor: "green",
         // m: "auto",
         "filter": "drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
@@ -82,13 +84,19 @@ function HMsectionTwo() {
                     <Flex className="title-wrap" backgroundColor="" h="50%" w="100%"
                         filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
                     >
-                        <Text m="auto" fontFamily="Inknut Antiqua" fontSize="3em">A ROSCOMMON ORIGINAL</Text>
+                        <Text m="auto" fontFamily="Inknut Antiqua"
+                              fontSize={{base: "1.3em", md:"3em"}}
+                              whiteSpace="nowrap"
+                        >
+                            A ROSCOMMON ORIGINAL
+                        </Text>
                     </Flex>
                     <Flex className="undertitle-wrap" h="50%" w="100%" backgroundColor=""
-                          filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))"
+                          filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))" color="#0C6E5A"
                     >
-                        <Text m="auto" fontFamily="Ingrid Darling" fontSize="3.5em" color="#0C6E5A">A few of our
-                            favorites...</Text>
+                        <Text m="auto" fontFamily="Ingrid Darling" fontSize={{base: "2.5em", md:"3em"}} whiteSpace="nowrap" >
+                            A few of our favorites...
+                        </Text>
                     </Flex>
                 </Flex>
 
@@ -102,7 +110,7 @@ function HMsectionTwo() {
                             <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
                         </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
-                            <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">LIPTON ICED TEA</Text>
+                            <Text fontFamily="Istok Web" fontSize={{md: "1.3em"}} fontWeight="bold">LIPTON ICED TEA</Text>
                         </Box>
                     </Flex>
 
@@ -115,8 +123,9 @@ function HMsectionTwo() {
                             <Box as="img" sx={imgWrapSx} src={smoothieImg}/>
                         </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
-                            <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">STRAWBERRY
-                                SMOOTHIE</Text>
+                            <Text fontFamily="Istok Web" fontSize={{md: "1.3em"}} fontWeight="bold">
+                                STRAWBERRY SMOOTHIE
+                            </Text>
                         </Box>
                     </Flex>
 
@@ -130,7 +139,7 @@ function HMsectionTwo() {
                             <Box as="img" sx={imgWrapSx} src={lemonadeImg}/>
                         </motion.div>
                         <Box className="beverage-name-wrap" m="auto">
-                            <Text fontFamily="Istok Web" fontSize="1.3em" fontWeight="bold">FRESH LEMONADE</Text>
+                            <Text fontFamily="Istok Web" fontSize={{md: "1.3em"}} fontWeight="bold">FRESH LEMONADE</Text>
                         </Box>
                     </Flex>
                 </Flex>

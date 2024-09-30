@@ -10,13 +10,13 @@ function ViewMenusBar() {
     }
     const outerBarSx = {
         backgroundColor: "white",
-        width: "70%",
+        width: {base: "100%", md: "70%"},
         height: "70%",
         m: "auto",
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
     }
     const contentWrapSx = {
-        w: "60%",
+        w: {base: "95%", md: "60%"},
         h: "100%",
         backgroundColor: "",
         m: "auto"
@@ -25,18 +25,21 @@ function ViewMenusBar() {
         width: "60%",
         justifyContent: "space-around",
         fontFamily: "Inknut Antiqua",
-        fontSize: "1.8em",
+        fontSize: {base: "1.0em", md: "1.8em"},
+        backgroundColor: "",
     }
     return (
     <Flex className="bottom-bar-wrap" as="section" w="100%" h="5em" sx={sectionWrapSx}>
         <Flex className="bottom-content-wrap" sx={outerBarSx}>
             <Flex className="content-wrap" sx={contentWrapSx}>
                 <Flex className="title-wrap" color="#0C6E5A" w="40%"
-                    backgroundColor=""
+                    backgroundColor="" m={{base: "auto"}}
                 >
-                    <Text fontFamily="Inknut Antiqua" fontSize={{base: "1.2em", md: "2.3em"}}
-                          backgroundColor="" fontWeight="300" whiteSpace="nowrap">
-                    View Menus:</Text>
+                    <Text fontFamily="Inknut Antiqua" fontSize={{base: "1.3em", md: "2.3em"}}
+                          backgroundColor="" fontWeight="300" whiteSpace="nowrap"
+                    >
+                        View Menus:
+                    </Text>
                 </Flex>
                 <HStack className="menu-items" sx={menuItemsSx} backgroundColor="">
                     <NavLink className="item" to="/food">FOOD</NavLink>
