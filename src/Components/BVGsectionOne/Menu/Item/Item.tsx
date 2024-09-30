@@ -12,15 +12,14 @@ interface Props {
 const imgWrapSx = {
     h: "100%",
     w: "100%",
-    justifyContent: "center"
 }
 
 function Item(props: Props) {
     const itemWrapSx = {
-        backgroundColor: "",
         h: "90%",
-        w: `${props.imgProportion}`,
+        w: {base: "90%", md: `${props.imgProportion}`},
         flexDirection: "column",
+        m: "auto"
     }
     const itemTitleSx = {
         m: "auto",

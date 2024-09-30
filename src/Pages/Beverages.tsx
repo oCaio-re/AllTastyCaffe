@@ -16,9 +16,10 @@ function Beverages() {
                 <Box h="110px" w="100vw"/>
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
-                      backgroundAttachment="fixed">
+                      backgroundAttachment="fixed"
+                >
                     <BVGsectionOne/>
-                    <Box h="10vh" w="100%"/>
+                    <Box h={{base: "10em", md: "300px"}} w="100%"/>
                     <Footer/>
                 </Flex>
             </Flex>

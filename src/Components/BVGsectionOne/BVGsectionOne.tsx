@@ -4,24 +4,24 @@ import bvgs_colorful_img from "../../../public/beverages/beverages_color.png"
 
 function BVGsectionOne() {
     const whiteBoardSx = {
-        h: "180vh",
-        w: "70%",
+        h: {base: "250em", md: "110em"},
+        w: {base: "90%", md: "70%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
         flexDirection: "column",
     }
     const bvgsGridSx = {
         w: "100%",
-        h: "30%",
-        backgroundColor: "grey",
-        mt: "2em",
+        h: {base: "30em", md:"50em"},
+        backgroundColor: "",
+        mt: {base: "1em", md: "2em"},
     }
     return (
         <>
             <Flex className="outer-wrap" justifyContent="center">
                 <Flex className="white-board" sx={whiteBoardSx}>
-                    <Flex className="bvgs-grid" sx={bvgsGridSx} >
-                        <Box as="img" src={bvgs_colorful_img} objectFit="cover" w="100%"/>
+                    <Flex className="bvgs-grid" sx={bvgsGridSx}>
+                        <Box as="img" src={bvgs_colorful_img} objectFit="cover" w="100%" />
                     </Flex>
                     <Menu/>
                 </Flex>
