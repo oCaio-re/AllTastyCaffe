@@ -49,7 +49,7 @@ function HMsectionThree() {
         justifyContent: "center",
         position: "relative",
         h: {base: "50em", md: "90vh"},
-        mb: "-5em",
+        mb: {base: "2em",md: "-5em"},
     }
     const outerWrapSx = {
         backgroundColor: "",

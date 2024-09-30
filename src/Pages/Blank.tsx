@@ -5,8 +5,8 @@ import wallpaper from "../../public/wallpaper-opac.svg";
 // import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
 import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
 import HMsectionThree from "../Components/HMsectionThree/HMsectionThree.tsx";
-// import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
-// import Footer from "../Components/Footer/Footer.tsx";
+import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
+import Footer from "../Components/Footer/Footer.tsx";
 
 function Blank() {
     return (
@@ -22,8 +22,8 @@ function Blank() {
                     {/*<HMsectionOne/>*/}
                     <HMsectionTwo/>
                     <HMsectionThree/>
-                    {/*<HMsectionFour/>*/}
-                    {/*<Footer/>*/}
+                    <HMsectionFour/>
+                    <Footer/>
                 </Flex>
             </Flex>
         </>
