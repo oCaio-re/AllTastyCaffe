@@ -5,7 +5,7 @@ import HealthInfo from "./HealthInfo/HealthInfo.tsx";
 
 function BaCsectionOne() {
     const whiteBoardSx = {
-        h: "150em",
+        h: {base: "150em", md: "130em"},
         w: {base: "90%", md: "80%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",

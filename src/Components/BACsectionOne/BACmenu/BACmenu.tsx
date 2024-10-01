@@ -38,7 +38,7 @@ function BaCmenu() {
             </Flex>
             <Flex className="menu-wrap" sx={menuWrapSx}>
                 <Flex className="row-one" h="45%" w="100%" backgroundColor=""
-                      flexDirection={{base: "column", md: "row"}}>
+                      flexDirection={{base: "column", md: "row"}} mb="auto">
                     <Item image={flavour1} title="Flavour1" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
                     <Item image={flavour2} title="Flavour2" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
                     <Item image={flavour3} title="Flavour3" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
