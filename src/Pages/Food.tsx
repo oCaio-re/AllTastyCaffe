@@ -17,7 +17,7 @@ function Food() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
-                    <Box h="150px" w="100%"/>
+                    <Box h={{md: "150px"}} w="100%"/>
                     <FDsectionOne/>
                     <FDsectionTwo/>
                     <Box h="150px" w="100%"/>

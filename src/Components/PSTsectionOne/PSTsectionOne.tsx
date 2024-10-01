@@ -19,7 +19,8 @@ function PsTsectionOne() {
     }
     const rowsWrapSx = {
         flexDirection: "column",
-        height: "80%"
+        height: "80%",
+        m: "0 auto auto auto"
     }
     const rowWrapSx = {
         flexDirection: {base: "column", md: "row"},

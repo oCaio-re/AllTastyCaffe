@@ -4,12 +4,13 @@ import sandwichesImg from "../../../../public/food/side-view-club-sandwich-with-
 function FDbigImg1() {
     const imgWrapSx = {
         w: "100%",
-        h: "50vh"
+        h: {base: "15em", md: "30em"},
+        m: {base: "3em 0em 3em 0em", md: "0em"}
     }
     const imgSx = {
         objectFit: "cover",
         h: "100%",
-        w: "80%",
+        w: {base: "95%", md:"80%"},
         m: "auto",
         borderRadius: "40px"
     }
