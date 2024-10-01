@@ -10,7 +10,7 @@ import Item from "./Item/Item.tsx";
 
 const menuWrapSx = {
     w: "90%",
-    h: {base: "250em", md: "40%"},
+    h: {base: "250em", md: "250em"},
     margin: {base: "auto", md: "0 auto auto auto"},
     flexDirection: "column",
     backgroundColor: "",
@@ -39,7 +39,7 @@ function Menu() {
                 </Flex>
             </Flex>
             <Flex className="menu-wrap" sx={menuWrapSx}>
-                <Flex className="row-one" h="50%" w="100%" backgroundColor="" flexDirection={{base: "column", md: "row"}}>
+                <Flex className="row-one" h="50%" w="100%" backgroundColor="grey" flexDirection={{base: "column", md: "row"}}>
                     <Item image={lemonadeImg} title="Lemonade" imgProportion="25%"/>
                     <Item image={mochaImg} title="Frozen & Blended" imgProportion="25%"/>
                     <Item image={coldImg} title="Iced Coffee" imgProportion="25%"/>
@@ -49,9 +49,9 @@ function Menu() {
                 <Flex className="row-two" h="35%" w="100%" m="auto"
                       justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
                 >
-                    <Item image={coffeMilkImg} title="Coffee" imgProportion="33%"/>
-                    <Item image={hotChocolateImg} title="Expresso" imgProportion="33%"/>
-                    <Item image={vanillaLateImg} title="Classics" imgProportion="33%"/>
+                    <Item image={coffeMilkImg} title="Coffee" imgProportion="30%"/>
+                    <Item image={hotChocolateImg} title="Expresso" imgProportion="30%"/>
+                    <Item image={vanillaLateImg} title="Classics" imgProportion="30%"/>
                 </Flex>
             </Flex>
         </>

@@ -4,7 +4,7 @@ import bvgs_colorful_img from "../../../public/beverages/beverages_color.png"
 
 function BVGsectionOne() {
     const whiteBoardSx = {
-        h: {base: "250em", md: "110em"},
+        h: {base: "250em", md: "120em"},
         w: {base: "90%", md: "70%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",

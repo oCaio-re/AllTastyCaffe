@@ -9,12 +9,20 @@ interface Props {
     borderRadius?: string,
 }
 
-const imgWrapSx = {
-    h: "100%",
-    w: "100%",
-}
 
 function Item(props: Props) {
+    const variantsLemonade = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 2,
+                delay: 0.2
+            }
+        },
+    }
     const itemWrapSx = {
         h: "90%",
         w: {base: "90%", md: `${props.imgProportion}`},
@@ -29,17 +37,10 @@ function Item(props: Props) {
         fontWeight: 700,
         color: "#0C6E5A",
     }
-    const variantsLemonade = {
-        initial: {
-            opacity: 0,
-        },
-        animate: {
-            opacity: 1,
-            transition: {
-                duration: 2,
-                delay: 0.2
-            }
-        },
+    const imgWrapSx = {
+        h: "100%",
+        w: "100%",
+        backgroundColor: ""
     }
     return (
         <>

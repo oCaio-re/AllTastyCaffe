@@ -39,17 +39,17 @@ function BaCmenu() {
             <Flex className="menu-wrap" sx={menuWrapSx}>
                 <Flex className="row-one" h="45%" w="100%" backgroundColor=""
                       flexDirection={{base: "column", md: "row"}}>
-                    <Item image={flavour1} title="Flavour1" borderRadius="20px" titleSize="1.5em" imgProportion="33%"/>
-                    <Item image={flavour2} title="Flavour2" borderRadius="20px" titleSize="1.5em" imgProportion="33%"/>
-                    <Item image={flavour3} title="Flavour3" borderRadius="20px" titleSize="1.5em" imgProportion="33%"/>
+                    <Item image={flavour1} title="Flavour1" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
+                    <Item image={flavour2} title="Flavour2" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
+                    <Item image={flavour3} title="Flavour3" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
                 </Flex>
 
                 <Flex className="row-two" h={{base: "33%", md: "45%"}} w="100%" m="auto" justifyContent={{md: "space-evenly"}}
                       flexDirection={{base: "column", md: "row"}}
-                      mb={{base: "7em", md: "0"}}
+                      mb={{base: "7em", md: "18em"}}
                 >
-                    <Item image={flavour4} title="Flavour4" borderRadius="20px" titleSize="1.5em" imgProportion="33%"/>
-                    <Item image={flavour5} title="Flavour5" borderRadius="20px" titleSize="1.5em" imgProportion="33%"/>
+                    <Item image={flavour4} title="Flavour4" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
+                    <Item image={flavour5} title="Flavour5" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
                 </Flex>
             </Flex>
         </>
