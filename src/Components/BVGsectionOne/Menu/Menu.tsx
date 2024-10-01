@@ -39,7 +39,7 @@ function Menu() {
                 </Flex>
             </Flex>
             <Flex className="menu-wrap" sx={menuWrapSx}>
-                <Flex className="row-one" h="50%" w="100%" backgroundColor="grey" flexDirection={{base: "column", md: "row"}}>
+                <Flex className="row-one" h="50%" w="100%" backgroundColor="" flexDirection={{base: "column", md: "row"}}>
                     <Item image={lemonadeImg} title="Lemonade" imgProportion="25%"/>
                     <Item image={mochaImg} title="Frozen & Blended" imgProportion="25%"/>
                     <Item image={coldImg} title="Iced Coffee" imgProportion="25%"/>

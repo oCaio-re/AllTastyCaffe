@@ -18,7 +18,7 @@ function AboutUs() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                     backgroundAttachment="fixed">
-                    <Box h="150px" w="100%"/>
+                    <Box h={{base: "1em", md: "150px"}} w="100%"/>
                     <AUsectionOne/>
                     <AUsectionTwo/>
                     <AUsectionThree/>

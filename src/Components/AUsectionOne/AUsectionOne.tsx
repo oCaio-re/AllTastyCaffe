@@ -8,21 +8,22 @@ function AUsectionOne() {
         "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io " +
         "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io. "
     const sectionSx = {
-        h: "360px",
+        h: {base: "110em", md: "360px"},
         w: "100%",
         backgroundColor: "",
         justifyContent: "center",
-        mt: "3em"
+        mt: {base: "0em", md: "3em"}
     }
     const contentSx = {
+        flexDirection: {base: "column", md: "row"},
         backgroundColor: "",
         h: "100%",
-        w: "70%",
+        w: {base: "95%", md: "70%"},
         justifyContent: "space-between",
     }
     const imgWrapSx = {
-        w: "25%",
-        h: "100%",
+        w: {base: "100%", md: "25%"},
+        h: {base: "30%", md: "100%"},
         backgroundColor: "white",
         boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
         borderRadius: "20px",
@@ -33,8 +34,8 @@ function AUsectionOne() {
         borderRadius: "20px",
     }
     const outerTextWrapSx = {
-        h: "100%",
-        w: "45%",
+        h: {base: "35%", md: "100%"},
+        w: {base: "100%", md: "45%"},
         borderRadius: "25px",
         backgroundColor: "white",
         boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
