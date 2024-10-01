@@ -19,7 +19,7 @@ function Pastries() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
-                    <Box h="6em" w="100%"/>
+                    <Box h={{md: "6em"}} w="100%"/>
                     <PSTsectionOne/>
                     <FirstBigImage/>
                     <PSTsectionTwo/>

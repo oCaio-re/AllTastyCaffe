@@ -10,19 +10,24 @@ interface Props {
 function Item(props: Props) {
     const contentWrapSx = {
         height: "100%",
-        width: "30%",
+        width: {base: "85%", md: "30%"},
         flexDirection: "column",
+        p: {base: "2em", md: "0em"},
     }
     const titleWrapSx = {
         fontFamily: "Inknut Antiqua",
+        justifyContent: {base: "left"},
     }
     const titleSx = {
         // fontSize: `${props.titleSize}px`,
-        fontSize: "1.5em",
+        textAlign: "center",
+        fontSize: {base: "1.8em", md: "1.5em"},
     }
     const descSx = {
         fontFamily: "Inter",
-        color: "grey"
+        fontSize: {base: "1.3em", md: "1.2em"},
+        color: "grey",
+        backgroundColor: "",
     }
     return (
         <>
