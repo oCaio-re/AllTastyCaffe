@@ -48,7 +48,7 @@ function DropDownMobile() {
                             </NavLink>
                         </MenuItem>
                         <MenuItem className="menu-item">
-                            <NavLink to="/about">
+                            <NavLink to="/about-us">
                                 About
                             </NavLink>
                         </MenuItem>

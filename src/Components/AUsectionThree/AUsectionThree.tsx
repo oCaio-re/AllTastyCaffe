@@ -4,35 +4,38 @@ import DropDownMenu from "../DropDownMenu/DropDownMenu.tsx";
 function AUsectionThree() {
     const sectionWrapSx = {
         w: "100vw",
-        h: "450px",
-        zIndex: "20"
+        h: {base: "100em", md: "450px"},
+        zIndex: "20",
+        justifyContent: "center",
     }
     const contentWrapSx = {
         boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
-        w: "70%",
+        w: {base: "95%", md: "70%"},
         h: "100%",
         backgroundColor: "white",
         borderRadius: "20px",
-        m: "0 auto 0 auto"
+        m: {base: "2em 0 0 2em", md: "0 auto 0 auto"},
     }
     const titleWrapSx = {
         backgroundColor: "",
-        h: "20%",
-        w: "50%",
+        h: {base: "10%", md: "20%"},
+        w: {base: "100%", md: "50%"},
         m: "2% auto 0 auto",
         alignItems: "center",
         justifyContent: "center"
     }
     const imagesWrapSx = {
+        backgroundColor: "",
+        flexDirection: {base: "column", md: "row"},
         h: "60%",
         w: "92%",
-        backgroundColor: "",
-        m: "auto",
+        m: {base: "0 auto 0 auto", md: "auto"},
         justifyContent: "space-between",
     }
     const imgWrapSx = {
-        h: "100%",
-        w: "23%",
+        m: "auto",
+        h: {base: "90%", md: "100%"},
+        w: {base: "80%", md: "23%"},
         backgroundColor: "grey"
     }
     const imgSx = {
@@ -43,7 +46,7 @@ function AUsectionThree() {
             <Flex className="section-wrap" sx={sectionWrapSx}>
                 <Flex className="content-wrap" sx={contentWrapSx} flexDirection="column">
                     <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text fontFamily="Inknut Antiqua" fontSize="2.5em" whiteSpace="nowrap">WE LOVE OUR COMMUNITY</Text>
+                        <Text fontFamily="Inknut Antiqua" fontSize={{base: "1.2em", md: "2.5em"}} whiteSpace="nowrap">WE LOVE OUR COMMUNITY</Text>
                     </Flex>
                     <Flex className="images-wrap" sx={imagesWrapSx}>
                         <Flex className="img-wrap" sx={imgWrapSx}>

@@ -1,5 +1,6 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
 import {GoLink} from "react-icons/go";
+import {NavLink} from "react-router-dom";
 
 function LinkItem() {
     const contentWrapSx = {
@@ -26,11 +27,18 @@ function LinkItem() {
               </Box>
               <Flex flexDirection="column" h="80%" backgroundColor="" mt="0.8em"
                     color="#FFFFFF" fontSize="1.5em" fontWeight="500">
-                  <Text>Beverage Menu</Text>
-                  <Text>Food Menu</Text>
-                  <Text>About Us</Text>
-                  <Text>Our Project</Text>
-                  <Text>Loyalty Program</Text>
+                  <NavLink to="/beverages">
+                      <Text>Beverage Menu</Text>
+                  </NavLink>
+                  <NavLink to="/food">
+                      <Text>Food</Text>
+                  </NavLink>
+                  <NavLink to="/about">
+                      <Text>About Us</Text>
+                  </NavLink>
+                  <NavLink to="/">
+                      <Text>Loyalty Program</Text>
+                  </NavLink>
               </Flex>
           </Flex>
       </>

@@ -31,10 +31,10 @@ function PhoneItem() {
                     <Text color="white" fontSize="1.8em">Follow Us</Text>
                 </Box>
                 <Flex className="logos-wrap" sx={logosWrapSx}>
-                    <Box className="instagram-wrap" backgroundColor="" w="50%">
+                    <Flex className="instagram-wrap" backgroundColor="" w="50%">
                         <GrInstagram size="100%" color="white"/>
-                    </Box>
-                    <Flex className="facebook-wrap" w="50%" backgroundColor="" justifyContent="center">
+                    </Flex>
+                    <Flex as="a" href=""  className="facebook-wrap" w="50%" backgroundColor="" justifyContent="center">
                         <FaFacebookF size="85%" color="white"/>
                     </Flex>
                 </Flex>
