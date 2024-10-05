@@ -1,11 +1,11 @@
 import {Box, Flex} from "@chakra-ui/react";
-import sandwichesImg from "../../../../public/food/side-view-club-sandwich-with-ham-pickled-cucumber-lettuce-tomato-cheese-sauce-board.jpg"
+import hSandwichImg from "../../../../public/food/sandwich-horizontal.jpg"
 
-function FDbigImg1() {
+function SDWbigImg2() {
     const imgWrapSx = {
         w: "100%",
         h: {base: "15em", md: "30em"},
-        m: {base: "3em 0em 3em 0em", md: "0em"}
+        m: {base: "0em 0em 3em 0em", md: "0em"}
     }
     const imgSx = {
         objectFit: "cover",
@@ -17,10 +17,10 @@ function FDbigImg1() {
     return (
         <>
             <Flex as="section" className="image-wrap" sx={imgWrapSx}>
-                <Box as="img" src={sandwichesImg} sx={imgSx}/>
+                <Box as="img" src={hSandwichImg} sx={imgSx}/>
             </Flex>
         </>
     );
 }
 
-export default FDbigImg1;
+export default SDWbigImg2;

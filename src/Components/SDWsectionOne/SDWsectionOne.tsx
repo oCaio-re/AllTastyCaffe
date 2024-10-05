@@ -1,9 +1,9 @@
-import FDbigImg1 from "./FDbigImg1/FDbigImg1.tsx";
+import SDWbigImg1 from "./SDWbigImg1/SDWbigImg1.tsx";
 import {Flex, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
-import FDbigImg2 from "./FDbigImg2/FDbigImg2.tsx";
+import SDWbigImg2 from "./SDWbigImg2/SDWbigImg2.tsx";
 
-function FDsectionOne() {
+function SDWsectionOne() {
     const description = "This is the description text filling up the content adjkgfnma aw wemf" +
         "jkamwefjk m ekwomf ewfm eow mqero merof merq m4"
     const sectionWrapSx = {
@@ -30,7 +30,7 @@ function FDsectionOne() {
     }
     return (
         <>
-            <FDbigImg1/>
+            <SDWbigImg1/>
             <Flex className="section-wrap" sx={sectionWrapSx}>
                 <Flex className="title-wrap" sx={titleWrapSx}>
                     <Text m="auto" color="#0C6E5A">
@@ -38,14 +38,14 @@ function FDsectionOne() {
                     </Text>
                 </Flex>
                 <Flex className="row-one" sx={rowWrapSx}>
-                    <Item title="Club Sandwich" description={description} titleSize="3em"/>
-                    <Item title="Cuban" description={description}/>
-                    <Item title="Turkey and Swiss" description={description}/>
+                    <Item title="Club Sandwich" description={description} titleSize="3em" width="30%"/>
+                    <Item title="Cuban" description={description} width="30%"/>
+                    <Item title="Turkey and Swiss" description={description} width="30%"/>
                 </Flex>
             </Flex>
-            <FDbigImg2/>
+            <SDWbigImg2/>
         </>
     );
 }
 
-export default FDsectionOne;
+export default SDWsectionOne;

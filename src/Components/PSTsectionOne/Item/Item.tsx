@@ -5,12 +5,13 @@ interface Props {
     titleSize?: string;
     description: string;
     descriptionSize?: string;
+    width?: string;
 }
 
 function Item(props: Props) {
     const contentWrapSx = {
         height: "100%",
-        width: {base: "85%", md: "30%"},
+        width: {base: "85%", md: `${props.width}` || "30%"},
         flexDirection: "column",
         p: {base: "2em", md: "0em"},
     }

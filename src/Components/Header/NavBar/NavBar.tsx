@@ -60,7 +60,7 @@ function NavBar() {
                         <NavLink to="/beverages" className="nav-item">Beverages</NavLink>
                         <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
                         <NavLink to="/pastries" className="nav-item">Pastries & Savouries</NavLink>
-                        <NavLink to="/food" className="nav-item">Food</NavLink>
+                        <NavLink to="/sandwiches" className="nav-item">Food</NavLink>
                         <NavLink to="/about-us" className="nav-item">About</NavLink>
                     </Flex>
                 </Show>

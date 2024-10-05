@@ -3,12 +3,9 @@ import Header from "../Components/Header/Header.tsx";
 import {Box, Flex} from "@chakra-ui/react";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
-import PSTsectionOne from "../Components/PSTsectionOne/PSTsectionOne.tsx";
-import FirstBigImage from "../Components/PSTsectionOne/FirstBigImage/FirstBigImage.tsx";
-import PSTsectionTwo from "../Components/SVRsectionOne/SVRsectionOne.tsx";
-import SecondBigImage from "../Components/SVRsectionOne/SecondBigImage/SecondBigImage.tsx";
+import FDsectionTwo from "../Components/FDsectionTwo/FDsectionTwo.tsx";
 
-function Pastries() {
+function Toasties() {
     return (
         <>
             <Flex className="App" maxW="100vw"
@@ -19,12 +16,9 @@ function Pastries() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
-                    <Box h={{md: "6em"}} w="100%"/>
-                    <PSTsectionOne/>
-                    <FirstBigImage/>
-                    <PSTsectionTwo/>
-                    <SecondBigImage/>
-                    <Box h="10em" w="100%"/>
+                    <Box h={{md: "150px"}} w="100%"/>
+                    <FDsectionTwo/>
+                    <Box h="150px" w="100%"/>
                     <Footer/>
                 </Flex>
             </Flex>
@@ -32,4 +26,4 @@ function Pastries() {
     );
 }
 
-export default Pastries;
+export default Toasties;

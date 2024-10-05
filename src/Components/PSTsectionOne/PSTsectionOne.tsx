@@ -7,7 +7,7 @@ function PsTsectionOne() {
     const sectionWrapSx = {
         backgroundColor: "white",
         w: {base: "95%", md: "80%"},
-        h: {base: "150em", md: "30em"},
+        h: {base: "150em", md: "40em"},
         flexDirection: "column",
         m: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
@@ -24,9 +24,10 @@ function PsTsectionOne() {
     }
     const rowWrapSx = {
         flexDirection: {base: "column", md: "row"},
-        h: "50%",
+        h: "30%",
         w: "100%",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        m: "auto",
     }
     return (
         <>
@@ -38,14 +39,19 @@ function PsTsectionOne() {
                 </Flex>
                 <Flex className="rows-wrap" sx={rowsWrapSx}>
                     <Flex className="row-one" sx={rowWrapSx}>
-                        <Item title="Muffins" description={description} titleSize="3em"/>
-                        <Item title="Croissants" description={description}/>
-                        <Item title="Scones" description={description}/>
+                        <Item title="Muffins" description={description} titleSize="3em" width="30%"/>
+                        <Item title="Croissants" description={description} width="30%"/>
+                        <Item title="Cookies" description={description} width="30%"/>
                     </Flex>
                     <Flex className="row-two" sx={rowWrapSx}>
-                        <Item title="Bagels" description={description}/>
-                        <Item title="Cinnamon Roll" description={description}/>
-                        <Item title="Cookie" description={description}/>
+                        <Item title="Portuguese Custard Tart" description={description} width="30%"/>
+                        <Item title="Slice of Homemade Cake" description={description} width="30%"/>
+                        <Item title="Apple Crumble" description={description} width="30%"/>
+                    </Flex>
+                    <Flex className="row-two" sx={rowWrapSx}>
+                        <Item title="Rocky Road" description={description} width="30%"/>
+                        <Item title="Lemon Drizzle" description={description} width="30%"/>
+                        <Item title="Strawberry Cheesecake" description={description} width="30%"/>
                     </Flex>
                 </Flex>
             </Flex>
