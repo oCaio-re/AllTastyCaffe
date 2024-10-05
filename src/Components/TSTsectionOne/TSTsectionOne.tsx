@@ -1,6 +1,6 @@
 import {Flex, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
-import FDbigImg3 from "./FDbigImg3/FDbigImg3.tsx";
+import TSTbigImg1 from "./TSTbigImg1/TSTbigImg1.tsx";
 
 function FDsectionOne() {
     const description = "This is the description text filling up the content adjkgfnma aw wemf" +
@@ -31,16 +31,16 @@ function FDsectionOne() {
             <Flex className="section-wrap" sx={sectionWrapSx}>
                 <Flex className="title-wrap" sx={titleWrapSx}>
                     <Text m="auto" color="#0C6E5A">
-                        HOT MEALS
+                        TOASTIES
                     </Text>
                 </Flex>
                 <Flex className="row-one" sx={rowWrapSx}>
-                    <Item title="Dish1" description={description} titleSize="3em"/>
-                    <Item title="Dish2" description={description}/>
-                    <Item title="Dish3" description={description}/>
+                    <Item title="Dish1" description={description} titleSize="3em" width="30%"/>
+                    <Item title="Dish2" description={description} width="30%"/>
+                    <Item title="Dish3" description={description} width="30%"/>
                 </Flex>
             </Flex>
-            <FDbigImg3/>
+            <TSTbigImg1/>
         </>
     );
 }

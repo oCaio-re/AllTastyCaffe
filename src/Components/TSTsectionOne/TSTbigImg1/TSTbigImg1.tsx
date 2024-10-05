@@ -1,7 +1,7 @@
 import {Box, Flex} from "@chakra-ui/react";
 import hotMealImg from "../../../../public/food/hot-meal.jpg"
 
-function FDbigImg3() {
+function TSTbigImg1() {
     const imgWrapSx = {
         w: "100%",
         h: {base: "15em", md: "30em"},
@@ -23,4 +23,4 @@ function FDbigImg3() {
     );
 }
 
-export default FDbigImg3;
+export default TSTbigImg1;
