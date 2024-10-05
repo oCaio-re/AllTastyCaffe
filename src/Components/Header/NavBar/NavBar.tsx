@@ -50,7 +50,9 @@ function NavBar() {
         <>
             <Flex className="outerwrap" sx={outerWrapSx}>
                 <Box className="img-wrap" sx={imgWrapSx}>
-                    <Box as="img" src={logo} width="100%"/>
+                    <NavLink to={"/"}>
+                        <Box as="img" src={logo} width="100%"/>
+                    </NavLink>
                 </Box>
                 <Show above="lg">
                     <Flex className="nav-bar-wrap" sx={navBarWrapSx}>

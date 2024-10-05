@@ -24,7 +24,7 @@ function BedrockBar() {
                     <Box className="left-conten-wrap"
                          // backgroundColor="grey"
                     >
-                        <Text color="white">Copyright ©2024 Roscommon, Ireland. All rights reserved.</Text>
+                        <Text color="white">©️ 2023 Light for The People Ministries | All rights reserved</Text>
                     </Box>
                     <Box className="right-conten-wrap" ml="auto">
                         <Text color="white">Contact Us</Text>

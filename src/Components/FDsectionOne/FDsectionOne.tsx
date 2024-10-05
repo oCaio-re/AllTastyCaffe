@@ -9,7 +9,7 @@ function FDsectionOne() {
     const sectionWrapSx = {
         backgroundColor: "white",
         w: {base: "95%", md: "80%"},
-        h: {base: "70em", md: "30em"},
+        h: {base: "70em", md: "27em"},
         flexDirection: "column",
         m: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
@@ -26,7 +26,7 @@ function FDsectionOne() {
         justifyContent: "space-around",
         backgroundColor: "",
         flexDirection: {base: "column", md: "row"},
-        m: "2em auto auto auto"
+        m: {base: "2em auto auto auto", md: "auto"},
     }
     return (
         <>

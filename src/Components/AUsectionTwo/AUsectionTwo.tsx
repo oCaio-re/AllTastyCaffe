@@ -9,20 +9,19 @@ function AUsectionTwo() {
     const sectionWrapSx = {
         width: "100vw",
         height: "889px",
-        mb: {md: "-25em"},
+        mb: {md: "-27em"}, // negative margin to place THIS section inside the UPPER section
         mt: "5em",
-        backgroundColor: "#0C6E5A",
+        backgroundColor: {base: "#0C6E5A", md: "transparent"},
     }
     const contentWrapSx = {
         width: {base: "95%", md: "70%"},
         height: {base: "90%", md: "50%"},
-        backgroundColor: "",
         zIndex: "20",
         m: {base: "auto auto auto auto", md: "0 auto 0 auto"},
         flexDirection: {base: "column", md: "row"},
     }
     const outerTextWrapSx = {
-        h: "60%",
+        h: {base: "60%", md: "100%"},
         w: {base: "100%", md: "56%"},
         borderRadius: "25px",
         backgroundColor: "white",

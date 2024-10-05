@@ -7,6 +7,7 @@ function AUsectionThree() {
         h: {base: "100em", md: "450px"},
         zIndex: "20",
         justifyContent: "center",
+        backgroundColor: "",
     }
     const contentWrapSx = {
         boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
@@ -14,7 +15,7 @@ function AUsectionThree() {
         h: "100%",
         backgroundColor: "white",
         borderRadius: "20px",
-        m: {base: "2em 0 0 2em", md: "0 auto 0 auto"},
+        m: {base: "2em 0 0 2em"},
     }
     const titleWrapSx = {
         backgroundColor: "",
