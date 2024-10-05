@@ -1,5 +1,5 @@
 import {Box, Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
-// import {ChevronDownIcon, ChevronUpIcon} from "@chakra-ui/icons";
+import {ChevronDownIcon, ChevronUpIcon} from "@chakra-ui/icons";
 import {NavLink} from "react-router-dom";
 import {useDisclosure, useColorModeValue} from "@chakra-ui/react";
 
