@@ -1,4 +1,6 @@
 import {Flex, Text} from "@chakra-ui/react";
+import {NavLink} from "react-router-dom";
+import "./TopBar.css"
 
 function TopBar() {
     const topBarSx = {
@@ -17,7 +19,9 @@ function TopBar() {
             <Flex className="text-wrap" h="37px" alignItems="center">
                 <Text className="top-bar-content" color="white" fontFamily="Inter" textAlign="center"
                       fontSize={{base: "0.7em", md: "1em"}}>
-                    CHECKOUT OUR TREAT REWARDS: BE REWARDED FOR YOUR DAILY <i><b>ALL TASTY</b></i>
+                    <NavLink to={"/loyalty-program"} className="content-sentence">
+                        CHECKOUT OUR TREAT REWARDS: BE REWARDED FOR YOUR DAILY <i><b className="all-tasty">ALL TASTY</b></i>
+                    </NavLink>
                 </Text>
             </Flex>
         </Flex>

@@ -1,4 +1,5 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
+import {NavLink} from "react-router-dom";
 
 
 function BedrockBar() {
@@ -27,7 +28,9 @@ function BedrockBar() {
                         <Text color="white">©️ 2023 Light for The People Ministries | All rights reserved</Text>
                     </Box>
                     <Box className="right-conten-wrap" ml="auto">
-                        <Text color="white">Contact Us</Text>
+                        <NavLink to={"/contact"}>
+                            <Text color="white">Contact Us</Text>
+                        </NavLink>
                     </Box>
                 </Flex>
             </Flex>

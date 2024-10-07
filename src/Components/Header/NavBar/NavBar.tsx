@@ -1,9 +1,9 @@
 import {Box, Button, Flex, Show} from "@chakra-ui/react";
 import {NavLink} from "react-router-dom";
-import logo from "../../../../public/AT_logo.svg"
-import "./NavBar.css"
 import DropDownMobile from "../DropDownMobile/DropDownMobile.tsx";
 import DropDownHover from "./DropDownHover/DropDownHover.tsx";
+import logo from "../../../../public/AT_logo.svg"
+import "./NavBar.css"
 
 function NavBar() {
     const outerWrapSx = {
@@ -51,8 +51,13 @@ function NavBar() {
         {name: "Savouries", link: "/savouries"}
     ]
     const dropBVG: { name: string; link: string }[] = [
-        {name: "Cold", link: "/pastries"},
-        {name: "Hot", link: "/savouries"}
+        {name: "Hot Beverages", link: "/hot-beverages"},
+        {name: "Cold Drinks", link: "/beverages"},
+        {name: "Smoothies", link: "/smoothies"},
+    ]
+    const dropAbout: { name: string; link: string }[] = [
+        {name: "About Us", link: "/about-us"},
+        {name: "Loyalty Program", link: "/about-us"}
     ]
     return (
         <>
@@ -69,13 +74,15 @@ function NavBar() {
                         <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
                         <DropDownHover title={"Pastries & Savouries"} items={dropPS}/>
                         <DropDownHover title={"Food"} items={dropFood}/>
-                        <NavLink to="/about-us" className="nav-item">About</NavLink>
+                        <DropDownHover title={"About"} items={dropAbout}/>
                     </Flex>
                 </Show>
                 <Show below="lg">
                     <DropDownMobile/>
                 </Show>
-                <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
+                <NavLink to={"/contact"}>
+                    <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
+                </NavLink>
             </Flex>
         </>
     )

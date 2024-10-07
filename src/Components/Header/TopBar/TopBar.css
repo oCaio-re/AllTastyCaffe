@@ -1,0 +1,8 @@
+.content-sentence:hover{
+    color: #b5b5b5;
+    transition: 0.5s;
+}
+.all-tasty:hover{
+    color: orange;
+    transition: 0.5s;
+}

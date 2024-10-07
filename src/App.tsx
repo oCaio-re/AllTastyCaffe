@@ -9,6 +9,8 @@ import TreatRewards from "./Pages/TreatRewards.tsx";
 import Blank from "./Pages/Blank.tsx";
 import Savouries from "./Pages/Savouries.tsx";
 import Toasties from "./Pages/Toasties.tsx";
+import Contact from "./Pages/Contact.tsx";
+import HotBeverages from "./Pages/HotBeverages.tsx";
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/beverages" element={<Beverages/>} />
+                    <Route path="/hot-beverages" element={<HotBeverages/>} />
                     <Route path="/berry-acai" element={<BerryAcai/>} />
                     <Route path="/pastries" element={<Pastries/>} />
                     <Route path="/savouries" element={<Savouries/>} />
@@ -25,6 +28,7 @@ function App() {
                     <Route path="/toasties" element={<Toasties/>} />
                     <Route path="/about-us" element={<AboutUs/>} />
                     <Route path="/treat-rewards" element={<TreatRewards/>} />
+                    <Route path="/contact" element={<Contact/>} />
                     <Route path="/blank" element={<Blank/>} />
                 </Routes>
             </main>

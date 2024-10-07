@@ -47,14 +47,16 @@ function AUsectionTwo() {
     }
     const imgWrapSx = {
         w: {base: "100%", md: "41%"},
-        backgroundColor: "white",
+        backgroundColor: "transparent",
         m: {base: "auto 0 0 auto", md: "0 0 0 auto"},
         borderRadius: "20px",
         boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
     }
     const imgSx = {
         // boxShadow: "-4px 10px 10px rgba(77, 76, 76, 0.4)",
-        borderRadius: "20px"
+        borderRadius: "20px",
+        width: "100%",
+        height: "100%"
     }
     return (
         <>
