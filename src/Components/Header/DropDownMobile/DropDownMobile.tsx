@@ -10,7 +10,7 @@ function DropDownMobile() {
         <>
             <Box zIndex="20" m="auto"  backgroundColor="">
                 <IconButton
-                    aria-label="HotMenu"
+                    aria-label="SmoothiesMenu"
                     icon={isOpen ? <LuArrowDownNarrowWide /> : <GiHamburgerMenu />}
                     width="3em"
                     height="3em"

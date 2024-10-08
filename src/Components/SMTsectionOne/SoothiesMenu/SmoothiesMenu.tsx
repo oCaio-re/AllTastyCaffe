@@ -23,7 +23,7 @@ const titleSectionSx = {
     w: "100%",
     h: "5%",
     backgroundColor: "",
-    m: {md: "0 0 0 0"},
+    m: {md: "auto 0 0 0"},
 }
 const titleWrapSx = {
     backgroundColor: "",
@@ -34,7 +34,7 @@ const titleWrapSx = {
     fontSize: "3em",
     fontWeight: 500,
 }
-function HotMenu() {
+function SmoothiesMenu() {
     return (
         <>
             <Flex className="title-section" sx={titleSectionSx}>
@@ -74,4 +74,4 @@ function HotMenu() {
     );
 }
 
-export default HotMenu;
+export default SmoothiesMenu;

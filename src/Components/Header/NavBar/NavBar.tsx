@@ -52,7 +52,7 @@ function NavBar() {
     ]
     const dropBVG: { name: string; link: string }[] = [
         {name: "Hot Beverages", link: "/hot-beverages"},
-        {name: "Cold Drinks", link: "/beverages"},
+        {name: "Cold Drinks", link: "/cold-beverages"},
         {name: "Smoothies", link: "/smoothies"},
     ]
     const dropAbout: { name: string; link: string }[] = [

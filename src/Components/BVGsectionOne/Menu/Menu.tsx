@@ -1,11 +1,11 @@
 import {Flex, Text} from "@chakra-ui/react";
-import lemonadeImg from "../../../../public/beverages/lemonade.png"
+import lemonadeImg from "../../../../public/beverages/cold/lemonade.png"
 import mochaImg from "../../../../public/beverages/mocha-granita.png"
 import coldImg from "../../../../public/beverages/cold-brew.png"
-import icedTeaImg from "../../../../public/beverages/iced-tea.png"
-import coffeMilkImg from "../../../../public/beverages/Cafe-Au-Lait.png"
-import hotChocolateImg from "../../../../public/beverages/hot-chocolate.png"
-import vanillaLateImg from "../../../../public/beverages/skinny-vanilla-latte.png"
+import icedTeaImg from "../../../../public/beverages/hot/iced-tea.png"
+import coffeMilkImg from "../../../../public/beverages/hot/Cafe-Au-Lait.png"
+import hotChocolateImg from "../../../../public/beverages/hot/hot-chocolate.png"
+import vanillaLateImg from "../../../../public/beverages/hot/skinny-vanilla-latte.png"
 import Item from "./Item/Item.tsx";
 
 const menuWrapSx = {

@@ -11,6 +11,8 @@ import Savouries from "./Pages/Savouries.tsx";
 import Toasties from "./Pages/Toasties.tsx";
 import Contact from "./Pages/Contact.tsx";
 import HotBeverages from "./Pages/HotBeverages.tsx";
+import Smoothies from "./Pages/Smoothies.tsx";
+import ColdBeverages from "./Pages/ColdBeverages.tsx";
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
                     <Route path="/" element={<Home/>} />
                     <Route path="/beverages" element={<Beverages/>} />
                     <Route path="/hot-beverages" element={<HotBeverages/>} />
+                    <Route path="/cold-beverages" element={<ColdBeverages/>} />
                     <Route path="/berry-acai" element={<BerryAcai/>} />
+                    <Route path="/smoothies" element={<Smoothies/>} />
                     <Route path="/pastries" element={<Pastries/>} />
                     <Route path="/savouries" element={<Savouries/>} />
                     <Route path="/sandwiches" element={<Sandwiches/>} />
