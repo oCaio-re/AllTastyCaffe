@@ -1,5 +1,5 @@
 import {Box, Flex} from "@chakra-ui/react";
-import SmoothiesMenu from "./SoothiesMenu/SmoothiesMenu.tsx";
+import SmoothiesMenu from "./SmoothiesMenu/SmoothiesMenu.tsx";
 import bvgs_colorful_img from "../../../public/beverages/hot/machine.jpg"
 
 function SMTsectionOne() {

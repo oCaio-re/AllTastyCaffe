@@ -4,7 +4,7 @@ import latteImg from "../../../../public/beverages/hot/latte.png"
 import flatWhiteImg from "../../../../public/beverages/hot/flat-white.png"
 import espressoImg from "../../../../public/beverages/hot/espresso.png"
 import americanoImg from "../../../../public/beverages/hot/americano.png"
-import mochaImg from "../../../../public/beverages/hot/hot-mocha.png"
+// import mochaImg from "../../../../public/beverages/hot/hot-mocha.png"
 import icedImg from "../../../../public/beverages/cold-brew.png"
 import hotChocolateImg from "../../../../public/beverages/hot/hot-chocolate.png"
 import KidshotChocolateImg from "../../../../public/beverages/hot/kids-hot-chocolate.png"
@@ -47,10 +47,9 @@ function SmoothiesMenu() {
                 <Flex className="row-two" h="33%" w="100%" m="auto"
                       justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
                 >
-                    <Item image={americanoImg} title="Americano" imgProportion="25%"/>
-                    <Item image={hotChocolateImg} title="Hot Chocolate" imgProportion="25%"/>
-                    <Item image={icedImg} title="Iced Coffee" imgProportion="25%"/>
-                    <Item image={mochaImg} title="Mocha" imgProportion="25%"/>
+                    <Item image={americanoImg} title="Americano" imgProportion="33%"/>
+                    <Item image={hotChocolateImg} title="Hot Chocolate" imgProportion="33%"/>
+                    <Item image={icedImg} title="Iced Coffee" imgProportion="33%"/>
 
                     {/*<Item image={frozenImg} title="Frozen & Blended" imgProportion="25%"/>*/}
                     {/*<Item image={coffeMilkImg} title="Coffee" imgProportion="25%"/>*/}

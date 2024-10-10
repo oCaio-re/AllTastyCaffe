@@ -2,10 +2,7 @@ import {Flex, Text} from "@chakra-ui/react";
 import Item from "./Item/Item.tsx";
 import capuccinoImg from "../../../../public/beverages/hot/cappuccino.png"
 import latteImg from "../../../../public/beverages/hot/latte.png"
-import flatWhiteImg from "../../../../public/beverages/hot/flat-white.png"
-import espressoImg from "../../../../public/beverages/hot/espresso.png"
 import americanoImg from "../../../../public/beverages/hot/americano.png"
-import mochaImg from "../../../../public/beverages/hot/hot-mocha.png"
 import icedImg from "../../../../public/beverages/cold-brew.png"
 import hotChocolateImg from "../../../../public/beverages/hot/hot-chocolate.png"
 
@@ -45,18 +42,37 @@ function ColdMenu() {
                 <Flex className="row-two" h="50%" w="100%" m="auto"
                       justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
                 >
-                    <Item image={americanoImg} title="Americano" imgProportion="25%"/>
-                    <Item image={hotChocolateImg} title="Hot Chocolate" imgProportion="25%"/>
-                    <Item image={icedImg} title="Iced Coffee" imgProportion="25%"/>
-                    <Item image={mochaImg} title="Mocha" imgProportion="25%"/>
+                    <Item image={americanoImg} title="Americano" imgProportion="33%"/>
+                    <Item image={icedImg} title="Iced Coffee" imgProportion="33%"/>
+                    <Item image={hotChocolateImg} title="Hot Chocolate" imgProportion="33%"/>
                 </Flex>
-                <Flex className="row-one" h="50%" w="100%" backgroundColor="" flexDirection={{base: "column", md: "row"}}>
-                    <Item image={capuccinoImg} title="Cappucino" imgProportion="25%"/>
-                    <Item image={latteImg} title="Latte" imgProportion="25%"/>
-                    <Item image={flatWhiteImg} title="Flat White" imgProportion="25%"/>
-                    <Item image={espressoImg} title="Espresso" imgProportion="25%"/>
+                <Flex className="row-one" h="50%" w="100%" justifyContent="space-between" flexDirection={{base: "column", md: "row"}}>
+                    <Item image={capuccinoImg} title="Cappucino" imgProportion="33%"/>
+                    <Item image={latteImg} title="Latte" imgProportion="33%"/>
                 </Flex>
             </Flex>
+            {/*----------*/}
+            <Flex className="title-section" sx={titleSectionSx}>
+                <Flex className="title-wrap" sx={titleWrapSx}>
+                    <Text m="auto" whiteSpace={{md: "nowrap"}} textAlign="center">COLD DRINKS</Text>
+                </Flex>
+            </Flex>
+            <Flex className="menu-wrap" sx={menuWrapSx}>
+                <Flex className="row-two" h="50%" w="100%" m="auto"
+                      justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
+                >
+
+                    <Item image={icedImg} title="Iced Coffee" imgProportion="33%"/>
+                    <Item image={hotChocolateImg} title="Lemonade" imgProportion="33%"/>
+                </Flex>
+                <Flex className="row-two" h="50%" w="100%" m="auto"
+                      justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
+                >
+                    <Item image={americanoImg} title="All Cans" imgProportion="33%"/>
+                    <Item image={hotChocolateImg} title="Still Spring Water" imgProportion="33%"/>
+                </Flex>
+            </Flex>
+
         </>
     );
 }

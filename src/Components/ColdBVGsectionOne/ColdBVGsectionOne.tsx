@@ -5,7 +5,7 @@ import smoothiesCoverImg from "../../../public/beverages/cold/smoothies cover.jp
 
 function ColdBVGsectionOne() {
     const whiteBoardSx = {
-        h: {base: "250em", md: "140em"},
+        h: {base: "250em", md: "220em"},
         w: {base: "90%", md: "70%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",

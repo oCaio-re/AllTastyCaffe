@@ -9,7 +9,7 @@ import flavour5 from "../../../../public/berry-acai/flavour5.jpeg";
 const menuWrapSx = {
     backgroundColor: "",
     w: "90%",
-    h: "110em",
+    h: "80em",
     margin: "0 auto auto auto",
     flexDirection: "column",
 }
@@ -37,19 +37,20 @@ function BaCmenu() {
                 </Flex>
             </Flex>
             <Flex className="menu-wrap" sx={menuWrapSx}>
-                <Flex className="row-one" h="45%" w="100%" backgroundColor=""
+                <Flex className="row-one" h="45%" w="80%" backgroundColor="" m={{md: "0 auto 0 auto"}}
                       flexDirection={{base: "column", md: "row"}} mb="auto">
-                    <Item image={flavour1} title="Flavour1" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
-                    <Item image={flavour2} title="Flavour2" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
-                    <Item image={flavour3} title="Flavour3" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
+                    <Item image={flavour1} title="Flavour1" borderRadius="20px" titleSize="2em" imgProportion="30%"/>
+                    <Item image={flavour2} title="Flavour2" borderRadius="20px" titleSize="2em" imgProportion="30%"/>
+                    <Item image={flavour3} title="Flavour3" borderRadius="20px" titleSize="2em" imgProportion="30%"/>
                 </Flex>
 
-                <Flex className="row-two" h={{base: "33%", md: "45%"}} w="100%" m="auto" justifyContent={{md: "space-evenly"}}
+                <Flex className="row-two" h={{base: "33%", md: "45%"}} w="80%" backgroundColor=""
+                      justifyContent={{md: "space-evenly"}}
                       flexDirection={{base: "column", md: "row"}}
-                      mb={{base: "7em", md: "18em"}}
+                      m={{base: "0 auto 7em auto", md: "5em auto 18em auto"}}
                 >
-                    <Item image={flavour4} title="Flavour4" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
-                    <Item image={flavour5} title="Flavour5" borderRadius="20px" titleSize="1.5em" imgProportion="30%"/>
+                    <Item image={flavour4} title="Flavour4" borderRadius="20px" titleSize="2em" imgProportion="30%"/>
+                    <Item image={flavour5} title="Flavour5" borderRadius="20px" titleSize="2em" imgProportion="30%"/>
                 </Flex>
             </Flex>
         </>
