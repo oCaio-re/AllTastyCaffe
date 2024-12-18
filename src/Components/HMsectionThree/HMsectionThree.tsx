@@ -2,7 +2,7 @@ import {Box, Flex, Show, Text} from "@chakra-ui/react";
 import friendsCoffeImg from "../../../public/friends-drinking-coffee.jpg"
 import backgroundSvg from "../../../public/hm_secThree_bg.svg"
 import {motion} from "framer-motion";
-import "./HMSectionThree.css"
+import HMsectionFour from "../HMsectionFour/HMsectionFour.tsx";
 
 function HMsectionThree() {
     const weOpenVariants = {
@@ -17,6 +17,23 @@ function HMsectionThree() {
             }
         }
     }
+    const weOpenImgVariants = {
+        initial: {
+            x: 300,
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 1,
+                delay: 0.2
+            }
+        },
+        whileHover: {
+            scale: 1.1,
+        }
+    }
     const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.\n" +
         "Vestibulum\n" +
         "vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros\n" +
@@ -29,14 +46,15 @@ function HMsectionThree() {
         "Aenean vel felis ac elit scelerisque lacinia. Etiam ornare quis tortor non\n" +
         "tincidunt."
     const sectionWrapSx = {
-        // backgroundColor: "#0C6E5A",
-        justifyContent: "center",
+        // backgroundColor: "red",
+        alignItems: "center",
+        flexDirection: "column",
         position: "relative",
-        h: {base: "50em", md: "90vh"},
+        h: {base: "50em", md: "auto"},
         mb: {base: "2em", md: "6em"},
     }
     const outerWrapSx = {
-        backgroundColor: "",
+        // backgroundColor: "",
         h: {base: "85%", md: "760px"},
         w: {base: "100%", md: "1320px"},
         zIndex: "20"
@@ -49,13 +67,9 @@ function HMsectionThree() {
         m: {base: "4em auto auto auto", md: "12em auto auto auto"},
     }
     const friendsCoffeImgSx = {
-        backgroundColor: "red",
+        // backgroundColor: "red",
         width: "100%",
-        objectFit: "cover",
-        w: "100%",
-        h: {base: "80%", md: "100%"},
-        boxShadow: "-8px 8px 8px rgba(77, 76, 76, 0.4)",
-}
+    }
 
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
@@ -96,13 +110,19 @@ function HMsectionThree() {
                     </Flex>
                 </Flex>
                 <Flex className="right-content" w={{base: "100%", md: "50%"}} backgroundColor=""
-                      m={{base: "35em 0 0 0", md: "0"}} position={{base: "absolute", md: "relative"}}  >
-                    <Box as="img" src={friendsCoffeImg} sx={friendsCoffeImgSx}
-                    />
+                      m={{base: "35em 0 0 0", md: "0"}} position={{base: "absolute", md: "relative"}}
+                >
+                    <motion.div style={{height: "90%"}} whileInView="animate" variants={weOpenImgVariants}
+                                initial="initial" viewport={{once: true}}
+                    >
+                        <Box as="img" src={friendsCoffeImg} objectFit="cover" w="100%" h={{base: "80%", md: "100%"}}
+                             boxShadow="-8px 8px 8px rgba(77, 76, 76, 0.4)" sx={friendsCoffeImgSx}/>
+                    </motion.div>
                 </Flex>
             </Flex>
+            <HMsectionFour/>
         </Flex>
-    );
+);
 }
 
 export default HMsectionThree;

@@ -24,7 +24,7 @@ function HMsectionFour() {
     const sectionWrapSx = {
         h: "70vh",
         w: "100vw",
-        mb: "5em",
+        margin: "3em auto 5em auto",
         // mt: {base: "5em", md: "-80px"}
         // backgroundColor: "grey",
     }

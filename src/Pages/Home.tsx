@@ -44,7 +44,7 @@ function Home() {
                     <HMsectionOne/>
                     <HMsectionTwo/>
                     <HMsectionThree/>
-                    {/*<HMsectionFour/>*/}
+                    {/*<HMsectionFour/>*/ /* CONTENT IS INSIDE SECTION THREE (S4 IS INSIDE S3) */}
                     <Footer/>
                 </Flex>
             </motion.div>

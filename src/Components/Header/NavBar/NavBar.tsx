@@ -7,14 +7,14 @@ import "./NavBar.css"
 
 function NavBar() {
     const outerWrapSx = {
-        backgroundColor: "orange",
+        // backgroundColor: "orange",
         h: {base: "100%", md: "40px"},
         width: {base: "90%", md: "1320px"},
         m: {base: "auto", md: "auto"},
         justifyContent: "center",
     }
     const navBarWrapSx = {
-        backgroundColor: "red",
+        // backgroundColor: "red",
         width: "auto",
         m: "auto",
         fontSize: "1.3em",
