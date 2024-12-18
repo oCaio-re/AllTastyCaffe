@@ -18,12 +18,8 @@ function DropDownHover(props: Props) {
         color: props.color || "black",
         fontFamily: `${props.fontFamily || "Inter"}`,
         fontWeight: `${props.fontWeight || "500"}`,
-        // ":hover": {
-        //     color: "grey",
-        //     transitionDuration: "200ms",
-        //     cursor: "pointer",
-        // },
         fontSize: "20px",
+        whiteSpace: "nowrap",
     }
 
 

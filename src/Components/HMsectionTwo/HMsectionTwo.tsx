@@ -46,17 +46,18 @@ function HMsectionTwo() {
         },
     }
     const sectionWrapSx = {
+        // backgroundColor: "",
         height: "90vh",
-        backgroundColor: "",
         mt: {base: "2em", md: "15em"},
         mb: {base: "2em", md: "10em"},
         flexDirection: "column",
     }
     const contentWrapSx = {
-        backgroundColor: "",
+        backgroundColor: "red",
         h: {base: "25em",md: "80%"},
-        w: {base: "80%", md: "60%"},
+        w: {base: "80%", md: "1320px"},
         m: "0 auto 0 auto",
+        justifyContent: "center",
     }
     const titleSWrapSx = {
         h: "25%",
@@ -64,10 +65,11 @@ function HMsectionTwo() {
         flexDirection: "column",
     }
     const beverageContentSx = {
+        // backgroundColor: "",
         w: {base: "32%", md:"33.3333%"},
         h: {base: "100%", md: "auto"},
-        backgroundColor: "",
         m: "0 auto 0 auto",
+        justifyContent: "center",
     }
     const imgWrapSx = {
         h: "90%",
@@ -99,11 +101,11 @@ function HMsectionTwo() {
                     </Flex>
                 </Flex>
 
-                <Flex className="images-wrap" h="75%" backgroundColor="">
+                <Flex className="images-wrap" h="75%" justifyContent="center">
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <motion.div whileHover="whileHover" style={{height: "90%"}} whileInView="animate"
+                        <motion.div whileHover="whileHover" style={{height: "90%", width: "auto"}} whileInView="animate"
                             variants={variantsIcedTea} initial="initial" viewport={{once: true}}
                         >
                             <Box as="img" sx={imgWrapSx} src={icedTeaImg}/>
@@ -116,7 +118,7 @@ function HMsectionTwo() {
                     <Flex className="beverage-image-wrap" flexDirection="column" sx={beverageContentSx}
                           backgroundColor=""
                     >
-                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%", width: "auto"}} whileInView="animate"
                                     variants={variantsSmoothie} initial="initial" viewport={{once: true}}
                         >
                             <Box as="img" sx={imgWrapSx} src={smoothieImg}/>
@@ -132,7 +134,7 @@ function HMsectionTwo() {
                           backgroundColor=""
                     >
 
-                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%"}} whileInView="animate"
+                        <motion.div whileHover={{scale: 1.1}} style={{height: "90%", width: "auto"}} whileInView="animate"
                                     variants={variantsLemonade} initial="initial" viewport={{once: true}}
                         >
                             <Box as="img" sx={imgWrapSx} src={lemonadeImg}/>

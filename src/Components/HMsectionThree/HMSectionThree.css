@@ -1,0 +1,7 @@
+.right-content{
+    transition: transform .3s
+}
+
+.right-content:hover{
+    transform: scale(1.08)
+}

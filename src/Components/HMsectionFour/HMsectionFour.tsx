@@ -25,11 +25,11 @@ function HMsectionFour() {
         h: "70vh",
         w: "100vw",
         mb: "5em",
-        mt: {base: "5em", md: "0"}
+        // mt: {base: "5em", md: "-80px"}
         // backgroundColor: "grey",
     }
     const outerContentWrapSx = {
-        w: {base: "90%", md: "70%"},
+        w: {base: "90%", md: "1320px"},
         h: "100%",
         m: "auto",
         position: "relative",

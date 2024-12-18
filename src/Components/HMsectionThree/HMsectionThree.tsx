@@ -2,6 +2,7 @@ import {Box, Flex, Show, Text} from "@chakra-ui/react";
 import friendsCoffeImg from "../../../public/friends-drinking-coffee.jpg"
 import backgroundSvg from "../../../public/hm_secThree_bg.svg"
 import {motion} from "framer-motion";
+import "./HMSectionThree.css"
 
 function HMsectionThree() {
     const weOpenVariants = {
@@ -14,23 +15,6 @@ function HMsectionThree() {
                 duration: 1.5,
                 delay: 0.4
             }
-        }
-    }
-    const weOpenImgVariants = {
-        initial: {
-            x: 300,
-            opacity: 0,
-        },
-        animate: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                delay: 0.2
-            }
-        },
-        whileHover: {
-            scale: 1.1,
         }
     }
     const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.\n" +
@@ -49,21 +33,29 @@ function HMsectionThree() {
         justifyContent: "center",
         position: "relative",
         h: {base: "50em", md: "90vh"},
-        mb: {base: "2em",md: "-5em"},
+        mb: {base: "2em", md: "6em"},
     }
     const outerWrapSx = {
         backgroundColor: "",
-        h: "85%",
-        w: {base: "100%", md: "70%"},
+        h: {base: "85%", md: "760px"},
+        w: {base: "100%", md: "1320px"},
         zIndex: "20"
     }
     const textContentWrapSx = {
-        flexDirection: {base: "auto",md: "column"},
-        backgroundColor: "",
+        // backgroundColor: "",
+        flexDirection: {base: "auto", md: "column"},
         w: "80%",
         h: "75%",
         m: {base: "4em auto auto auto", md: "12em auto auto auto"},
     }
+    const friendsCoffeImgSx = {
+        backgroundColor: "red",
+        width: "100%",
+        objectFit: "cover",
+        w: "100%",
+        h: {base: "80%", md: "100%"},
+        boxShadow: "-8px 8px 8px rgba(77, 76, 76, 0.4)",
+}
 
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
@@ -76,12 +68,12 @@ function HMsectionThree() {
                 <Box h="100%" w="100%" backgroundColor="#0C6E5A" position="absolute"/>
             </Show>
             <Flex className="outer-wrap" sx={outerWrapSx}>
-                <Flex className="left-content" w={{base: "50%", md: "50%"}} backgroundColor="" >
+                <Flex className="left-content" w={{base: "50%", md: "50%"}} backgroundColor="">
                     <Flex className="text-content-wrap" sx={textContentWrapSx}>
                         <motion.div style={{height: "90%"}} whileInView="animate" variants={weOpenVariants}
                                     initial="initial" viewport={{once: true}}
                         >
-                            <Flex className="title-wrap" h="25%" backgroundColor="" justifyContent="center" >
+                            <Flex className="title-wrap" h="25%" backgroundColor="" justifyContent="center">
                                 <Text className="title-wrap" backgroundColor="" fontSize={{base: "6em", md: "7em"}}
                                       color="white" fontFamily="Italianno" w={{base: "100%", md: "80%"}}
                                       whiteSpace="nowrap"
@@ -94,7 +86,7 @@ function HMsectionThree() {
                             >
                                 <Flex backgroundColor="" mt="2em">
                                     <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em"
-                                        textAlign={{base: "center", md: "left"}}
+                                          textAlign={{base: "center", md: "left"}}
                                     >
                                         {desc}
                                     </Text>
@@ -104,14 +96,9 @@ function HMsectionThree() {
                     </Flex>
                 </Flex>
                 <Flex className="right-content" w={{base: "100%", md: "50%"}} backgroundColor=""
-                      m={{base: "35em 0 0 0", md: "0"}} position={{base: "absolute", md: "relative"}}>
-                    <motion.div style={{height: "100%", backgroundColor: ""}} whileInView="animate"
-                                variants={weOpenImgVariants} initial="initial" viewport={{once: true}}
-                                whileHover="whileHover"
-                    >
-                        <Box as="img" src={friendsCoffeImg} objectFit="cover" w="100%" h={{base: "80%", md: "100%"}}
-                             boxShadow="-8px 8px 8px rgba(77, 76, 76, 0.4)"/>
-                    </motion.div>
+                      m={{base: "35em 0 0 0", md: "0"}} position={{base: "absolute", md: "relative"}}  >
+                    <Box as="img" src={friendsCoffeImg} sx={friendsCoffeImgSx}
+                    />
                 </Flex>
             </Flex>
         </Flex>

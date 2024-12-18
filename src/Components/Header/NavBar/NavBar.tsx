@@ -7,15 +7,20 @@ import "./NavBar.css"
 
 function NavBar() {
     const outerWrapSx = {
+        backgroundColor: "orange",
         h: {base: "100%", md: "40px"},
-        width: {base: "90%", md:"70%"},
+        width: {base: "90%", md: "1320px"},
         m: {base: "auto", md: "auto"},
+        justifyContent: "center",
     }
     const navBarWrapSx = {
-        m: "auto 0 auto auto",
+        backgroundColor: "red",
+        width: "auto",
+        m: "auto",
         fontSize: "1.3em",
         gap: "40px",
         color: "grey",
+        justifyContent: "center",
     }
     const visitUsButton = {
         w: {base: "4rem", md: "160px"},
@@ -24,7 +29,7 @@ function NavBar() {
         fontFamily: "Inter",
         fontWeight: "600",
         fontSize: {base: "0.9em", md:"1.3em"},
-        m: {base: "auto", md: "0 0 0 3em"},
+        m: {base: "auto", md: "0 0 0 auto"},
         borderRadius: "5px",
         border: "none",
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.4)",
@@ -33,15 +38,20 @@ function NavBar() {
         }
     }
     const imgWrapSx = {
-        w: {base: "5em", md: "7%"},
-        h: {base: "5em", md: "7%"},
-        m: {base: "auto", md: "0 0 0 0"},
-        // backgroundColor: "",
-        position: {base: "relative", md: "absolute"},
+        // backgroundColor: "blue",
+        w: {base: "5em", md: "9em"},
+        h: {base: "5em", md: "9em"},
+        m: {base: "auto", md: "0 0 0 auto"},
+        position: {base: "relative", md: "relative"},
         "filter": "drop-shadow(0px 2px 2px rgba(77, 76, 76, 0.5))",
         zIndex: "20",
     }
 
+    const nav_item_wrap = {
+        // backgroundColor: "red",
+        width: "auto",
+
+    }
     const dropFood: { name: string; link: string }[] = [
         {name: "Sandwiches", link: "/sandwiches"},
         {name: "Toasties", link: "/toasties"}
@@ -62,19 +72,31 @@ function NavBar() {
     return (
         <>
             <Flex className="outerwrap" sx={outerWrapSx}>
-                <Box className="img-wrap" sx={imgWrapSx}>
-                    <NavLink to={"/"}>
+                <NavLink to={"/"} style={{width: "auto", height: "auto"}}>
+                    <Box className="img-wrap" sx={imgWrapSx}>
                         <Box as="img" src={logo} width="100%"/>
-                    </NavLink>
-                </Box>
+                    </Box>
+                </NavLink>
                 <Show above="lg">
                     <Flex className="nav-bar-wrap" sx={navBarWrapSx}>
-                        <NavLink to="/" className="nav-item">Home</NavLink>
-                        <DropDownHover title={"Beverages"} items={dropBVG}/>
-                        <NavLink to="/berry-acai" className="nav-item-acai">Berry Acai</NavLink>
-                        <DropDownHover title={"Pastries & Savouries"} items={dropPS}/>
-                        <DropDownHover title={"Food"} items={dropFood}/>
-                        <DropDownHover title={"About"} items={dropAbout}/>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                            <NavLink to="/" className="nav-item">Home</NavLink>
+                        </Box>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                            <DropDownHover title={"Beverages"} items={dropBVG}/>
+                        </Box>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                            <NavLink to="/berry-acai" style={{whiteSpace: "nowrap"}}>Berry Acai</NavLink>
+                        </Box>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                            <DropDownHover title={"Pastries & Savouries"} items={dropPS}/>
+                        </Box>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                            <DropDownHover title={"Food"} items={dropFood}/>
+                        </Box>
+                        <Box className="nav-item-wrap"sx={nav_item_wrap} >
+                            <DropDownHover title={"About"} items={dropAbout}/>
+                        </Box>
                     </Flex>
                 </Show>
                 <Show below="lg">

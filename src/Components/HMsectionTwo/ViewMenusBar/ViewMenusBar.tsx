@@ -10,7 +10,7 @@ function ViewMenusBar() {
     }
     const outerBarSx = {
         backgroundColor: "white",
-        width: {base: "100%", md: "70%"},
+        width: {base: "100%", md: "1320px"},
         height: "70%",
         m: "auto",
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
