@@ -53,9 +53,9 @@ function HMsectionTwo() {
         flexDirection: "column",
     }
     const contentWrapSx = {
-        backgroundColor: "red",
-        h: {base: "25em",md: "80%"},
+        // backgroundColor: "red",
         w: {base: "80%", md: "1320px"},
+        h: {base: "25em",md: "80%"},
         m: "0 auto 0 auto",
         justifyContent: "center",
     }
@@ -65,11 +65,12 @@ function HMsectionTwo() {
         flexDirection: "column",
     }
     const beverageContentSx = {
-        // backgroundColor: "",
+        // backgroundColor: "red",
         w: {base: "32%", md:"33.3333%"},
         h: {base: "100%", md: "auto"},
         m: "0 auto 0 auto",
         justifyContent: "center",
+        alignItems: "center",
     }
     const imgWrapSx = {
         h: "90%",
