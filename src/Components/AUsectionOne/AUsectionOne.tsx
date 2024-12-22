@@ -3,10 +3,7 @@ import atLogoImg from "../../../public/AT_logo.svg"
 import balconyImg from "../../../public/place_images/balcao-vertical-atendente.png"
 
 function AUsectionOne() {
-    const desc: string = "This is a text filling description sajfndjfnwahjregn rjawern jwrenfg fjokwenfjenm" +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io " +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io " +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io. "
+    const desc: string = "All Tasty Caffe has arrived! We're a neighborhood coffee shop dedicated to crafting delicious brews and fostering a warm, welcoming community. Join us for your daily dose of caffeine and connection."
     const sectionSx = {
         h: {base: "110em", md: "360px"},
         w: "100%",
@@ -70,7 +67,7 @@ function AUsectionOne() {
                                 <Text m="auto">We are Open!</Text>
                             </Flex>
                             <Flex className="desc-wrap" mt="1em">
-                                <Text fontFamily="Inter">{desc}</Text>
+                                <Text fontFamily="Inter" fontSize="1.3em">{desc}</Text>
                             </Flex>
                         </Flex>
                     </Flex>

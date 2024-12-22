@@ -2,10 +2,7 @@ import {Box, Flex, Show, Text} from "@chakra-ui/react";
 import backgroundSvg from "../../../public/hm_secThree_bg.svg";
 import balconyImg from "../../../public/place_images/balcao.png"
 function AUsectionTwo() {
-    const desc: string = "This is a text filling description sajfndjfnwahjregn rjawern jwrenfg fjokwenfjenm" +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io " +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io " +
-        "dsfadsgfawdfgwdfg asddfa sdfg asdgf asdg fg rweafg werg raghaewgh aerg arwg art htjnuytk io. "
+    const desc: string = "We are more than just a coffee shop; we are a community hub. Nestled alongside a vibrant drop-in center offering a wide range of essential services, we provide a warm and inclusive space for everyone to connect, relax, and enjoy a delicious cup of coffee. Join us and become part of a thriving community where support and good coffee are always on tap."
     const sectionWrapSx = {
         width: "100vw",
         height: "889px",
@@ -73,7 +70,7 @@ function AUsectionTwo() {
                                 <Text m="auto">This is a special place!</Text>
                             </Flex>
                             <Flex className="desc-wrap" mt="1em">
-                                <Text fontFamily="Inter">{desc}</Text>
+                                <Text fontFamily="Inter" fontSize="1.3em">{desc}</Text>
                             </Flex>
                         </Flex>
                     </Flex>

@@ -40,7 +40,7 @@ function DropDownHover(props: Props) {
                     <MenuList onMouseEnter = { onOpen } onMouseLeave = { onClose }>
 
                         {props.items.map( (element) => (
-                            <MenuItem className="menu-item" >
+                            <MenuItem className="menu-item" _hover={{color: "#0C6E5A"}}>
                                 <NavLink to={element.link}>
                                     {element.name}
                                 </NavLink>

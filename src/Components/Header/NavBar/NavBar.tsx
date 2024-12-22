@@ -48,9 +48,11 @@ function NavBar() {
     }
 
     const nav_item_wrap = {
-        // backgroundColor: "red",
         width: "auto",
-
+        fontWeight: "500",
+        fontFamily: "Inter",
+        color: "rgba(74,12,110,0.68)",
+        "_hover": {color: "#4a0c6e", transition: "all 0.5s ease"},
     }
     const dropFood: { name: string; link: string }[] = [
         {name: "Sandwiches", link: "/sandwiches"},
@@ -67,7 +69,9 @@ function NavBar() {
     ]
     const dropAbout: { name: string; link: string }[] = [
         {name: "About Us", link: "/about-us"},
-        {name: "Loyalty Program", link: "/about-us"}
+        // {name: "Loyalty Program", link: "/about-us"},
+        {name: "Loyalty Program", link: "https://squidloyalty.ie/for-customers/"},
+
     ]
     return (
         <>
@@ -94,7 +98,7 @@ function NavBar() {
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"Food"} items={dropFood}/>
                         </Box>
-                        <Box className="nav-item-wrap"sx={nav_item_wrap} >
+                        <Box className="nav-item-wrap" sx={nav_item_wrap} >
                             <DropDownHover title={"About"} items={dropAbout}/>
                         </Box>
                     </Flex>

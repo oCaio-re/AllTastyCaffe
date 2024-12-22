@@ -1,6 +1,6 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
 import dummy from "../../../public/coffe-on-a-table-center.jpg"
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 function HMsectionFour() {
     const textVariants = {
@@ -15,37 +15,33 @@ function HMsectionFour() {
             }
         },
     }
-    const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus. Vestibulum\n" +
-        "                 vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros bibendum, sed\n" +
-        "                 iaculis felis consectetur. Fusce non enim urna. Phasellus vel neque sagittis, rutrum\n" +
-        "                 nulla ut, consequat massa. Aliquam pellentesque commodo nisl, et ultricies felis\n" +
-        "                 efficitur vel. Pellentesque vehicula neque justo, ut mattis urna ullamcorper feugiat.\n"
+    const desc: string = "At All Tasty Caffe, we believe in providing more than just coffee. We're committed to delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the perfect cup and ensuring you feel comfortable and valued."
 
     const sectionWrapSx = {
+        // backgroundColor: "grey",
         h: "70vh",
         w: "100vw",
         margin: "3em auto 5em auto",
         // mt: {base: "5em", md: "-80px"}
-        // backgroundColor: "grey",
     }
     const outerContentWrapSx = {
+        // backgroundColor: "red",
         w: {base: "90%", md: "1320px"},
         h: "100%",
         m: "auto",
         position: "relative",
         flexDirection: {base: "column", md: "row"},
-        // backgroundColor: "white",
     }
     const imgWrapSx = {
-        w: {base: "100%", md:"60%"},
+        w: {base: "100%", md: "60%"},
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.15)",
     }
     const textWrapSx = {
+        // backgroundColor: "red",
         w: {base: "100%", md: "40%"},
         h: {base: "60em", md: "100%"},
         position: "relative",
         alignContent: "center",
-        // backgroundColor: "red",
     }
     const cardWrapSx = {
         backgroundColor: "white",
@@ -59,8 +55,9 @@ function HMsectionFour() {
     }
     const contentWrapSx = {
         // backgroundColor: "grey",
+        justifyContent: "center",
         width: "90%",
-        height: "70%",
+        height: "90%",
         m: "auto",
         flexDirection: "column",
     }
@@ -77,9 +74,12 @@ function HMsectionFour() {
                     <Flex className="card-wrap" sx={cardWrapSx}>
                         <Flex className="content-wrap" sx={contentWrapSx}>
                             <Flex className="title-wrap" h="20%" backgroundColor="" color="#0C6E5A">
-                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4em"}}>This is the title!</Text>
+                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md: "4em"}}>
+                                    Get Serviced!
+                                </Text>
                             </Flex>
-                            <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize={{base: "0.7em", md: "1.1em"}}>
+                            <Flex className="desc-wrap" p="20px" fontFamily="Inter"
+                                  fontSize={{base: "0.7em", md: "1.6em"}}>
                                 <motion.div style={{height: "100%"}} whileInView="animate"
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
@@ -93,7 +93,7 @@ function HMsectionFour() {
                 </Flex>
             </Flex>
         </Flex>
-);
+    );
 }
 
 export default HMsectionFour;

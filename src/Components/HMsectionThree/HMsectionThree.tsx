@@ -34,19 +34,9 @@ function HMsectionThree() {
             scale: 1.1,
         }
     }
-    const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus.\n" +
-        "Vestibulum\n" +
-        "vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros\n" +
-        "bibendum, sed\n" +
-        "iaculis felis consectetur. Fusce non enim urna. Phasellus vel neque sagittis,\n" +
-        "rutrum\n" +
-        "nulla ut, consequat massa. Aliquam pellentesque commodo nisl, et ultricies felis\n" +
-        "efficitur vel. Pellentesque vehicula neque justo, ut mattis urna ullamcorper\n" +
-        "feugiat.\n" +
-        "Aenean vel felis ac elit scelerisque lacinia. Etiam ornare quis tortor non\n" +
-        "tincidunt."
+    const desc: string = "Come on in and experience the warmth of All Tasty Caffe! We've poured our hearts into creating a space where you can relax, connect, and enjoy the simple pleasures of a perfectly brewed cup of coffee. Whether you're seeking a quiet moment to yourself or a lively conversation with friends, we invite you to discover the magic of our cozy corner. We can't wait to welcome you!"
     const sectionWrapSx = {
-        // backgroundColor: "red",
+        // backgroundColor: "blue",
         alignItems: "center",
         flexDirection: "column",
         position: "relative",
@@ -54,9 +44,9 @@ function HMsectionThree() {
         mb: {base: "2em", md: "6em"},
     }
     const outerWrapSx = {
-        // backgroundColor: "",
+        // backgroundColor: "red",
         h: {base: "85%", md: "760px"},
-        w: {base: "100%", md: "1320px"},
+        w: {base: "1320px", md: "1320px"},
         zIndex: "20"
     }
     const textContentWrapSx = {
@@ -64,7 +54,7 @@ function HMsectionThree() {
         flexDirection: {base: "auto", md: "column"},
         w: "80%",
         h: "75%",
-        m: {base: "4em auto auto auto", md: "12em auto auto auto"},
+        m: {base: "4em auto auto auto", md: "5em auto auto auto"},
     }
     const friendsCoffeImgSx = {
         // backgroundColor: "red",
@@ -74,8 +64,8 @@ function HMsectionThree() {
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
             <Show above="lg">
-                <Flex className="background-wrap" position="absolute">
-                    <Box as="img" src={backgroundSvg}/>
+                <Flex className="background-wrap"  width="100vw" mb="auto" h="100%">
+                    <Box as="img" src={backgroundSvg}  position="absolute"/>
                 </Flex>
             </Show>
             <Show below="lg">
@@ -99,7 +89,7 @@ function HMsectionThree() {
                                   overflow="hidden"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1em"
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1.5em"
                                           textAlign={{base: "center", md: "left"}}
                                     >
                                         {desc}
@@ -122,7 +112,7 @@ function HMsectionThree() {
             </Flex>
             <HMsectionFour/>
         </Flex>
-);
+    );
 }
 
 export default HMsectionThree;

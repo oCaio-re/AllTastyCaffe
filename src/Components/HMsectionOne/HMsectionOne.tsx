@@ -18,10 +18,10 @@ function HMsectionOne() {
         }
     }
     const swiperWraperSx = {
+        // backgroundColor: "",
         margin: "0 auto 0 auto",
         width: "100%",
         h: "100%",
-        backgroundColor: "",
         position: "absolute",
     }
     return (
