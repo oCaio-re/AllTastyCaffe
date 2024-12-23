@@ -19,9 +19,9 @@ function TopBar() {
             <Flex className="text-wrap" h="37px" alignItems="center">
                 <Text className="top-bar-content" color="white" fontFamily="Inter" textAlign="center"
                       fontSize={{base: "0.7em", md: "1em"}}>
-                    <NavLink to={"/loyalty-program"} className="content-sentence">
+                    <a href="https://squidloyalty.ie/for-customers/" className="content-sentence" target="blank">
                         CHECKOUT OUR TREAT REWARDS: BE REWARDED FOR YOUR DAILY <i><b className="all-tasty">ALL TASTY</b></i>
-                    </NavLink>
+                    </a>
                 </Text>
             </Flex>
         </Flex>

@@ -64,10 +64,16 @@ function AUsectionOne() {
                     <Flex className="outer-text-wrap" sx={outerTextWrapSx}>
                         <Flex className="text-wrap" sx={textWrapSx}>
                             <Flex className="title-wrap" sx={titleWrapSx}>
-                                <Text m="auto">We are Open!</Text>
+                                <Text m="auto">
+                                    We are Open!
+                                </Text>
                             </Flex>
                             <Flex className="desc-wrap" mt="1em">
-                                <Text fontFamily="Inter" fontSize="1.3em">{desc}</Text>
+                                <Text fontFamily="Inter" fontSize="1.3em"
+                                      textAlign={{base: "justify", md: "justify"}}
+                                >
+                                    {desc}
+                                </Text>
                             </Flex>
                         </Flex>
                     </Flex>

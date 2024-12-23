@@ -1,11 +1,12 @@
-import {Flex, Text} from "@chakra-ui/react";
+import {Flex, Img, Text} from "@chakra-ui/react";
 import {motion} from "framer-motion";
 
 interface Props {
     image: string,
     title: string,
     titleSize?: string,
-    imgProportion?: string,
+    height?: string,
+    width?: string,
     borderRadius?: string,
 }
 
@@ -24,37 +25,40 @@ function Item(props: Props) {
         },
     }
     const itemWrapSx = {
-        h: "90%",
-        w: {base: "90%", md: `${props.imgProportion}`},
+        backgroundColor: "",
+        h: "80%",
+        w: {base: "90%", md: `${props.width}`},
         flexDirection: "column",
         m: "auto"
     }
     const itemTitleSx = {
+        justifyContent: "center",
         m: "auto",
-        // h: "5%",
         fontFamily: "Inter",
         fontSize: `${props.titleSize || "1.3em"}`,
         fontWeight: 700,
         color: "#0C6E5A",
     }
     const imgWrapSx = {
-        h: "100%",
-        w: "100%",
-        backgroundColor: ""
+        // backgroundColor: "",
+        h: `${props.height || "90%"}`,
+        w: "100%"
+    }
+    const ItemImgSx = {
+        borderRadius: `${props.borderRadius}`,
     }
     return (
         <>
             <Flex className="item-wrap" sx={itemWrapSx}>
-                <Flex className="img-wrap" sx={imgWrapSx}>
-                    <motion.img src={props.image} alt="item picture"
-                                style={{objectFit: "cover", borderRadius: `${props.borderRadius}`}}
-                                whileHover={{scale: 1.1}} whileInView="animate" initial="initial"
-                                viewport={{once: true}} variants={variantsLemonade}
-                    />
-                </Flex>
-                <Flex className="title-wrap" sx={itemTitleSx}>
-                    <Text className="item-tile">{props.title}</Text>
-                </Flex>
+                <motion.div whileHover={{scale: 1.1}} whileInView="animate" initial="initial"
+                            viewport={{once: true}} variants={variantsLemonade}>
+                    <Flex className="img-wrap" sx={imgWrapSx}>
+                        <Img sx={ItemImgSx} src={props.image} alt="item picture"/>
+                    </Flex>
+                    <Flex className="title-wrap" sx={itemTitleSx}>
+                        <Text className="item-tile" textAlign="center">{props.title}</Text>
+                    </Flex>
+                </motion.div>
             </Flex>
         </>
     );

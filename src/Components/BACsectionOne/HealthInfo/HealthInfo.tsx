@@ -15,11 +15,7 @@ function HealthInfo() {
             }
         },
     }
-    const desc: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna lacus. Vestibulum\n" +
-        "                 vehicula lacus consequat est dignissim volutpat. Ut maximus eros a eros bibendum, sed\n" +
-        "                 iaculis felis consectetur. Fusce non enim urna. Phasellus vel neque sagittis, rutrum\n" +
-        "                 nulla ut, consequat massa. Aliquam pellentesque commodo nisl, et ultricies felis\n" +
-        "                 efficitur vel. Pellentesque vehicula neque justo, ut mattis urna ullamcorper feugiat.\n"
+    const desc: string = "Acai berries are packed with antioxidants, which may help protect your cells from damage. They may also support heart health, boost brain function, and aid digestion. Enjoy acai in smoothies, bowls, or as a powder for a delicious and nutritious boost!"
 
     const sectionWrapSx = {
         h: "70vh",
@@ -77,14 +73,16 @@ function HealthInfo() {
                     <Flex className="card-wrap" sx={cardWrapSx}>
                         <Flex className="content-wrap" sx={contentWrapSx}>
                             <Flex className="title-wrap" h="20%" backgroundColor="" color="#0C6E5A">
-                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4em"}}>Health Infos!</Text>
+                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4em"}}>
+                                    More than a dish!
+                                </Text>
                             </Flex>
-                            <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize={{base: "0.7em", md: "1.1em"}}>
+                            <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize={{base: "0.7em", md: "1.2vw"}}>
                                 <motion.div style={{height: "100%"}} whileInView="animate"
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text>{desc}</Text>
+                                    <Text textAlign={{base: "justify", md: "justify"}} >{desc}</Text>
                                 </motion.div>
                             </Flex>
                         </Flex>

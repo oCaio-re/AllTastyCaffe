@@ -96,7 +96,7 @@ function HMsectionTwo() {
                     <Flex className="undertitle-wrap" h="50%" w="100%" backgroundColor=""
                           filter="drop-shadow(-4px 4px 4px rgba(77, 76, 76, 0.2))" color="#0C6E5A"
                     >
-                        <Text m="auto" fontFamily="Ingrid Darling" fontSize={{base: "2.5em", md:"3em"}} whiteSpace="nowrap" >
+                        <Text m="auto" fontFamily="Ingrid Darling" fontSize={{base: "2.5em", md:"4em"}} whiteSpace="nowrap" >
                             A few of our favorites...
                         </Text>
                     </Flex>

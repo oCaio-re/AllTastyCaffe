@@ -84,7 +84,7 @@ function HMsectionFour() {
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text>{desc}</Text>
+                                    <Text textAlign={{base: "justify", md: "justify"}}>{desc}</Text>
                                 </motion.div>
                             </Flex>
                         </Flex>

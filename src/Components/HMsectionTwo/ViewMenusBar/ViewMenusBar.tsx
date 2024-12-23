@@ -13,7 +13,8 @@ function ViewMenusBar() {
         width: {base: "100%", md: "1320px"},
         height: "70%",
         m: "auto",
-        boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
+        borderTop: "1px solid silver",
+        borderBottom: "1px solid silver",
     }
     const contentWrapSx = {
         w: {base: "95%", md: "60%"},

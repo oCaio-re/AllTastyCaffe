@@ -5,8 +5,8 @@ import HealthInfo from "./HealthInfo/HealthInfo.tsx";
 
 function BaCsectionOne() {
     const whiteBoardSx = {
-        h: {base: "150em", md: "130em"},
-        w: {base: "90%", md: "80%"},
+        h: {base: "150em", md: "120em"},
+        w: {base: "90%", md: "1320px"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
         flexDirection: "column",
@@ -14,7 +14,7 @@ function BaCsectionOne() {
     }
     const bvgsGridSx = {
         w: {base: "100%", md: "70%"},
-        // h: "30%",
+        h: "30%",
         m: "auto",
         backgroundColor: "",
         mt: {md: "8em"},

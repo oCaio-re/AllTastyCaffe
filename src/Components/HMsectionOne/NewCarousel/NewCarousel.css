@@ -42,7 +42,8 @@ html {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background: #797979;
+    background: #0C6E5A;
+    /*background: rgba(255, 137, 52, 0.65);*/
     transition: all 0.5s ease-in-out;
 }
 

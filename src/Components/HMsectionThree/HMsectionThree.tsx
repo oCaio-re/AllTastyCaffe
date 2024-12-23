@@ -89,8 +89,8 @@ function HMsectionThree() {
                                   overflow="hidden"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1.5em"
-                                          textAlign={{base: "center", md: "left"}}
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1.2vw"
+                                          textAlign={{base: "justify", md: "justify"}}
                                     >
                                         {desc}
                                     </Text>

@@ -12,20 +12,24 @@ function Footer() {
         backgroundColor: "#0C6E5A",
         bottom: "0",
         mt: "auto",
+        alignContent: "center",
+        justifyContent: "center",
     }
     const contentWrapSx = {
+        // backgroundColor: "orange",
+        alignItems: "center",
         width: "70%",
         ml: "auto",
         mr: "auto",
         flexDirection: {base: "column", md: "row"}
     }
     const innerBoxWrapSx = {
+        // backgroundColor: "purple",
         width: {base: "100%", md: "25%"},
         height: {base: "40em", md: "20em"},
         position: "relative",
         m: "2em 0 2em 0",
-        // alignContent: "center",
-        // backgroundColor: "purple"
+        justifyContent: "center",
     }
     return (
         <>

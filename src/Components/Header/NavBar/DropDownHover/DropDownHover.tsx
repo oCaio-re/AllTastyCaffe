@@ -12,7 +12,7 @@ interface Props {
 }
 
 function DropDownHover(props: Props) {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure()
     const itemSx = {
         alignContent: "center",
         color: props.color || "black",
@@ -26,20 +26,24 @@ function DropDownHover(props: Props) {
     return (
         <>
             <Box className="dropdown" zIndex="3">
-                <Menu isOpen={isOpen} >
+                <Menu isOpen={isOpen}>
                     <Box sx={itemSx}>
-                        <MenuButton _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                        <MenuButton _hover={{
+                            // bg: useColorModeValue("gray.100", "gray.700"),
+                            color: useColorModeValue("#0C6E5A", "#0C6E5A"),
+                            transition: "0.3s"
+                        }}
                                     aria-label="Courses"
                                     fontWeight="500"
                                     onMouseEnter={onOpen}
                                     onMouseLeave={onClose}
                         >
-                            {props.title} {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                            {props.title} {isOpen ? <ChevronUpIcon/> : <ChevronDownIcon/>}
                         </MenuButton>
                     </Box>
-                    <MenuList onMouseEnter = { onOpen } onMouseLeave = { onClose }>
+                    <MenuList onMouseEnter={onOpen} onMouseLeave={onClose}>
 
-                        {props.items.map( (element) => (
+                        {props.items.map((element) => (
                             <MenuItem className="menu-item" _hover={{color: "#0C6E5A"}}>
                                 <NavLink to={element.link}>
                                     {element.name}
@@ -50,7 +54,7 @@ function DropDownHover(props: Props) {
                     </MenuList>
                 </Menu>
             </Box>
-        </>    )
+        </>)
 }
 
 export default DropDownHover

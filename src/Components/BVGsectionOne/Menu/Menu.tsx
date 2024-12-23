@@ -40,18 +40,18 @@ function Menu() {
             </Flex>
             <Flex className="menu-wrap" sx={menuWrapSx}>
                 <Flex className="row-one" h="50%" w="100%" backgroundColor="" flexDirection={{base: "column", md: "row"}}>
-                    <Item image={lemonadeImg} title="Lemonade" imgProportion="25%"/>
-                    <Item image={mochaImg} title="Frozen & Blended" imgProportion="25%"/>
-                    <Item image={coldImg} title="Iced Coffee" imgProportion="25%"/>
-                    <Item image={icedTeaImg} title="Iced Tea" imgProportion="25%"/>
+                    <Item image={lemonadeImg} title="Lemonade" width="25%"/>
+                    <Item image={mochaImg} title="Frozen & Blended" width="25%"/>
+                    <Item image={coldImg} title="Iced Coffee" width="25%"/>
+                    <Item image={icedTeaImg} title="Iced Tea" width="25%"/>
                 </Flex>
 
                 <Flex className="row-two" h="35%" w="100%" m="auto"
                       justifyContent={{base: "center", md: "space-evenly"}} flexDirection={{base: "column", md: "row"}}
                 >
-                    <Item image={coffeMilkImg} title="Coffee" imgProportion="30%"/>
-                    <Item image={hotChocolateImg} title="Expresso" imgProportion="30%"/>
-                    <Item image={vanillaLateImg} title="Classics" imgProportion="30%"/>
+                    <Item image={coffeMilkImg} title="Coffee" width="30%"/>
+                    <Item image={hotChocolateImg} title="Expresso" width="30%"/>
+                    <Item image={vanillaLateImg} title="Classics" width="30%"/>
                 </Flex>
             </Flex>
         </>

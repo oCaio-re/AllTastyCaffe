@@ -28,7 +28,7 @@ function NavBar() {
         color: "white",
         fontFamily: "Inter",
         fontWeight: "600",
-        fontSize: {base: "0.9em", md:"1.3em"},
+        fontSize: {base: "0.9em", md: "1.3em"},
         m: {base: "auto", md: "0 0 0 auto"},
         borderRadius: "5px",
         border: "none",
@@ -51,8 +51,7 @@ function NavBar() {
         width: "auto",
         fontWeight: "500",
         fontFamily: "Inter",
-        color: "rgba(74,12,110,0.68)",
-        "_hover": {color: "#4a0c6e", transition: "all 0.5s ease"},
+        // color: "rgba(74,12,110,0.68)",
     }
     const dropFood: { name: string; link: string }[] = [
         {name: "Sandwiches", link: "/sandwiches"},
@@ -89,7 +88,8 @@ function NavBar() {
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"Beverages"} items={dropBVG}/>
                         </Box>
-                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
+                        <Box className="nav-item-wrap" sx={nav_item_wrap} color="rgba(74,12,110,0.68)"
+                             _hover={{color: "rgb(74,12,110)", transition: "0.3s"}}>
                             <NavLink to="/berry-acai" style={{whiteSpace: "nowrap"}}>Berry Acai</NavLink>
                         </Box>
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
@@ -98,7 +98,7 @@ function NavBar() {
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"Food"} items={dropFood}/>
                         </Box>
-                        <Box className="nav-item-wrap" sx={nav_item_wrap} >
+                        <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"About"} items={dropAbout}/>
                         </Box>
                     </Flex>

@@ -31,11 +31,15 @@ function PhoneItem() {
                     <Text color="white" fontSize="1.8em">Follow Us</Text>
                 </Box>
                 <Flex className="logos-wrap" sx={logosWrapSx}>
-                    <Flex className="instagram-wrap" backgroundColor="" w="50%">
-                        <GrInstagram size="100%" color="white"/>
+                    <Flex className="instagram-wrap" backgroundColor="" w="50%" zIndex="25">
+                        <a href="https://www.instagram.com/alltasty.ie/" target="blank">
+                            <GrInstagram size="100%" color="white"/>
+                        </a>
                     </Flex>
-                    <Flex as="a" href=""  className="facebook-wrap" w="50%" backgroundColor="" justifyContent="center">
-                        <FaFacebookF size="85%" color="white"/>
+                    <Flex className="facebook-wrap" w="50%" backgroundColor="" justifyContent="center" zIndex="25">
+                        <a href="https://www.facebook.com/alltastycafe" target="blank" >
+                            <FaFacebookF size="90%" color="white"/>
+                        </a>
                     </Flex>
                 </Flex>
             </Flex>
