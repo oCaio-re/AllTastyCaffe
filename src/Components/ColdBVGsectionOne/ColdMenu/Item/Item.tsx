@@ -2,7 +2,7 @@ import {Flex, Text} from "@chakra-ui/react";
 import {motion} from "framer-motion";
 
 interface Props {
-    image: string,
+    image?: string,
     title: string,
     titleSize?: string,
     imgProportion?: string,
