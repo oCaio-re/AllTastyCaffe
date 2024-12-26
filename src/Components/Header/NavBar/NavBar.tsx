@@ -2,7 +2,7 @@ import {Box, Button, Flex, Show} from "@chakra-ui/react";
 import {NavLink} from "react-router-dom";
 import DropDownMobile from "../DropDownMobile/DropDownMobile.tsx";
 import DropDownHover from "./DropDownHover/DropDownHover.tsx";
-import logo from "../../../../public/AT_logo.svg"
+import logo from "../../../../public/AT_logo.png"
 import "./NavBar.css"
 
 function NavBar() {
