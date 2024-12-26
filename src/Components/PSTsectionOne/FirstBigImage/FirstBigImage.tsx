@@ -1,6 +1,7 @@
 import {Box, Flex} from "@chakra-ui/react";
 import pastriesImg from "../../../../public/food/pastries-viewtop.jpg"
 
+
 function FirstBigImage() {
     const imgWrapSx = {
         w: "100%",
@@ -9,9 +10,9 @@ function FirstBigImage() {
     const imgSx = {
         objectFit: "cover",
         h: "100%",
-        w: {base: "95%", md:"80%"},
+        w: {base: "95%", md:"100%"},
         m: "auto",
-        borderRadius: "40px"
+        // borderRadius: "40px"
     }
     return (
         <>

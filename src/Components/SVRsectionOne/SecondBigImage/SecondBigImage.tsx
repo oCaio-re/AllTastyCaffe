@@ -1,5 +1,5 @@
 import {Box, Flex} from "@chakra-ui/react";
-import pastriesImg from "../../../../public/food/top-view-delicious-pastry-concept.jpg"
+import pastriesImg from "../../../../public/food/savouries-topview.jpg"
 
 function SecondBigImage() {
     const imgWrapSx = {
@@ -9,9 +9,9 @@ function SecondBigImage() {
     const imgSx = {
         objectFit: "cover",
         h: "100%",
-        w: {base: "95%", md:"80%"},
+        w: {base: "95%", md:"100%"},
         m: "auto",
-        borderRadius: "40px"
+        // borderRadius: "40px"
     }
     return (
         <>

@@ -4,9 +4,6 @@ import {Box, Flex} from "@chakra-ui/react";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
 import PSTsectionOne from "../Components/PSTsectionOne/PSTsectionOne.tsx";
-import FirstBigImage from "../Components/PSTsectionOne/FirstBigImage/FirstBigImage.tsx";
-import PSTsectionTwo from "../Components/SVRsectionOne/SVRsectionOne.tsx";
-import SecondBigImage from "../Components/SVRsectionOne/SecondBigImage/SecondBigImage.tsx";
 import { motion } from "framer-motion";
 
 function Pastries() {
@@ -43,9 +40,6 @@ function Pastries() {
                       backgroundAttachment="fixed">
                     <Box h={{md: "6em"}} w="100%"/>
                     <PSTsectionOne/>
-                    <FirstBigImage/>
-                    <PSTsectionTwo/>
-                    <SecondBigImage/>
                     <Box h="10em" w="100%"/>
                     <Footer/>
                 </Flex>

@@ -1,5 +1,6 @@
 import {Box, Flex} from "@chakra-ui/react";
-import hotMealImg from "../../../../public/food/hot-meal.jpg"
+// import hotMealImg from "../../../../public/food/hot-meal.jpg"
+import hotMealImg from "../../../../public/food/meat-sandwich.jpg"
 
 function TSTbigImg1() {
     const imgWrapSx = {
@@ -10,9 +11,9 @@ function TSTbigImg1() {
     const imgSx = {
         objectFit: "cover",
         h: "100%",
-        w: {base: "95%", md:"80%"},
+        w: {base: "95%", md:"100%"},
         m: "auto",
-        borderRadius: "40px"
+        // borderRadius: "40px"
     }
     return (
         <>

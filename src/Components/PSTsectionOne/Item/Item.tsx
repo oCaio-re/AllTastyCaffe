@@ -6,6 +6,7 @@ interface Props {
     description: string;
     descriptionSize?: string;
     width?: string;
+    descTextColor?: string;
 }
 
 function Item(props: Props) {
@@ -20,14 +21,16 @@ function Item(props: Props) {
         justifyContent: {base: "left"},
     }
     const titleSx = {
-        // fontSize: `${props.titleSize}px`,
         textAlign: "center",
-        fontSize: {base: "1.8em", md: "1.5em"},
+        fontSize: {base: "1.8em", md: "1.3em"},
     }
     const descSx = {
         fontFamily: "Inter",
-        fontSize: {base: "1.3em", md: "1.2em"},
-        color: "grey",
+        fontSize: {base: "1.3em", md: "1em"},
+        alignItems: "center",
+        textAlign: "justify",
+        // color: `${props.descTextColor || "grey"}`,
+        color: "#4d4c4c",
         backgroundColor: "",
     }
     return (

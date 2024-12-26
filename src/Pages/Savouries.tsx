@@ -3,8 +3,7 @@ import Header from "../Components/Header/Header.tsx";
 import {Box, Flex} from "@chakra-ui/react";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
-import PSTsectionTwo from "../Components/SVRsectionOne/SVRsectionOne.tsx";
-import SecondBigImage from "../Components/SVRsectionOne/SecondBigImage/SecondBigImage.tsx";
+import PSTsectionOne from "../Components/SVRsectionOne/SVRsectionOne.tsx";
 import { motion } from "framer-motion";
 
 function Savouries() {
@@ -40,8 +39,7 @@ function Savouries() {
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
                     <Box h={{md: "6em"}} w="100%"/>
-                    <PSTsectionTwo/>
-                    <SecondBigImage/>
+                    <PSTsectionOne/>
                     <Box h="10em" w="100%"/>
                     <Footer/>
                 </Flex>
