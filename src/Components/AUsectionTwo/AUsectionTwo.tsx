@@ -70,7 +70,7 @@ function AUsectionTwo() {
                             <Flex className="title-wrap" sx={titleWrapSx}>
                                 <Text m="auto">This is a special place!</Text>
                             </Flex>
-                            <Flex className="desc-wrap" mt="1em">
+                            <Flex className="desc-wrap" mt="1em" justifyContent="justify">
                                 <Text fontFamily="Inter" fontSize="1.3em"
                                       textAlign={{base: "justify", md: "justify"}}>{desc}</Text>
                             </Flex>

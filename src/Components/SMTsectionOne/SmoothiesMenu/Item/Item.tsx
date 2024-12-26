@@ -32,8 +32,9 @@ function Item(props: Props) {
         }
     }
     const itemWrapSx = {
+        // backgroundColor: "grey",
         h: "90%",
-        w: {base: "90%", md: `${props.imgProportion}`},
+        w: {base: "90%"},
         flexDirection: "column",
         m: "auto"
     }
@@ -46,24 +47,25 @@ function Item(props: Props) {
         color: "#0C6E5A",
     }
     const imgWrapSx = {
+        // backgroundColor: "",
         h: "100%",
-        w: "100%",
-        backgroundColor: ""
+        w: "100%"
     }
     return (
         <>
-            <Flex className="item-wrap" sx={itemWrapSx}>
-                <Flex className="img-wrap" sx={imgWrapSx}>
-                    <motion.img src={props.image} alt="item picture"
-                                style={{objectFit: "contain", borderRadius: `${props.borderRadius}`}}
-                                whileInView="animate" initial="initial" whileHover="whileHover"
-                                viewport={{once: true}} variants={variantsItem}
-                    />
+            <motion.div whileInView="animate" initial="initial" whileHover="whileHover"
+                        viewport={{once: true}} variants={variantsItem}
+                        style={{backgroundColor: ""}}
+            >
+                <Flex className="item-wrap" sx={itemWrapSx}>
+                    <Flex className="img-wrap" sx={imgWrapSx}>
+                        <motion.img src={props.image} alt="item picture" style={{objectFit: "contain", borderRadius: `${props.borderRadius}`}}/>
+                    </Flex>
+                    <Flex className="title-wrap" sx={itemTitleSx}>
+                        <Text className="item-tile">{props.title}</Text>
+                    </Flex>
                 </Flex>
-                <Flex className="title-wrap" sx={itemTitleSx}>
-                    <Text className="item-tile">{props.title}</Text>
-                </Flex>
-            </Flex>
+            </motion.div>
         </>
     );
 }

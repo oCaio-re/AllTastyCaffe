@@ -46,9 +46,9 @@ function Item(props: Props) {
         color: "#0C6E5A",
     }
     const imgWrapSx = {
+        // backgroundColor: "red",
         h: "100%",
-        w: "100%",
-        backgroundColor: ""
+        w: "100%"
     }
     return (
         <>

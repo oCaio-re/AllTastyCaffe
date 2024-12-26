@@ -38,6 +38,7 @@ function BerryAcai() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
+                    {/*<Box h="8em" w="100%"/>*/}
                     <SMTsectionOne/>
                     <Box h="10vh" w="100%"/>
                     <Footer/>

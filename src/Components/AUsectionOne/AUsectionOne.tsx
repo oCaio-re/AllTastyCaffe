@@ -1,5 +1,5 @@
 import {Box, Flex, Text} from "@chakra-ui/react";
-import atLogoImg from "../../../public/AT_logo.png"
+import atLogoImg from "../../../public/AT_logo.old.svg"
 import balconyImg from "../../../public/place_images/balcao-vertical-atendente.png"
 
 function AUsectionOne() {
