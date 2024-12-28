@@ -15,7 +15,7 @@ function AUsectionTwo() {
         width: {base: "95%", md: "70%"},
         height: {base: "90%", md: "50%"},
         zIndex: "20",
-        m: {base: "auto auto auto auto", md: "0 auto 0 auto"},
+        margin: {base: "auto auto auto auto", md: "0 auto 0 auto"},
         flexDirection: {base: "column", md: "row"},
     }
     const outerTextWrapSx = {
@@ -71,7 +71,7 @@ function AUsectionTwo() {
                                 <Text m="auto">This is a special place!</Text>
                             </Flex>
                             <Flex className="desc-wrap" mt="1em" justifyContent="justify">
-                                <Text fontFamily="Inter" fontSize="1.3em"
+                                <Text fontFamily="Inter" fontSize={{base: "4vw", md: "1.3em"}}
                                       textAlign={{base: "justify", md: "justify"}}>{desc}</Text>
                             </Flex>
                         </Flex>

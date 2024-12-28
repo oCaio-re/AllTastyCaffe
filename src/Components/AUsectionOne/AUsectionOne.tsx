@@ -5,17 +5,18 @@ import balconyImg from "../../../public/place_images/balcao-vertical-atendente.p
 function AUsectionOne() {
     const desc: string = "All Tasty Caffe has arrived! We're a neighborhood coffee shop dedicated to crafting delicious brews and fostering a warm, welcoming community. Join us for your daily dose of caffeine and connection."
     const sectionSx = {
-        h: {base: "110em", md: "360px"},
+        // backgroundColor: "",
+        h: {base: "100em", md: "360px"},
         w: "100%",
-        backgroundColor: "",
         justifyContent: "center",
-        mt: {base: "0em", md: "3em"}
+        margin: {base: "0 0 5rem 0", md: "3em 0 0 0"}
     }
     const contentSx = {
+        // backgroundColor: "",
+        margin: {base: "8rem 0 0 0", md: "0"},
         flexDirection: {base: "column", md: "row"},
-        backgroundColor: "",
-        h: "100%",
-        w: {base: "95%", md: "70%"},
+        height: "100%",
+        width: {base: "95%", md: "70%"},
         justifyContent: "space-between",
     }
     const imgWrapSx = {
@@ -65,7 +66,7 @@ function AUsectionOne() {
                         <Flex className="text-wrap" sx={textWrapSx}>
                             <Flex className="title-wrap" sx={titleWrapSx}>
                                 <Text m="auto">
-                                    We are Open!
+                                    Here we are
                                 </Text>
                             </Flex>
                             <Flex className="desc-wrap" mt="1em">
