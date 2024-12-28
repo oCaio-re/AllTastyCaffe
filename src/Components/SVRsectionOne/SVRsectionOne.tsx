@@ -14,16 +14,16 @@ function SVRsectionOne() {
     const desc9 = "Crispy and flavorful chicken nuggets with a spicy kick and melted cheese, served in a portion of 6."
     const sectionWrapSx = {
         backgroundColor: "white",
-        w: {base: "95%", md: "90%"},
-        h: {base: "70em", md: "35em"},
+        width: {base: "100%", md: "90%"},
+        height: {base: "150em", md: "35em"},
         padding: "2em",
         flexDirection: "column",
-        m: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
+        margin: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
         // boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
     }
     const contentWrapSx = {
         // backgroundColor: "red",
-        width: "85%",
+        width: {base: "95%", md: "85%"},
         margin: "auto auto",
         flexDirection: "column",
     }
@@ -31,15 +31,15 @@ function SVRsectionOne() {
         fontFamily: "Inknut Antiqua",
         fontWeight: "500",
         fontSize: "2.5em",
-        h: {base: "10%", md: "20%"},
+        height: {base: "10%", md: "20%"},
     }
     const rowWrapSx = {
-        h: "50%",
-        w: "100%",
+        height: "50%",
+        width: "100%",
         justifyContent: "space-around",
         backgroundColor: "",
         flexDirection: {base: "column", md: "row"},
-        m: "2em auto auto auto"
+        margin: "2em auto auto auto"
     }
     return (
         <>

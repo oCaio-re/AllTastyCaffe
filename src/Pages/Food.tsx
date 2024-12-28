@@ -6,7 +6,7 @@ import Footer from "../Components/Footer/Footer.tsx";
 import FDsectionTwo from "../Components/TSTsectionOne/TSTsectionOne.tsx";
 import { motion } from "framer-motion";
 
-function Toasties() {
+function Food() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
@@ -48,4 +48,4 @@ function Toasties() {
     );
 }
 
-export default Toasties;
+export default Food;

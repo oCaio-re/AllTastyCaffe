@@ -4,12 +4,13 @@ import pastriesImg from "../../../../public/food/savouries-topview.jpg"
 function SecondBigImage() {
     const imgWrapSx = {
         w: "100%",
-        h: {base: "15em", md: "30em"}
+        h: {base: "15em", md: "30em"},
+
     }
     const imgSx = {
         objectFit: "cover",
         h: "100%",
-        w: {base: "95%", md:"100%"},
+        w: {base: "100%", md:"100%"},
         m: "auto",
         // borderRadius: "40px"
     }

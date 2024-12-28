@@ -10,24 +10,35 @@ function BedrockBar() {
         zIndex: "10",
     }
     const contentWrapSx = {
-        // fontFamily: "Istok Web",
-        fontFamily: "Inter",
-        fontSize: "1.4em",
-        fontWeight: "300",
         // backgroundColor: "grey",
-        width: "68%",
-        m: "auto",
+        fontFamily: "Inter",
+        fontSize: {base: "1.2em", md:"1.4em"},
+        fontWeight: "300",
+        width: {base: "100%", md: "68%"},
+        m: {base: "auto", md: "auto"},
+        justifyContent: "space-around",
+        alignItems: "center",
+        padding: {base: "10px", md:"0px"}
+    }
+    const leftContentWrapSx = {
+        width: {base: "50%", md: "80%"},
+        justifyContent: {base: "justify", md: "auto"},
+    }
+    const rightContentWrapSx = {
+        // width: {base: "60%", md: "100%"},
+        height: {base: "50%", md: "100%"},
+        // backgroundColor: "grey",
     }
     return (
         <>
             <Flex className="bed-rock-barr-wrap" sx={outerWrapSx}>
                 <Flex className="conten-wrap" sx={contentWrapSx}>
                     <Box className="left-conten-wrap"
-                         // backgroundColor="grey"
+                         sx={leftContentWrapSx}
                     >
                         <Text color="white">©️ 2023 Light for The People Ministries | All rights reserved</Text>
                     </Box>
-                    <Box className="right-conten-wrap" ml="auto">
+                    <Box className="right-conten-wrap" sx={rightContentWrapSx}>
                         <NavLink to={"/contact"}>
                             <Text color="white">Contact Us</Text>
                         </NavLink>

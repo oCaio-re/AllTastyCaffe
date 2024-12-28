@@ -21,12 +21,12 @@ function Item(props: Props) {
         justifyContent: {base: "left"},
     }
     const titleSx = {
-        textAlign: "center",
-        fontSize: {base: "1.8em", md: "1.3em"},
+        textAlign: {base: "left", md:"center"},
+        fontSize: {base: "1.3em", md: "1.3em"},
     }
     const descSx = {
         fontFamily: "Inter",
-        fontSize: {base: "1.3em", md: "1em"},
+        fontSize: {base: "1em", md: "1em"},
         alignItems: "center",
         textAlign: "justify",
         // color: `${props.descTextColor || "grey"}`,

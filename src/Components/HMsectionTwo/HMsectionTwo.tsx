@@ -46,10 +46,11 @@ function HMsectionTwo() {
         },
     }
     const sectionWrapSx = {
-        // backgroundColor: "",
+        // backgroundColor: "red",
         height: "90vh",
-        mt: {base: "2em", md: "15em"},
-        mb: {base: "2em", md: "10em"},
+        margin: {base: "0", md: "12em 0"},
+        // mt: {base: "2em", md: "15em"},
+        // mb: {base: "2em", md: "10em"},
         flexDirection: "column",
     }
     const contentWrapSx = {

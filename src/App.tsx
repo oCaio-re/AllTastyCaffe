@@ -8,7 +8,7 @@ import AboutUs from "./Pages/AboutUs.tsx";
 import TreatRewards from "./Pages/TreatRewards.tsx";
 import Blank from "./Pages/Blank.tsx";
 import Savouries from "./Pages/Savouries.tsx";
-import Toasties from "./Pages/Toasties.tsx";
+import Food from "./Pages/Food.tsx";
 import Contact from "./Pages/Contact.tsx";
 import HotBeverages from "./Pages/HotBeverages.tsx";
 import Smoothies from "./Pages/Smoothies.tsx";
@@ -29,7 +29,7 @@ function App() {
                     <Route path="/pastries" element={<Pastries/>} />
                     <Route path="/savouries" element={<Savouries/>} />
                     <Route path="/sandwiches" element={<Sandwiches/>} />
-                    <Route path="/toasties" element={<Toasties/>} />
+                    <Route path="/food" element={<Food/>} />
                     <Route path="/about-us" element={<AboutUs/>} />
                     <Route path="/treat-rewards" element={<TreatRewards/>} />
                     <Route path="/contact" element={<Contact/>} />

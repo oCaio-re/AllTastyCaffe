@@ -44,7 +44,7 @@ function HealthInfo() {
         // backgroundColor: "red",
     }
     const cardWrapSx = {
-        backgroundColor: "white",
+        backgroundColor: "#503068",
         w: "100%",
         h: "80%",
         borderRadius: "20px",
@@ -73,7 +73,9 @@ function HealthInfo() {
                     <Flex className="card-wrap" sx={cardWrapSx}>
                         <Flex className="content-wrap" sx={contentWrapSx}>
                             <Flex className="title-wrap" h="20%" backgroundColor="" color="#0C6E5A">
-                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4em"}}>
+                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4em"}}
+                                    fontWeight="500" color="white"
+                                >
                                     More than a dish!
                                 </Text>
                             </Flex>
@@ -82,7 +84,7 @@ function HealthInfo() {
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text textAlign={{base: "justify", md: "justify"}} >{desc}</Text>
+                                    <Text textAlign={{base: "justify", md: "justify"}} color="white">{desc}</Text>
                                 </motion.div>
                             </Flex>
                         </Flex>

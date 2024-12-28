@@ -12,6 +12,7 @@ function NavBar() {
         width: {base: "90%", md: "1320px"},
         m: {base: "auto", md: "auto"},
         justifyContent: "center",
+        // alignItems: "center"
     }
     const navBarWrapSx = {
         // backgroundColor: "red",
@@ -23,13 +24,15 @@ function NavBar() {
         justifyContent: "center",
     }
     const visitUsButton = {
-        w: {base: "4rem", md: "160px"},
+        width: {base: "4rem", md: "160px"},
+        height: {base: "auto", md: "auto"},
+        padding: {base: "10px", md: "10px"},
         backgroundColor: "#0C6E5A",
         color: "white",
         fontFamily: "Inter",
         fontWeight: "600",
         fontSize: {base: "0.9em", md: "1.3em"},
-        m: {base: "auto", md: "0 0 0 auto"},
+        margin: {base: "auto", md: "0 0 0 auto"},
         borderRadius: "5px",
         border: "none",
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.4)",
@@ -53,10 +56,10 @@ function NavBar() {
         fontFamily: "Inter",
         // color: "rgba(74,12,110,0.68)",
     }
-    const dropFood: { name: string; link: string }[] = [
-        {name: "Sandwiches", link: "/sandwiches"},
-        {name: "Toasties", link: "/toasties"}
-    ]
+    // const dropFood: { name: string; link: string }[] = [
+    //     {name: "Sandwiches", link: "/sandwiches"},
+    //     {name: "Toasties", link: "/toasties"}
+    // ]
     const dropPS: { name: string; link: string }[] = [
         {name: "Pastries", link: "/pastries"},
         {name: "Savouries", link: "/savouries"}
@@ -96,7 +99,7 @@ function NavBar() {
                             <DropDownHover title={"Pastries & Savouries"} items={dropPS}/>
                         </Box>
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
-                            <DropDownHover title={"Food"} items={dropFood}/>
+                            <NavLink to="/food" className="nav-item">Food</NavLink>
                         </Box>
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"About"} items={dropAbout}/>
@@ -106,7 +109,7 @@ function NavBar() {
                 <Show below="lg">
                     <DropDownMobile/>
                 </Show>
-                <NavLink to={"/contact"}>
+                <NavLink className="visit-button-link" to={"/contact"} style={{display: "flex"}}>
                     <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>
                 </NavLink>
             </Flex>

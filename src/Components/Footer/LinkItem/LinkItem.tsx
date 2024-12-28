@@ -27,18 +27,18 @@ function LinkItem() {
               </Box>
               <Flex flexDirection="column" h="80%" backgroundColor="" mt="0.8em"
                     color="#FFFFFF" fontSize="1.5em" fontWeight="500">
-                  <NavLink to="/beverages">
+                  <NavLink to="/hot-beverages">
                       <Text>Beverage Menu</Text>
                   </NavLink>
                   <NavLink to="/food">
                       <Text>Food</Text>
                   </NavLink>
-                  <NavLink to="/about">
+                  <NavLink to="/about-us">
                       <Text>About Us</Text>
                   </NavLink>
-                  <NavLink to="/">
+                  <a href="https://squidloyalty.ie/for-customers/" target="_blank">
                       <Text>Loyalty Program</Text>
-                  </NavLink>
+                  </a>
               </Flex>
           </Flex>
       </>

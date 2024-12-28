@@ -21,7 +21,13 @@ function DropDownHover(props: Props) {
         fontSize: "20px",
         whiteSpace: "nowrap",
     }
-
+    const menuItemSx = {
+        "_hover": {color: "#0C6E5A",
+                backgroundColor: "rgba(126,126,126,0.13)"
+                },
+        borderBlockEnd: "0.2px solid rgba(126,126,126,0.13)",
+        color: "#3c3c3c",
+    }
 
     return (
         <>
@@ -44,7 +50,8 @@ function DropDownHover(props: Props) {
                     <MenuList onMouseEnter={onOpen} onMouseLeave={onClose}>
 
                         {props.items.map((element) => (
-                            <MenuItem className="menu-item" _hover={{color: "#0C6E5A"}}>
+                            <MenuItem className="menu-item" sx={menuItemSx}
+                            >
                                 <NavLink to={element.link}>
                                     {element.name}
                                 </NavLink>
