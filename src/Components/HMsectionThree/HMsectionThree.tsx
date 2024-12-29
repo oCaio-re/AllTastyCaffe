@@ -36,25 +36,26 @@ function HMsectionThree() {
     }
     const desc: string = "Come on in and experience the warmth of All Tasty Caffe! We've poured our hearts into creating a space where you can relax, connect, and enjoy the simple pleasures of a perfectly brewed cup of coffee. Whether you're seeking a quiet moment to yourself or a lively conversation with friends, we invite you to discover the magic of our cozy corner. We can't wait to welcome you!"
     const sectionWrapSx = {
-        // backgroundColor: "blue",
+        // backgroundColor: "grey",
         alignItems: "center",
-        flexDirection: "column",
+        flexDirection: {base: "row", md: "column"},
         position: "relative",
-        h: {base: "50em", md: "auto"},
+        height: {base: "50em", md: "auto"},
         mb: {base: "2em", md: "6em"},
+        zIndex: 15,
     }
     const outerWrapSx = {
         // backgroundColor: "red",
-        h: {base: "85%", md: "760px"},
-        w: {base: "1320px", md: "1320px"},
+        height: {base: "85%", md: "760px"},
+        width: {base: "1320px", md: "1320px"},
         zIndex: "20"
     }
     const textContentWrapSx = {
         // backgroundColor: "",
         flexDirection: {base: "auto", md: "column"},
-        w: "80%",
-        h: "75%",
-        m: {base: "4em auto auto auto", md: "5em auto auto auto"},
+        width: "80%",
+        height: "75%",
+        margin: {base: "4em auto auto auto", md: "5em auto auto auto"},
     }
     const friendsCoffeImgSx = {
         // backgroundColor: "red",
@@ -89,7 +90,7 @@ function HMsectionThree() {
                                   overflow="hidden"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize="1.2vw"
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize={{base: "1em",md: "1.2vw"}}
                                           textAlign={{base: "justify", md: "justify"}}
                                     >
                                         {desc}
@@ -110,7 +111,9 @@ function HMsectionThree() {
                     </motion.div>
                 </Flex>
             </Flex>
-            <HMsectionFour/>
+            <Show above="md">
+                <HMsectionFour/>
+            </Show>
         </Flex>
     );
 }

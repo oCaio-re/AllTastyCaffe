@@ -1,4 +1,4 @@
-import {Flex} from "@chakra-ui/react";
+import {Flex, Hide} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
 import Footer from "../Components/Footer/Footer.tsx";
 import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
@@ -8,6 +8,7 @@ import HMsectionOne from "../Components/HMsectionOne/HMsectionOne.tsx";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg"
 import { motion } from "framer-motion";
+import HMsectionFour from "../Components/HMsectionFour/HMsectionFour.tsx";
 
 function Home() {
     const fadeInAnimationVariants = {
@@ -45,7 +46,9 @@ function Home() {
                     <HMsectionOne/>
                     <HMsectionTwo/>
                     <HMsectionThree/>
-                    {/*<HMsectionFour/>*/ /* CONTENT IS INSIDE SECTION THREE (S4 IS INSIDE S3) */}
+                    <Hide below="md">
+                        <HMsectionFour/>
+                    </Hide>
                     <Footer/>
                 </Flex>
             </motion.div>

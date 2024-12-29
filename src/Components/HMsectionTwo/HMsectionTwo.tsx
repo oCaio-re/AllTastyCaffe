@@ -47,7 +47,7 @@ function HMsectionTwo() {
     }
     const sectionWrapSx = {
         // backgroundColor: "red",
-        height: "90vh",
+        height: {base: "70vh", md: "90vh"},
         margin: {base: "0", md: "12em 0"},
         // mt: {base: "2em", md: "15em"},
         // mb: {base: "2em", md: "10em"},

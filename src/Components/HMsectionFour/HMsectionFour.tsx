@@ -15,42 +15,45 @@ function HMsectionFour() {
             }
         },
     }
-    const desc: string = "At All Tasty Caffe, we believe in providing more than just coffee. We're committed to delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the perfect cup and ensuring you feel comfortable and valued."
+    const desc: string = "At All Tasty Caffe, we believe in providing more than just coffee. We're committed to " +
+        "delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the " +
+        "perfect cup and ensuring you feel comfortable and valued."
 
     const sectionWrapSx = {
         // backgroundColor: "grey",
-        h: "70vh",
-        w: "100vw",
+        height: "70vh",
+        width: "100vw",
         margin: "3em auto 5em auto",
-        // mt: {base: "5em", md: "-80px"}
+        zIndex: "14",
+        mt: {base: "8rem", md: "0"}
     }
     const outerContentWrapSx = {
         // backgroundColor: "red",
-        w: {base: "90%", md: "1320px"},
-        h: "100%",
-        m: "auto",
+        width: {base: "90%", md: "1320px"},
+        height: "100%",
+        margin: "auto",
         position: "relative",
         flexDirection: {base: "column", md: "row"},
     }
     const imgWrapSx = {
-        w: {base: "100%", md: "60%"},
+        width: {base: "100%", md: "60%"},
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.15)",
     }
     const textWrapSx = {
         // backgroundColor: "red",
-        w: {base: "100%", md: "40%"},
-        h: {base: "60em", md: "100%"},
+        width: {base: "100%", md: "40%"},
+        height: {base: "60em", md: "100%"},
         position: "relative",
         alignContent: "center",
     }
     const cardWrapSx = {
         backgroundColor: "white",
-        w: "100%",
-        h: "80%",
+        width: "100%",
+        height: "80%",
         borderRadius: "20px",
         position: "absolute",
         alignSelf: "center",
-        ml: {base: "0em", md: "-5em"},
+        marginLeft: {base: "0em", md: "-5em"},
         boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.4)",
     }
     const contentWrapSx = {
@@ -58,7 +61,7 @@ function HMsectionFour() {
         justifyContent: "center",
         width: "90%",
         height: "90%",
-        m: "auto",
+        margin: "auto",
         flexDirection: "column",
     }
 
@@ -79,7 +82,7 @@ function HMsectionFour() {
                                 </Text>
                             </Flex>
                             <Flex className="desc-wrap" p="20px" fontFamily="Inter"
-                                  fontSize={{base: "0.7em", md: "1.6em"}}>
+                                  fontSize={{base: "1.7vh", md: "1.6em"}}>
                                 <motion.div style={{height: "100%"}} whileInView="animate"
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
