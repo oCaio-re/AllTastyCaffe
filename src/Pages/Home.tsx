@@ -1,4 +1,4 @@
-import {Flex, Hide} from "@chakra-ui/react";
+import {Flex, Show} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
 import Footer from "../Components/Footer/Footer.tsx";
 import HMsectionTwo from "../Components/HMsectionTwo/HMsectionTwo.tsx";
@@ -46,9 +46,9 @@ function Home() {
                     <HMsectionOne/>
                     <HMsectionTwo/>
                     <HMsectionThree/>
-                    <Hide below="md">
+                    <Show below="md">
                         <HMsectionFour/>
-                    </Hide>
+                    </Show>
                     <Footer/>
                 </Flex>
             </motion.div>
