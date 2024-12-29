@@ -3,7 +3,7 @@ import Header from "../Components/Header/Header.tsx";
 import {Box, Flex} from "@chakra-ui/react";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
-import FDsectionTwo from "../Components/TSTsectionOne/TSTsectionOne.tsx";
+import FDsectionTwo from "../Components/FDsectionOne/FDsectionOne.tsx";
 import { motion } from "framer-motion";
 
 function Food() {

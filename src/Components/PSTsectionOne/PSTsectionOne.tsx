@@ -13,39 +13,42 @@ function PsTsectionOne() {
     const desc8 = "Indulge in this decadent treat featuring a mix of marshmallows, chocolate, nuts, and chewy bits."
     const sectionWrapSx = {
         backgroundColor: "white",
-        w: {base: "95%", md: "90%"},
-        h: {base: "70em", md: "35em"},
+        width: {base: "100%", md: "90%"},
+        height: {base: "125rem", md: "35em"},
         padding: "2em",
         flexDirection: "column",
-        m: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
+        margin: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
         // boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
     }
     const contentWrapSx = {
         // backgroundColor: "red",
-        width: "85%",
-        margin: "auto auto",
+        margin: {base: "8rem auto auto auto", md: "auto"},
+        width: {base: "95%", md: "85%"},
+        // margin: "auto auto",
         flexDirection: "column",
     }
     const titleWrapSx = {
+        // backgroundColor: "red",
         fontFamily: "Inknut Antiqua",
         fontWeight: "500",
         fontSize: "2.5em",
-        h: {base: "10%", md: "20%"},
+        height: {base: "10%", md: "20%"},
     }
     const rowWrapSx = {
-        h: "50%",
-        w: "100%",
-        justifyContent: "space-around",
+        alignItems: {base: "center", md: ""},
+        height: {base: "50%", md: "50%"},
+        width: {base: "100%", md: "100%"},
+        justifyContent: {base: "", md: "space-around"},
         backgroundColor: "",
         flexDirection: {base: "column", md: "row"},
-        m: "2em auto auto auto"
+        margin: "2em auto auto auto"
     }
     return (
         <>
             <Flex className="section-wrap" sx={sectionWrapSx}>
                 <Flex className="content-wrap" sx={contentWrapSx}>
                     <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text m="auto" color="#0C6E5A">
+                        <Text m="auto" color="#0C6E5A" textAlign="center">
                             PASTRIES <span style={{color: "#EF9540", fontWeight: "bold"}}>/</span> DESSERTS
                         </Text>
                     </Flex>

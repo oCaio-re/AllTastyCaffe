@@ -15,7 +15,7 @@ function SVRsectionOne() {
     const sectionWrapSx = {
         backgroundColor: "white",
         width: {base: "100%", md: "90%"},
-        height: {base: "150em", md: "35em"},
+        height: {base: "145rem", md: "35em"},
         padding: "2em",
         flexDirection: "column",
         margin: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
@@ -23,8 +23,9 @@ function SVRsectionOne() {
     }
     const contentWrapSx = {
         // backgroundColor: "red",
+        margin: {base: "8rem auto auto auto", md: "auto"},
         width: {base: "95%", md: "85%"},
-        margin: "auto auto",
+        // margin: "auto auto",
         flexDirection: "column",
     }
     const titleWrapSx = {
@@ -34,9 +35,12 @@ function SVRsectionOne() {
         height: {base: "10%", md: "20%"},
     }
     const rowWrapSx = {
-        height: "50%",
-        width: "100%",
-        justifyContent: "space-around",
+        // height: "50%",
+        // width: "100%",
+        alignItems: {base: "center", md: ""},
+        height: {base: "50%", md: "50%"},
+        width: {base: "100%", md: "100%"},
+        justifyContent: {base: "", md: "space-around"},
         backgroundColor: "",
         flexDirection: {base: "column", md: "row"},
         margin: "2em auto auto auto"

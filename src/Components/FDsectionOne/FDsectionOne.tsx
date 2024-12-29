@@ -1,6 +1,6 @@
 import {Flex, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
-import TSTbigImg1 from "./TSTbigImg1/TSTbigImg1.tsx";
+import FDbigImg1 from "./FDbigImg1/FDbigImg1.tsx";
 
 function FDsectionOne() {
     const desc1 = "Tender Angus beef sliced thin, paired with peppery arugula and melted cheese, all nestled on a crusty ciabatta roll."
@@ -14,39 +14,42 @@ function FDsectionOne() {
     const desc9= "Choose from soft white bread or hearty brown bread to suit your preference."
     const sectionWrapSx = {
         backgroundColor: "white",
-        w: {base: "95%", md: "90%"},
-        h: {base: "70em", md: "35em"},
+        width: {base: "100%", md: "90%"},
+        height: {base: "140rem", md: "35em"},
         padding: "2em",
         flexDirection: "column",
-        m: {base: "0em auto 6em auto", md: "0 auto 3em auto"},
+        margin: {base: "0em auto 6em auto", md: "0em auto 3em auto"},
         // boxShadow: "-4px 4px 4px rgba(77, 76, 76, 0.2)",
     }
     const contentWrapSx = {
         // backgroundColor: "red",
-        width: "85%",
-        margin: "auto auto",
+        margin: {base: "8rem auto auto auto", md: "auto"},
+        width: {base: "95%", md: "85%"},
+        // margin: "auto auto",
         flexDirection: "column",
     }
     const titleWrapSx = {
+        // backgroundColor: "red",
         fontFamily: "Inknut Antiqua",
         fontWeight: "500",
-        fontSize: "2.5em",
-        h: {base: "10%", md: "20%"},
+        fontSize: {base: "2em", md: "2.5em"},
+        height: {base: "10%", md: "20%"},
     }
     const rowWrapSx = {
-        h: "50%",
-        w: "100%",
-        justifyContent: "space-around",
+        alignItems: {base: "center", md: ""},
+        height: {base: "50%", md: "50%"},
+        width: {base: "100%", md: "100%"},
+        justifyContent: {base: "", md: "space-around"},
         backgroundColor: "",
         flexDirection: {base: "column", md: "row"},
-        m: "2em auto auto auto"
+        margin: "2em auto auto auto"
     }
     return (
         <>
             <Flex className="section-wrap" sx={sectionWrapSx}>
                 <Flex className="content-wrap" sx={contentWrapSx}>
                     <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text m="auto" color="#0C6E5A">
+                        <Text m="auto" color="#0C6E5A" textAlign="center">
                             TOASTIES <span style={{color: "#EF9540"}}>and</span> SANDWICHES
                         </Text>
                     </Flex>
@@ -67,7 +70,7 @@ function FDsectionOne() {
                     </Flex>
                 </Flex>
             </Flex>
-            <TSTbigImg1/>
+            <FDbigImg1/>
         </>
     );
 }

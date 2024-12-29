@@ -15,7 +15,7 @@ function HMsectionFour() {
             }
         },
     }
-    const desc: string = "At All Tasty Caffe, we believe in providing more than just coffee. We're committed to " +
+    const desc: string = "At All Tasty Cafe, we believe in providing more than just coffee. We're committed to " +
         "delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the " +
         "perfect cup and ensuring you feel comfortable and valued."
 
