@@ -8,10 +8,12 @@ import "./NavBar.css"
 function NavBar() {
     const outerWrapSx = {
         // backgroundColor: "orange",
+        padding: {base: "20px 0", md: "0"},
         h: {base: "100%", md: "40px"},
         width: {base: "90%", md: "1320px"},
         m: {base: "auto", md: "auto"},
         justifyContent: "center",
+        // alignItems: "center",
         // alignItems: "center"
     }
     const navBarWrapSx = {

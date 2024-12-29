@@ -24,7 +24,7 @@ function HMsectionOne() {
         margin: {base: "0", md: "0 0 -2em 0"},
     }
     const swiperWraperSx = {
-        backgroundColor: "red",
+        // backgroundColor: "red",
         alignItems: "center",
         // margin: "0 auto 0 auto",
         width: "100%",

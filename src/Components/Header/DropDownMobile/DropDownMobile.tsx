@@ -15,13 +15,13 @@ function DropDownMobile() {
                     width="3em"
                     height="3em"
                     color="#0C6E5A"
-                    ml={{base: "auto"}}
-                    mr="0.5em"
+                    // ml={{base: "auto"}}
+                    // mr="0.5em"
                     onClick={onOpen}
                     zIndex="3"
                 />
                 <Menu isOpen={isOpen} onClose={onClose} >
-                    <MenuList ml="6em" mt="5.5rem">
+                    <MenuList margin = "13vh 25vw">
                         <MenuItem className="menu-item">
                             <NavLink to="/">
                                 Home
