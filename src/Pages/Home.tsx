@@ -41,6 +41,7 @@ function Home() {
                 <Header/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
+                    <Flex height="114px" />
                     <HMsectionOne/>
                     <HMsectionTwo/>
                     <HMsectionThree/>

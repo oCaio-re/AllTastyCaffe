@@ -16,10 +16,19 @@ import sandwich from '../../../../public/food/side-view-club-sandwich-with-ham-p
 import acai1 from '../../../../public/berry-acai/flavour1.jpeg';
 import acai2 from '../../../../public/berry-acai/flavour4.jpeg';
 import hotMeal from '../../../../public/food/hot-meal.jpg';
+import {Flex} from "@chakra-ui/react";
 
 function NewCarousel() {
+    const contentWrapSx = {
+        // backgroundColor: "red",
+        position: "absolute",
+        margin: "0 0 0 0",
+        width: "100%",
+        // alignItems: "center",
+        // justifyContent: "center",
+    }
     return (
-        <div className="content-wrap-swiper" style={{position: "absolute", marginTop: "7em", backgroundColor: "", width: "100%"}}>
+        <Flex className="content-wrap-swiper" sx={contentWrapSx}>
             {/*<h1 className="heading">Flower Gallery</h1>*/}
             <Swiper
                 className="swiper_container"
@@ -77,7 +86,7 @@ function NewCarousel() {
                     <div className="swiper-pagination"></div>
                 </div>
             </Swiper>
-        </div>
+        </Flex>
     );
 }
 
