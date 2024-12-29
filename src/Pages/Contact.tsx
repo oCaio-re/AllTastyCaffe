@@ -1,9 +1,11 @@
-import {Flex} from "@chakra-ui/react";
+import {Box, Flex} from "@chakra-ui/react";
 import Header from "../Components/Header/Header.tsx";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import Footer from "../Components/Footer/Footer.tsx";
 import { motion } from "framer-motion";
+import CTsectionOne from "../Components/CTsectionOne/CTsectionOne.tsx";
+import CTsectionTwo from "../Components/CTsectionTwo/CTsectionTwo.tsx";
 
 function Contact() {
     const fadeInAnimationVariants = {
@@ -35,9 +37,11 @@ function Contact() {
             >
                 <ScrollToTop/>
                 <Header/>
+                <Box height="114px"/>
                 <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
                       backgroundAttachment="fixed">
-                    {/*<HMsectionOne/>*/}
+                    <CTsectionOne/>
+                    <CTsectionTwo/>
                     <Footer/>
                 </Flex>
             </motion.div>
