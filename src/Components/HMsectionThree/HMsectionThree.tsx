@@ -34,10 +34,7 @@ function HMsectionThree() {
             scale: 1.1,
         }
     }
-    const desc: string = "Come on in and experience the warmth of All Tasty Cafe! We've poured our hearts into " +
-        "creating a space where you can relax, connect, and enjoy the simple pleasures of a perfectly brewed cup of " +
-        "coffee. Whether you're seeking a quiet moment to yourself or a lively conversation with friends, we invite " +
-        "you to discover the magic of our cozy corner. We can't wait to welcome you!"
+    // const desc: string = "Come on in and experience the warmth of All Tasty Cafe! We've poured our hearts into creating a space where you can relax, connect, and enjoy the simple pleasures of a perfectly brewed cup of coffee. Whether you're seeking a quiet moment to yourself or a lively conversation with friends, we invite you to discover the magic of our cozy corner. We can't wait to welcome you!"
     const sectionWrapSx = {
         // backgroundColor: "grey",
         alignItems: "center",
@@ -68,8 +65,8 @@ function HMsectionThree() {
     return (
         <Flex as="section" className="section-wrap" sx={sectionWrapSx}>
             <Show above="lg">
-                <Flex className="background-wrap"  width="100vw" mb="auto" h="100%">
-                    <Box as="img" src={backgroundSvg}  position="absolute"/>
+                <Flex className="background-wrap" width="100vw" mb="auto" h="100%">
+                    <Box as="img" src={backgroundSvg} position="absolute"/>
                 </Flex>
             </Show>
             <Show below="lg">
@@ -93,10 +90,18 @@ function HMsectionThree() {
                                   overflow="hidden"
                             >
                                 <Flex backgroundColor="" mt="2em">
-                                    <Text className="desc-wrap" fontFamily="Inter" color="white" fontSize={{base: "1em",md: "1.2vw"}}
+                                    <Text className="desc-wrap" fontFamily="Inter" color="white"
+                                          fontSize={{base: "1em", md: "1.15vw"}}
                                           textAlign={{base: "justify", md: "justify"}}
                                     >
-                                        {desc}
+                                        <p>Come on in and experience the warmth of All Tasty Cafe!</p> <br/>
+                                        <p>We've poured our hearts into creating a space where you can relax, connect,
+                                            and enjoy the simple pleasures of a perfectly brewed cup of coffee.</p><br/>
+                                        <p>Whether you're seeking a quiet moment to yourself or a lively conversation
+                                            with
+                                            friends, we invite you to discover the magic of our cozy corner. We can't
+                                            wait
+                                            to welcome you!</p>
                                     </Text>
                                 </Flex>
                             </Flex>

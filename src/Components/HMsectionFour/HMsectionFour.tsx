@@ -15,9 +15,9 @@ function HMsectionFour() {
             }
         },
     }
-    const desc: string = "At All Tasty Cafe, we believe in providing more than just coffee. We're committed to " +
-        "delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the " +
-        "perfect cup and ensuring you feel comfortable and valued."
+    // const desc: string = "At All Tasty Cafe, we believe in providing more than just coffee. We're committed to " +
+    //     "delivering a truly exceptional experience. Our friendly baristas are passionate about crafting the " +
+    //     "perfect cup and ensuring you feel comfortable and valued."
 
     const sectionWrapSx = {
         // backgroundColor: "grey",
@@ -47,7 +47,8 @@ function HMsectionFour() {
         alignContent: "center",
     }
     const cardWrapSx = {
-        backgroundColor: "white",
+        // backgroundColor: "white",
+        backgroundColor: "#ffffff",
         width: "100%",
         height: "80%",
         borderRadius: "20px",
@@ -82,12 +83,17 @@ function HMsectionFour() {
                                 </Text>
                             </Flex>
                             <Flex className="desc-wrap" p="20px" fontFamily="Inter"
-                                  fontSize={{base: "1.7vh", md: "1.6em"}}>
+                                  fontSize={{base: "1.7vh", md: "1.5em"}}>
                                 <motion.div style={{height: "100%"}} whileInView="animate"
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text textAlign={{base: "justify", md: "justify"}}>{desc}</Text>
+                                    <Text textAlign={{base: "justify", md: "justify"}}>
+                                        At All Tasty Cafe, we believe in providing more than just coffee.<br/>
+                                        We're committed to delivering a truly exceptional experience.<br/>
+                                        Our friendly baristas are passionate about crafting the
+                                        perfect cup and ensuring you feel comfortable and valued.
+                                    </Text>
                                 </motion.div>
                             </Flex>
                         </Flex>

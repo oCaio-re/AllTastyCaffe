@@ -7,6 +7,7 @@ interface Props {
     titleSize?: string,
     imgProportion?: string,
     borderRadius?: string,
+    objectFit?: string,
 }
 
 
@@ -49,7 +50,8 @@ function Item(props: Props) {
     const imgWrapSx = {
         // backgroundColor: "",
         h: "100%",
-        w: "100%"
+        w: "100%",
+        // borderRadius: "3em"
     }
     return (
         <>
@@ -59,7 +61,14 @@ function Item(props: Props) {
             >
                 <Flex className="item-wrap" sx={itemWrapSx}>
                     <Flex className="img-wrap" sx={imgWrapSx}>
-                        <motion.img src={props.image} alt="item picture" style={{objectFit: "contain", borderRadius: `${props.borderRadius}`}}/>
+                        <motion.img src={props.image} alt="item picture"
+                                    style={{
+                                        aspectRatio: "1/1",
+                                        objectFit: "contain",
+                                        // borderRadius: `${props.borderRadius}`,
+                                        borderRadius: "10%"
+                        }}
+                        />
                     </Flex>
                     <Flex className="title-wrap" sx={itemTitleSx}>
                         <Text className="item-tile">{props.title}</Text>
