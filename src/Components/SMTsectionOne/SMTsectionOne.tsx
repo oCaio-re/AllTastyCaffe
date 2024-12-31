@@ -4,7 +4,7 @@ import SmoothiesMenu from "./SmoothiesMenu/SmoothiesMenu.tsx";
 
 function SMTsectionOne() {
     const whiteBoardSx = {
-        h: {base: "120rem", md: "80rem"},
+        h: {base: "150rem", md: "80rem"},
         w: {base: "90%", md: "70%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",

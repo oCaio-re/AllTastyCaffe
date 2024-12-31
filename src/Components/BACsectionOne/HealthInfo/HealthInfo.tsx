@@ -46,8 +46,9 @@ function HealthInfo() {
     }
     const cardWrapSx = {
         backgroundColor: "#503068",
-        w: {base: "100%", md: "100%"},
-        h: "80%",
+        width: {base: "100%", md: "100%"},
+        height: "80%",
+        padding: {base: "20px", md: "0"},
         borderRadius: {base: "40px 0", md: "80px 0"},
         position: "absolute",
         alignSelf: "center",
@@ -56,8 +57,8 @@ function HealthInfo() {
     }
     const contentWrapSx = {
         // backgroundColor: "grey",
-        width: "90%",
-        height: {base: "80%", md: "70%"},
+        width: {base: "100%", md: "90%"},
+        height: {base: "100%", md: "70%"},
         m: "auto",
         flexDirection: "column",
     }
@@ -74,7 +75,7 @@ function HealthInfo() {
                     <Flex className="card-wrap" sx={cardWrapSx}>
                         <Flex className="content-wrap" sx={contentWrapSx}>
                             <Flex className="title-wrap" h="20%" backgroundColor="" color="#0C6E5A">
-                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3em", md:"4.5em"}}
+                                <Text m="auto" fontFamily="Italianno" fontSize={{base: "3.5em", md:"4.5em"}}
                                     fontWeight="500" color="white"
                                 >
                                     More than a dish!

@@ -6,7 +6,7 @@ function CTsectionOne() {
         "grab a latte. We're your local gathering spot, a haven for connection and community."
     const sectionWrapSx = {
         // backgroundColor: "grey",
-        height: "50rem",
+        height: {base: "55rem", md: "50rem"},
         width: "100vw",
         flexDirection: "column",
         alignItems: "center",
@@ -18,7 +18,7 @@ function CTsectionOne() {
         flexDirection: "column",
         height: {base: "50%", md: "50%"},
         width: {base: "100%", md: "1320px"},
-        margin: {base: "4rem 0 0 0", md: "3rem 0 0 0"},
+        margin: {base: "1rem 0 0 0", md: "3rem 0 0 0"},
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
     }
     const outerBoardSx = {
@@ -32,7 +32,7 @@ function CTsectionOne() {
         color: "white",
         height: {base: "85%", md: "85%"},
         width: {base: "95%", md: "95%"},
-        fontSize: {base: "1rem", md: "3.5rem"},
+        fontSize: {base: "2rem", md: "3.5rem"},
         fontWeight: "bold",
         fontFamily: "Inter",
         borderWidth: "3px",

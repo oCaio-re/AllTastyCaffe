@@ -109,7 +109,8 @@ const titleWrapSx = {
     width: {base: "100%", md: "55%"},
     margin: "auto",
     fontFamily: "Inknut Antiqua",
-    fontSize: {base: "2em", md: "3em"},
+    fontSize: {base: "2.3em", md: "3em"},
+    whiteSpace: {base: "wrap", md: "nowrap"},
     fontWeight: 500,
 }
 

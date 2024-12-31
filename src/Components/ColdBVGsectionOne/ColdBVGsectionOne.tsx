@@ -4,7 +4,7 @@ import ColdMenu from "./ColdMenu/ColdMenu.tsx";
 
 function ColdBVGsectionOne() {
     const whiteBoardSx = {
-        h: {base: "auto", md: "70rem"},
+        h: {base: "125rem", md: "70rem"},
         w: {base: "90%", md: "70%"},
         backgroundColor: "white",
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
