@@ -5,6 +5,7 @@ import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
 import wallpaper from "../../public/wallpaper-opac.svg";
 import HotBVGsectionOne from "../Components/HotBVGsectionOne/HotBVGsectionOne.tsx";
 import { motion } from "framer-motion";
+import MomentumScroll from "../Components/MomentumScroll/MomentumScroll.tsx";
 
 function HotBeverages() {
     const fadeInAnimationVariants = {
@@ -34,6 +35,10 @@ function HotBeverages() {
                     display: "flex"
                 }}
             >
+                <MomentumScroll
+                    startDate="2024-07-04"
+                    endDate="2024-07-10"
+                />
                 <ScrollToTop/>
                 <Box h="110px" w="100vw"/>
                 <Header/>

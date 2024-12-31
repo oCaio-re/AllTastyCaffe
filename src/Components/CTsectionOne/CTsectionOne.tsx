@@ -165,7 +165,7 @@ function CTsectionOne() {
                                         <Text fontStyle="italic" fontWeight="normal">From 10:00am to 5:00pm</Text>
                                     </Flex>
                                     <Flex flexDirection="column" alignItems="center">
-                                        <Text>Tuesday to Friday</Text>
+                                        <Text>Sunday</Text>
                                         <Text fontStyle="italic" fontWeight="normal">CLOSED</Text>
                                     </Flex>
                                 </VStack>

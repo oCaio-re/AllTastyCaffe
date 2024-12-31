@@ -4,9 +4,9 @@ import HotMenu from "./HotMenu/HotMenu.tsx";
 
 function HotBVGsectionOne() {
     const whiteBoardSx = {
-        h: {base: "190rem", md: "90rem"},
-        w: {base: "90%", md: "70%"},
         backgroundColor: "white",
+        h: {base: "230rem", md: "90rem"},
+        w: {base: "90%", md: "70%"},
         boxShadow: "-2px 8px 8px rgba(77, 76, 76, 0.1)",
         flexDirection: "column",
     }
