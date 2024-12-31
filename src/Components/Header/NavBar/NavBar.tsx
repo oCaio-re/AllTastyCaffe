@@ -1,9 +1,10 @@
 import {Box, Button, Flex, Show} from "@chakra-ui/react";
 import {NavLink} from "react-router-dom";
-import DropDownMobile from "../DropDownMobile/DropDownMobile.tsx";
+// import DropDownMobile from "../DropDownMobile/DropDownMobile.tsx";
 import DropDownHover from "./DropDownHover/DropDownHover.tsx";
 import logo from "../../../../public/AT_logo.png"
 import "./NavBar.css"
+import SubDropDown from "../DropDownMobile/SubDropDown/SubDropDown.tsx";
 
 function NavBar() {
     const outerWrapSx = {
@@ -13,8 +14,6 @@ function NavBar() {
         width: {base: "90%", md: "1320px"},
         m: {base: "auto", md: "auto"},
         justifyContent: "center",
-        // alignItems: "center",
-        // alignItems: "center"
     }
     const navBarWrapSx = {
         // backgroundColor: "red",
@@ -26,9 +25,9 @@ function NavBar() {
         justifyContent: "center",
     }
     const visitUsButton = {
-        width: {base: "4rem", md: "160px"},
+        width: {base: "5rem", md: "160px"},
         height: {base: "auto", md: "auto"},
-        padding: {base: "10px", md: "10px"},
+        padding: {base: "10px 20px", md: "10px"},
         backgroundColor: "#0C6E5A",
         color: "white",
         fontFamily: "Inter",
@@ -108,8 +107,11 @@ function NavBar() {
                         </Box>
                     </Flex>
                 </Show>
+                {/*<Show below="lg">*/}
+                {/*    <DropDownMobile/>*/}
+                {/*</Show>*/}
                 <Show below="lg">
-                    <DropDownMobile/>
+                    <SubDropDown/>
                 </Show>
                 <NavLink className="visit-button-link" to={"/contact"} style={{display: "flex"}}>
                     <Button className="visit-us-button" sx={visitUsButton}>Visit Us</Button>

@@ -1,4 +1,4 @@
-import {Flex, Text} from "@chakra-ui/react";
+import {Flex, Text, Link} from "@chakra-ui/react";
 import "./TopBar.css"
 
 function TopBar() {
@@ -19,14 +19,18 @@ function TopBar() {
         padding: {base: "15px", md: "0"},
         alignItems: "center",
     }
+    const linkSx = {
+        href: "https://squidloyalty.ie/for-customers/",
+        target: "_blank",
+    }
     return (
         <Flex className="top-bar" sx={topBarSx}>
             <Flex className="text-wrap" sx={contentWrapSx}>
                 <Text className="top-bar-content" color="white" fontFamily="Inter" textAlign="center"
-                      fontSize={{base: "0.7rem", md: "1em"}}>
-                    <a href="https://squidloyalty.ie/for-customers/" className="content-sentence" target="blank">
+                      fontSize={{base: "0.6rem", md: "1em"}}>
+                    <Link sx={linkSx} className="content-sentence" >
                         CHECKOUT OUR TREAT REWARDS: BE REWARDED FOR YOUR DAILY <i><b className="all-tasty">ALL TASTY</b></i>
-                    </a>
+                    </Link>
                 </Text>
             </Flex>
         </Flex>

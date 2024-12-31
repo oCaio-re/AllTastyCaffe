@@ -1,10 +1,11 @@
-import {Box, Flex} from "@chakra-ui/react";
-import Header from "../Components/Header/Header.tsx";
-import Footer from "../Components/Footer/Footer.tsx";
-import BVGsectionOne from "../Components/BVGsectionOne/BVGsectionOne.tsx";
-import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
-import wallpaper from "../../public/wallpaper-opac.svg";
+// import {Box, Flex} from "@chakra-ui/react";
+// import Header from "../Components/Header/Header.tsx";
+// import Footer from "../Components/Footer/Footer.tsx";
+// import BVGsectionOne from "../Components/BVGsectionOne/BVGsectionOne.tsx";
+// import ScrollToTop from "../Components/ScrollToTop/ScrollToTop.tsx";
+// import wallpaper from "../../public/wallpaper-opac.svg";
 import { motion } from "framer-motion";
+import SubDropDown from "../Components/Header/DropDownMobile/SubDropDown/SubDropDown.tsx";
 
 function Beverages() {
     const fadeInAnimationVariants = {
@@ -34,16 +35,17 @@ function Beverages() {
                     display: "flex"
                 }}
             >
-                <ScrollToTop/>
-                <Box h="110px" w="100vw"/>
-                <Header/>
-                <Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"
-                      backgroundAttachment="fixed"
-                >
-                    <BVGsectionOne/>
-                    <Box h={{base: "10em", md: "300px"}} w="100%"/>
-                    <Footer/>
-                </Flex>
+                {/*<ScrollToTop/>*/}
+                {/*<Box h="110px" w="100vw"/>*/}
+                {/*<Header/>*/}
+                {/*<Flex flexDirection="column" backgroundImage={wallpaper} backgroundSize="cover"*/}
+                {/*      backgroundAttachment="fixed"*/}
+                {/*>*/}
+                {/*    <BVGsectionOne/>*/}
+                {/*    <Box h={{base: "10em", md: "300px"}} w="100%"/>*/}
+                {/*    <Footer/>*/}
+                {/*</Flex>*/}
+                <SubDropDown></SubDropDown>
             </motion.div>
         </>
     );
