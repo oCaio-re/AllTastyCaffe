@@ -1,7 +1,7 @@
 import {Flex, Image, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
-import coxinhaImg from "../../../public/food/coxinha.jpeg"
-import pdqImg from "../../../public/food/pao-de-queijo.jpeg"
+import coxinhaImg from "../../../public/food/coxinha.png"
+import pdqImg from "../../../public/food/pao-de-queijo.png"
 import SecondBigImage from "./SecondBigImage/SecondBigImage.tsx";
 
 function SVRsectionOne() {
@@ -21,7 +21,7 @@ function SVRsectionOne() {
     const whiteboardSx = {
         backgroundColor: "white",
         width: {base: "100%", md: "90%"},
-        height: {base: "145rem", md: "35em"},
+        height: {base: "160rem", md: "35em"},
         padding: "2em",
         flexDirection: "column",
         margin: {base: "0em auto 6em auto", md: "3em auto 3em auto"},
@@ -56,7 +56,7 @@ function SVRsectionOne() {
         position: "absolute",
         right: "0px",
         top: "30em",
-        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.2))"
 
     }
     const pdqSx = {
@@ -64,7 +64,7 @@ function SVRsectionOne() {
         position: "absolute",
         left: "0px",
         top: "10em",
-        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.2))"
     }
     return (
         <>

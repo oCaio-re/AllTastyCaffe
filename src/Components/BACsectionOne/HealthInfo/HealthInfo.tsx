@@ -81,7 +81,7 @@ function HealthInfo() {
                                     More than a dish!
                                 </Text>
                             </Flex>
-                            <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize={{base: "1rem", md: "1.2vw"}}
+                            <Flex className="desc-wrap" p="20px" fontFamily="Inter" fontSize={{base: "0.9rem", md: "1.2vw"}}
                                   margin={{base: "auto", md: "0"}}
                             >
                                 <motion.div style={{height: "100%"}} whileInView="animate"

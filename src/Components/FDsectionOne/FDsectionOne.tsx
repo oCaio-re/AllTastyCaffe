@@ -50,18 +50,18 @@ function FDsectionOne() {
         flexDirection: {base: "column", md: "row"},
         margin: "2em auto auto auto"
     }
-    const bltSx = {
-        width: {base: "0%", md: "15%"},
-        position: "absolute",
-        right: "0px",
-        top: "30em",
-        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
-
-    }
     const cheeseSx = {
         width: {base: "0%", md: "15%"},
         position: "absolute",
-        left: "0px",
+        right: "0px",
+        top: "35em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+
+    }
+    const bltSx = {
+        width: {base: "0%", md: "12%"},
+        position: "absolute",
+        left: "10px",
         top: "10em",
         "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
     }
