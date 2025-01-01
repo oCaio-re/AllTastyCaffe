@@ -4,7 +4,7 @@ import "./ViewMenuBar.css"
 
 function ViewMenusBar() {
     const sectionWrapSx = {
-        backgroundColor: "",
+        // backgroundColor: "",
         mt: "1em",
         justifyContent: "center",
     }
@@ -17,17 +17,19 @@ function ViewMenusBar() {
         borderBottom: "1px solid silver",
     }
     const contentWrapSx = {
+        // backgroundColor: "",
         w: {base: "95%", md: "60%"},
         h: "100%",
-        backgroundColor: "",
-        m: "auto"
+        m: "auto",
+        alignItems: "center",
+        justifyContent: "center",
     }
     const menuItemsSx = {
+        // backgroundColor: "",
         width: "60%",
         justifyContent: "space-around",
         fontFamily: "Inknut Antiqua",
-        fontSize: {base: "1.0em", md: "1.8em"},
-        backgroundColor: "",
+        fontSize: {base: "0.9em", md: "1.8em"},
     }
     return (
     <Flex className="bottom-bar-wrap" as="section" w="100%" h="5em" sx={sectionWrapSx}>

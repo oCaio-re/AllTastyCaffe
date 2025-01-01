@@ -94,9 +94,9 @@ function HMsectionThree() {
                                           fontSize={{base: "1em", md: "1.15vw"}}
                                           textAlign={{base: "justify", md: "justify"}}
                                     >
-                                        <p>Come on in and experience the warmth of All Tasty Cafe!</p> <br/>
+                                        <p>Come on in and experience the warmth of All Tasty Cafe!</p>
                                         <p>We've poured our hearts into creating a space where you can relax, connect,
-                                            and enjoy the simple pleasures of a perfectly brewed cup of coffee.</p><br/>
+                                            and enjoy the simple pleasures of a perfectly brewed cup of coffee.</p>
                                         <p>Whether you're seeking a quiet moment to yourself or a lively conversation
                                             with
                                             friends, we invite you to discover the magic of our cozy corner. We can't

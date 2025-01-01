@@ -1,6 +1,8 @@
-import {Flex, Text} from "@chakra-ui/react";
+import {Flex, Image, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
 import FDbigImg1 from "./FDbigImg1/FDbigImg1.tsx";
+import bltImg from "../../../public/food/blt.png";
+import cheeseImg from "../../../public/food/cheese-sourdough.png";
 
 function FDsectionOne() {
     const desc1 = "Tender Angus beef sliced thin, paired with peppery arugula and melted cheese, all nestled on a crusty ciabatta roll."
@@ -12,7 +14,11 @@ function FDsectionOne() {
     const desc7 = "High-quality ham and your favorite melted cheese on your choice of bread."
     const desc8 = "our choice of cheese on your choice of bread – a simple and delicious option."
     const desc9= "Choose from soft white bread or hearty brown bread to suit your preference."
-    const sectionWrapSx = {
+
+    const sectionWrapSx= {
+        flexDirection: "column",
+    }
+    const whiteboardSx = {
         backgroundColor: "white",
         width: {base: "100%", md: "90%"},
         height: {base: "140rem", md: "35em"},
@@ -44,33 +50,52 @@ function FDsectionOne() {
         flexDirection: {base: "column", md: "row"},
         margin: "2em auto auto auto"
     }
+    const bltSx = {
+        width: {base: "0%", md: "15%"},
+        position: "absolute",
+        right: "0px",
+        top: "30em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+
+    }
+    const cheeseSx = {
+        width: {base: "0%", md: "15%"},
+        position: "absolute",
+        left: "0px",
+        top: "10em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+    }
     return (
         <>
             <Flex className="section-wrap" sx={sectionWrapSx}>
-                <Flex className="content-wrap" sx={contentWrapSx}>
-                    <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text m="auto" color="#0C6E5A" textAlign="center">
-                            TOASTIES <span style={{color: "#EF9540"}}>and</span> SANDWICHES
-                        </Text>
-                    </Flex>
-                    <Flex className="row-one" sx={rowWrapSx}>
-                        <Item title="Angus Beef on Ciabatta" description={desc1} titleSize="3em" width="30%"/>
-                        <Item title="Ciabatta with Pork" description={desc2} width="30%"/>
-                        <Item title="Ribsteak with Cheese" description={desc3} width="30%"/>
-                    </Flex>
-                    <Flex className="row-two" sx={rowWrapSx}>
-                        <Item title="Sourdough Chicken" description={desc4} titleSize="3em" width="30%"/>
-                        <Item title="Sourdough Chicken Cheese" description={desc5} width="30%"/>
-                        <Item title="The Original BLT Sandwich" description={desc6} width="30%"/>
-                    </Flex>
-                    <Flex className="row-three" sx={rowWrapSx}>
-                        <Item title="Ham and Cheese" description={desc7} titleSize="3em" width="30%"/>
-                        <Item title="Cheese" description={desc8} width="30%"/>
-                        <Item title="White/Brown" description={desc9} width="30%"/>
+                <Image src={cheeseImg} sx={bltSx} alt="blt-img"/>
+                <Image src={bltImg} sx={cheeseSx} alt="cheese-img"/>
+                <Flex className="inner-wrap" sx={whiteboardSx}>
+                    <Flex className="content-wrap" sx={contentWrapSx}>
+                        <Flex className="title-wrap" sx={titleWrapSx}>
+                            <Text m="auto" color="#0C6E5A" textAlign="center">
+                                TOASTIES <span style={{color: "#EF9540"}}>and</span> SANDWICHES
+                            </Text>
+                        </Flex>
+                        <Flex className="row-one" sx={rowWrapSx}>
+                            <Item title="Angus Beef on Ciabatta" description={desc1} titleSize="3em" width="30%"/>
+                            <Item title="Ciabatta with Pork" description={desc2} width="30%"/>
+                            <Item title="Ribsteak with Cheese" description={desc3} width="30%"/>
+                        </Flex>
+                        <Flex className="row-two" sx={rowWrapSx}>
+                            <Item title="Sourdough Chicken" description={desc4} titleSize="3em" width="30%"/>
+                            <Item title="Sourdough Chicken Cheese" description={desc5} width="30%"/>
+                            <Item title="The Original BLT Sandwich" description={desc6} width="30%"/>
+                        </Flex>
+                        <Flex className="row-three" sx={rowWrapSx}>
+                            <Item title="Ham and Cheese" description={desc7} titleSize="3em" width="30%"/>
+                            <Item title="Cheese" description={desc8} width="30%"/>
+                            <Item title="White/Brown" description={desc9} width="30%"/>
+                        </Flex>
                     </Flex>
                 </Flex>
+                <FDbigImg1/>
             </Flex>
-            <FDbigImg1/>
         </>
     );
 }

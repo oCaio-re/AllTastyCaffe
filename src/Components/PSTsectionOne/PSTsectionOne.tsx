@@ -1,6 +1,8 @@
-import {Flex, Text} from "@chakra-ui/react";
+import {Flex, Image, Text} from "@chakra-ui/react";
 import Item from "./Item/Item.tsx";
 import FirstBigImage from "./FirstBigImage/FirstBigImage.tsx";
+import muffinImg from "../../../public/food/muffin.png";
+import pastelImg from "../../../public/food/pastel-natas.png";
 
 function PsTsectionOne() {
     const desc1 = " Indulge in this iconic Portuguese pastry: flaky puff pastry filled with a creamy, dreamy custard."
@@ -11,7 +13,11 @@ function PsTsectionOne() {
     const desc6 = "Tangy and zesty, this lemon cake is perfectly balanced with a sweet lemon glaze."
     const desc7 = "A decadent treat with a creamy cheesecake base layered with fresh strawberries and a buttery graham cracker crust."
     const desc8 = "Indulge in this decadent treat featuring a mix of marshmallows, chocolate, nuts, and chewy bits."
-    const sectionWrapSx = {
+
+    const sectionWrapSx= {
+        flexDirection: "column",
+    }
+    const whiteBoardSx = {
         backgroundColor: "white",
         width: {base: "100%", md: "90%"},
         height: {base: "125rem", md: "35em"},
@@ -43,33 +49,51 @@ function PsTsectionOne() {
         flexDirection: {base: "column", md: "row"},
         margin: "2em auto auto auto"
     }
+    const muffinSx = {
+        width: {base: "0%", md: "15%"},
+        position: "absolute",
+        left: "0px",
+        top: "10em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+    }
+    const pastelSx = {
+        width: {base: "0%", md: "22%"},
+        position: "absolute",
+        right: "0px",
+        top: "30em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.5))"
+    }
     return (
         <>
             <Flex className="section-wrap" sx={sectionWrapSx}>
-                <Flex className="content-wrap" sx={contentWrapSx}>
-                    <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text m="auto" color="#0C6E5A" textAlign="center">
-                            PASTRIES <span style={{color: "#EF9540", fontWeight: "bold"}}>/</span> DESSERTS
-                        </Text>
-                    </Flex>
-                    <Flex className="row-one" sx={rowWrapSx}>
-                        <Item title="Portuguese Custard Tart" description={desc1} titleSize="3em" width="30%"/>
-                        <Item title="Muffins" description={desc2} width="30%"/>
-                        <Item title="Slice of Cake" description={desc3} width="30%"/>
-                    </Flex>
-                    <Flex className="row-two" sx={rowWrapSx}>
-                        <Item title="Carrot Cake" description={desc4} titleSize="3em" width="30%"/>
-                        <Item title="Apple Crumble" description={desc5} width="30%"/>
-                        <Item title="Lemon Drizzle" description={desc6} width="30%"/>
-                    </Flex>
-                    <Flex className="row-three" sx={rowWrapSx} style={{justifyContent: "space-evenly"}}>
-                        <Item title="Strawberry Cheesecake" description={desc7} titleSize="3em" width="30%"/>
-                        <Item title="Rocky Road" description={desc8} width="30%"/>
-                        <Item title="" description="" width="30%"/>
+                <Image src={muffinImg} sx={muffinSx} alt="coxinha-img"/>
+                <Image src={pastelImg} sx={pastelSx} alt="coxinha-img"/>
+                <Flex className="inner-wrap" sx={whiteBoardSx}>
+                    <Flex className="content-wrap" sx={contentWrapSx}>
+                        <Flex className="title-wrap" sx={titleWrapSx}>
+                            <Text m="auto" color="#0C6E5A" textAlign="center">
+                                PASTRIES <span style={{color: "#EF9540", fontWeight: "bold"}}>/</span> DESSERTS
+                            </Text>
+                        </Flex>
+                        <Flex className="row-one" sx={rowWrapSx}>
+                            <Item title="Portuguese Custard Tart" description={desc1} titleSize="3em" width="30%"/>
+                            <Item title="Muffins" description={desc2} width="30%"/>
+                            <Item title="Slice of Cake" description={desc3} width="30%"/>
+                        </Flex>
+                        <Flex className="row-two" sx={rowWrapSx}>
+                            <Item title="Carrot Cake" description={desc4} titleSize="3em" width="30%"/>
+                            <Item title="Apple Crumble" description={desc5} width="30%"/>
+                            <Item title="Lemon Drizzle" description={desc6} width="30%"/>
+                        </Flex>
+                        <Flex className="row-three" sx={rowWrapSx} style={{justifyContent: "space-evenly"}}>
+                            <Item title="Strawberry Cheesecake" description={desc7} titleSize="3em" width="30%"/>
+                            <Item title="Rocky Road" description={desc8} width="30%"/>
+                            <Item title="" description="" width="30%"/>
+                        </Flex>
                     </Flex>
                 </Flex>
+                <FirstBigImage/>
             </Flex>
-            <FirstBigImage/>
         </>
     );
 }

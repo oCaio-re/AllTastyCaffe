@@ -45,6 +45,7 @@ function Item(props: Props) {
         fontFamily: "Inter",
         fontSize: `${props.titleSize || "1.3em"}`,
         fontWeight: 700,
+        textAlign: "center",
         color: "#0C6E5A",
     }
     const imgWrapSx = {

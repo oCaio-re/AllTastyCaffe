@@ -1,4 +1,4 @@
-import {Box, Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
+import {Box, Menu, MenuButton, MenuItem, MenuList, MenuDivider} from "@chakra-ui/react";
 import {ChevronDownIcon, ChevronUpIcon} from "@chakra-ui/icons";
 import {NavLink} from "react-router-dom";
 import {useDisclosure, useColorModeValue} from "@chakra-ui/react";
@@ -25,7 +25,6 @@ function DropDownHover(props: Props) {
         "_hover": {color: "#0C6E5A",
                 backgroundColor: "rgba(126,126,126,0.13)"
                 },
-        borderBlockEnd: "0.2px solid rgba(126,126,126,0.13)",
         color: "#3c3c3c",
     }
 
@@ -54,10 +53,10 @@ function DropDownHover(props: Props) {
                             >
                                 <NavLink to={element.link}>
                                     {element.name}
+                                    <MenuDivider width="100%"/>
                                 </NavLink>
                             </MenuItem>
                         ))}
-
                     </MenuList>
                 </Menu>
             </Box>

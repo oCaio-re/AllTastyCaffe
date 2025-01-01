@@ -1,22 +1,8 @@
-import {Box, Flex} from "@chakra-ui/react";
-// import {NavLink} from "react-router-dom";
+import {Box, Flex, Image} from "@chakra-ui/react";
 import backgroundImage from "../../../public/flat-lay-coffee-ingredients-with-copy-space.jpg";
 import NewCarousel from "./NewCarousel/NewCarousel.tsx";
 
 function HMsectionOne() {
-    // const buttonSx = {
-    //     fontFamily: "Inter",
-    //     color: "white",
-    //     backgroundColor: "#0C6E5A",
-    //     position: "absolute",
-    //     fontSize: "1.5em",
-    //     w: "14rem",
-    //     h: "4rem",
-    //     ml: "auto",
-    //     ":hover": {
-    //         color: "#0C6E5A",
-    //     }
-    // }
     const sectionWrapSx = {
         // backgroundColor: "red",
         height: {base: "70vh", md: "90vh"},
@@ -26,36 +12,30 @@ function HMsectionOne() {
     const swiperWraperSx = {
         // backgroundColor: "red",
         alignItems: "center",
-        // margin: "0 auto 0 auto",
         width: "100%",
         height: {base: "60vh", md: "80vh"},
         position: "absolute",
+        backgroundPosition: "bottom",
+        objectFit: "contain",
     }
-    // const backgroundImageSx = {
-    //     width: {base: "100vw", md: "100vw"},
-    //     height: {base: "60vh", md: "90vh"},
-    //     margin: {base: "0", md: "0 auto"},
-    //     objectFit: {base: "cover", md: "cover"},
-    //     zIndex: "1"
-    // }
+    const backgroundSx = {
+        position: "absolute",
+        height: "100%",
+        width: "100%",
+        objectFit: "cover",
+    }
     return (
         <>
             <Flex height="90vh" w="100%" top="0" backgroundColor="" mb="-2em" sx={sectionWrapSx}>
                 <Box className="img-wrap" zIndex="0"
                      w="100vw" h="90vh" position="relative"
                 >
-                    <Flex sx={swiperWraperSx} backgroundImage={backgroundImage}>
+                    <Flex sx={swiperWraperSx}>
+                        <Image src={backgroundImage} alt="background-carrousel-image" sx={backgroundSx}/>
                         <NewCarousel/>
                     </Flex>
-                    {/*<Box as="img" src={backgroundImage} sx={backgroundImageSx}/>*/}
                 </Box>
             </Flex>
-            {/*<NavLink to="/beverages"*/}
-            {/*    style={{ width: "11%", height: "4em", position: "relative",*/}
-            {/*        margin: "auto", display: "flex", justifyContent: "center", backgroundColor: ""}}*/}
-            {/*>*/}
-            {/*    <Button sx={buttonSx}>VIEW MENU</Button>*/}
-            {/*</NavLink>*/}
         </>
     );
 }

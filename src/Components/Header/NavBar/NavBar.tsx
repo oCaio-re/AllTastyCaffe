@@ -92,7 +92,7 @@ function NavBar() {
                         <Box className="nav-item-wrap" sx={nav_item_wrap}>
                             <DropDownHover title={"Beverages"} items={dropBVG}/>
                         </Box>
-                        <Box className="nav-item-wrap" sx={nav_item_wrap} color="rgba(74,12,110,0.68)"
+                        <Box className="nav-item-wrap" sx={nav_item_wrap} color="#000000FF"
                              _hover={{color: "rgb(74,12,110)", transition: "0.3s"}}>
                             <NavLink to="/berry-acai" style={{whiteSpace: "nowrap"}}>Berry Acai</NavLink>
                         </Box>

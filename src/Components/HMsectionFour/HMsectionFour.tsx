@@ -88,7 +88,7 @@ function HMsectionFour() {
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text textAlign={{base: "justify", md: "justify"}}>
+                                    <Text textAlign={{base: "justify", md: "justify"}} color="#3e3e3e" fontStyle="italic">
                                         At All Tasty Cafe, we believe in providing more than just coffee.<br/>
                                         We're committed to delivering a truly exceptional experience.<br/>
                                         Our friendly baristas are passionate about crafting the

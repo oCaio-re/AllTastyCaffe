@@ -1,5 +1,7 @@
-import {Flex, Text} from "@chakra-ui/react";
+import {Flex, Image, Text} from "@chakra-ui/react";
 import Item from "../PSTsectionOne/Item/Item.tsx";
+import coxinhaImg from "../../../public/food/coxinha.jpeg"
+import pdqImg from "../../../public/food/pao-de-queijo.jpeg"
 import SecondBigImage from "./SecondBigImage/SecondBigImage.tsx";
 
 function SVRsectionOne() {
@@ -12,7 +14,11 @@ function SVRsectionOne() {
     const desc7 = "Savory bread filled with flavorful chorizo, a perfect accompaniment to any meal.\n"
     const desc8 = "Crispy and flavorful chicken nuggets with a spicy kick and melted cheese, served in a portion of 4."
     const desc9 = "Crispy and flavorful chicken nuggets with a spicy kick and melted cheese, served in a portion of 6."
-    const sectionWrapSx = {
+
+    const sectionWrapSx= {
+        flexDirection: "column",
+    }
+    const whiteboardSx = {
         backgroundColor: "white",
         width: {base: "100%", md: "90%"},
         height: {base: "145rem", md: "35em"},
@@ -45,33 +51,52 @@ function SVRsectionOne() {
         flexDirection: {base: "column", md: "row"},
         margin: "2em auto auto auto"
     }
+    const coxinhaSx = {
+        width: {base: "0%", md: "15%"},
+        position: "absolute",
+        right: "0px",
+        top: "30em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+
+    }
+    const pdqSx = {
+        width: {base: "0%", md: "15%"},
+        position: "absolute",
+        left: "0px",
+        top: "10em",
+        "filter": "drop-shadow(-5px 8px 8px rgba(77, 76, 76, 0.6))"
+    }
     return (
         <>
             <Flex className="section-wrap" sx={sectionWrapSx}>
-                <Flex className="content-wrap" sx={contentWrapSx}>
-                    <Flex className="title-wrap" sx={titleWrapSx}>
-                        <Text m="auto" color="#0C6E5A">
-                            SAVOURIES
-                        </Text>
-                    </Flex>
-                    <Flex className="row-one" sx={rowWrapSx}>
-                        <Item title="Brazilian Chicken Ball" description={desc1} titleSize="3em" width="30%"/>
-                        <Item title="Cheese Bread" description={desc2} width="30%"/>
-                        <Item title="Sausage and Cheese Roll" description={desc3} width="30%"/>
-                    </Flex>
-                    <Flex className="row-two" sx={rowWrapSx}>
-                        <Item title="Smoked Gourmet Hotdog" description={desc4} titleSize="3em" width="30%"/>
-                        <Item title="Potato Dog" description={desc5} width="30%"/>
-                        <Item title="Roasted Chicken Skewers" description={desc6} width="30%"/>
-                    </Flex>
-                    <Flex className="row-three" sx={rowWrapSx}>
-                        <Item title="Chorizo Bread" description={desc7} titleSize="3em" width="30%"/>
-                        <Item title="Chilli Cheese Nuggets | 4" description={desc8} width="30%"/>
-                        <Item title="Chilli Cheese Nuggets | 6" description={desc9} width="30%"/>
+                <Image src={coxinhaImg} sx={coxinhaSx} alt="coxinha-img"/>
+                <Image src={pdqImg} sx={pdqSx} alt="coxinha-img"/>
+                <Flex className="inner-wrap" sx={whiteboardSx}>
+                    <Flex className="content-wrap" sx={contentWrapSx}>
+                        <Flex className="title-wrap" sx={titleWrapSx}>
+                            <Text m="auto" color="#0C6E5A">
+                                SAVOURIES
+                            </Text>
+                        </Flex>
+                        <Flex className="row-one" sx={rowWrapSx}>
+                            <Item title="Brazilian Chicken Ball" description={desc1} titleSize="3em" width="30%"/>
+                            <Item title="Cheese Bread" description={desc2} width="30%"/>
+                            <Item title="Sausage and Cheese Roll" description={desc3} width="30%"/>
+                        </Flex>
+                        <Flex className="row-two" sx={rowWrapSx}>
+                            <Item title="Smoked Gourmet Hotdog" description={desc4} titleSize="3em" width="30%"/>
+                            <Item title="Potato Dog" description={desc5} width="30%"/>
+                            <Item title="Roasted Chicken Skewers" description={desc6} width="30%"/>
+                        </Flex>
+                        <Flex className="row-three" sx={rowWrapSx}>
+                            <Item title="Chorizo Bread" description={desc7} titleSize="3em" width="30%"/>
+                            <Item title="Chilli Cheese Nuggets | 4" description={desc8} width="30%"/>
+                            <Item title="Chilli Cheese Nuggets | 6" description={desc9} width="30%"/>
+                        </Flex>
                     </Flex>
                 </Flex>
+                <SecondBigImage/>
             </Flex>
-            <SecondBigImage/>
         </>
     );
 }

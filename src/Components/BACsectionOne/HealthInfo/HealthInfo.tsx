@@ -88,7 +88,7 @@ function HealthInfo() {
                                             variants={textVariants} initial="initial" viewport={{once: true}}
                                             whileHover="whileHover"
                                 >
-                                    <Text textAlign={{base: "justify", md: "justify"}} color="white">
+                                    <Text textAlign={{base: "justify", md: "justify"}} color="white" fontStyle="italic">
                                         {desc}
                                     </Text>
                                 </motion.div>
