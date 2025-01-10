@@ -1,0 +1,18 @@
+.initial-text {
+    transition: color 0.3s ease-in-out;
+}
+
+.initial-text:hover {
+    color: #646DD2;
+    text-decoration: none;
+
+}
+
+.maker-name {
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.maker-name:hover {
+    color: #C9AA71
+}
