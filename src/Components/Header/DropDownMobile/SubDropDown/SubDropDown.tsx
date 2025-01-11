@@ -23,7 +23,7 @@ import backgroundImg from "../../../../../public/wallpaper-opac.svg"
 interface MenuItemType {
     label: string;
     link?: string;
-    subItems?: MenuItemType[];
+    subItems?: {label: string, link: string}[];
 }
 
 const SubDropDown: React.FC = () => {
