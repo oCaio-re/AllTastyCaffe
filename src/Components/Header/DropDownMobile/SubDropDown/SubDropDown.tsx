@@ -101,7 +101,7 @@ const SubDropDown: React.FC = () => {
                                                             key={subItem.label}
                                                             onClick={() => handleMenuItemClick(subItem)}
                                                         >
-                                                            <NavLink to={subItem.link}>
+                                                            <NavLink to={String(subItem.link)}>
                                                                 <Text color="#0C6E5A">
                                                                     {subItem.label}
                                                                 </Text>
