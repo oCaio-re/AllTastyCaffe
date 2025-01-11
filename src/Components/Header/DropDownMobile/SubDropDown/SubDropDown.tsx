@@ -118,7 +118,7 @@ const SubDropDown: React.FC = () => {
                                       color="white" fontFamily="Inter"
                                       fontSize="1.2em" height="3em" backgroundColor="" alignItems="center"
                                 >
-                                    <NavLink to={item.link}>
+                                    <NavLink to={String(item.link)}>
                                         {item.label}
                                     </NavLink>
                                 </Flex>
