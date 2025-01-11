@@ -1,19 +1,21 @@
 import React, {useState} from 'react';
 import {
-    IconButton,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuGroup,
-    useDisclosure,
     Drawer,
     DrawerBody,
+    DrawerContent,
     DrawerOverlay,
-    DrawerContent, Flex, Image,
-    Text
+    Flex,
+    IconButton,
+    Image,
+    Menu,
+    MenuButton,
+    MenuGroup,
+    MenuItem,
+    MenuList,
+    Text,
+    useDisclosure
 } from '@chakra-ui/react';
-import {HamburgerIcon, CloseIcon, ChevronDownIcon} from '@chakra-ui/icons';
+import {ChevronDownIcon, CloseIcon, HamburgerIcon} from '@chakra-ui/icons';
 import {NavLink} from "react-router-dom";
 import logo from "../../../../../public/AT_logo.png"
 import backgroundImg from "../../../../../public/wallpaper-opac.svg"
@@ -60,9 +62,7 @@ const SubDropDown: React.FC = () => {
     const handleMenuItemClick = (item: MenuItemType) => {
         setSelectedMenuItem(item.label);
     };
-    // @ts-ignore
-    const other = selectedMenuItem
-
+    console.log(selectedMenuItem)
     return (
         <>
             <IconButton
