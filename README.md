@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# The Cozy Kettle Cafe Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a website for The Cozy Kettle Cafe, a charming cafe located in Roscommon, Ireland.  It showcases the cafe's menu, location, opening hours, and contact information, providing potential customers with an easy way to learn more about the cafe and plan their visit.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project utilizes the following technologies:
 
-## Expanding the ESLint configuration
+*   **TypeScript:**  Used for type safety and improved code maintainability.
+*   **React:** A JavaScript library for building user interfaces.
+*   **Chakra UI:** A simple, modular, and accessible component library that provides a solid foundation for building React applications.
+*   **OVH:** The hosting provider used for deploying the website.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+*   **Menu Display:**  A clear and easy-to-navigate display of the cafe's menu, potentially including categories (e.g., breakfast, lunch, drinks) and descriptions.
+*   **Location and Contact Information:**  Prominent display of the cafe's address in Roscommon, Ireland, along with contact details such as phone number and email address.  A map integration could also be included.
+*   **Opening Hours:**  Clearly displayed opening hours to inform customers when the cafe is open.
+*   **Responsive Design:**  The website is designed to be responsive and accessible across different devices (desktops, tablets, and mobile phones).
+*   **Image Gallery:** Showcasing the cafe's ambiance and food through a visually appealing image gallery.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Deployment
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The website is deployed on OVH hosting.  The deployment process involved:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1.  Building the React application for production.
+2.  Transferring the built files to the OVH server.
+3.  Configuring the server (if necessary) to serve the website.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Future Enhancements
+
+*   Implement online ordering and/or reservation system.
+*   Add a blog section for news and updates.
+*   Integrate with social media platforms.
+*   Improve SEO for better search engine visibility.
