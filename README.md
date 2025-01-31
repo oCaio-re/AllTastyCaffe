@@ -1,4 +1,4 @@
-# The Cozy Kettle Cafe Website
+# The Cozy All Tasty Cafe Website
 
 This project is a website for The Cozy Kettle Cafe, a charming cafe located in Roscommon, Ireland.  It showcases the cafe's menu, location, opening hours, and contact information, providing potential customers with an easy way to learn more about the cafe and plan their visit.
 
